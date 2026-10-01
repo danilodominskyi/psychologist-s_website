@@ -1,0 +1,838 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #ffffff;
+  min-height: 100vh;
+
+}
+.up_header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  
+    height: 82px;            
+    width: 100%;             
+    background-color: #ffffff;
+}
+.logo_menu_button{
+    width: 78%;              
+    height: 50px;            
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.brand_logo{
+    width: 41.1%;
+    background: #ffffff;
+}
+.brand_logo h5 {
+    margin: 0;
+    padding: 0;
+}
+.brand_logo_h5{
+    font-size: 14px;
+}
+.brand_logo p{
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+}
+.menu div {
+  list-style: none;        /* Видаляє стандартні крапки списку */
+  margin: 0;               /* Скидає зовнішні відступи */
+  padding: 0;  
+  height: 100%;            /* Скидає внутрішні відступи */
+  
+  display: flex;           /* Вибудовує пункти меню в один рядок */
+  justify-content: center; /* Центрує всі пункти по горизонталі */
+  align-items: center;     /* Центрує по вертикалі */
+  gap: 20px;               /* Створює однакові відступи МІЖ пунктами меню */
+}
+
+.menu button {
+  text-decoration: none;   /* Прибирає стандартне підкреслення посилань */
+  color: #333333;          /* Колір тексту як на вашому макеті */
+  font-size: 14px;
+  display: inline-block;     
+  border: none; 
+  background: #ffffff;   /* Розмір тексту (можна налаштувати) */
+}
+
+.btn_apply{
+    width: 11.9%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center; /* Центрує всі пункти по горизонталі */
+    align-items: center;
+}
+.btn_apply-btn{
+    height: 90%;
+    width: 90%;
+    background: #19705e;
+    border-radius: 24px;
+    border: none;
+    color: #ffffff;
+}
+
+.hero{
+    background: #faf4e9;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+}
+.div_hero{
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.text_hero{
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+.img_hero {
+    display: flex;
+    align-items: flex-end; 
+    
+    overflow: hidden;      
+}
+
+.img_hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    display: block;        
+}
+.choice_window_full{
+    width: 100%;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+}
+.choice_window{
+    margin-top: 15px;
+    height: 810px;
+    width: 82%;
+    display: flex;
+    flex-direction: column;         
+    justify-content: space-between;
+
+}
+.choice_window_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.choice_window_cards{
+    height: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.choice_window_card_list{
+    margin-left: 30px;
+}
+.choice_window_card-button{
+    background: #ffffff;
+    font-family: sans-serif;
+    width: 133px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.choice_window_card-button button {
+    all: unset;             /* Скидаємо всі базові стилі браузера */
+    box-sizing: border-box;
+    cursor: pointer;        /* Робимо курсор-палець при наведенні */
+    
+    width: 100%;            /* Кнопка розтягується на всю ширину div */
+    height: 100%;           /* Кнопка розтягується на всю висоту div */
+    
+    display: flex;          /* Вирівнюємо текст і стрілку всередині кнопки */
+    justify-content: center;
+    align-items: center;
+    gap: 6px;               /* Відступ між словом "Перейти" та стрілкою */
+    
+    color: #1a2530;         /* Темний колір тексту (налаштуйте під себе) */
+    font-size: 14px;        /* Розмір шрифту */
+    font-weight: 600;       /* Робимо текст трохи жирнішим, як на макеті */
+}
+
+.choice_window_card1{
+    background: #dff5ed;
+    height: 100%;
+    width: 30%;
+    border-radius: 24px;
+}
+.choice_window_card2{
+    background: #ffe8dd;
+    height: 100%;
+    width: 30%;
+    border-radius: 24px;
+}
+.choice_window_card3{
+    background: #eee4ff;
+    height: 100%;
+    width: 30%;
+    border-radius: 24px;
+}
+.choice_window_card-icon{
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 90px;
+    width: 90px;
+    background: #f2fbf8;
+    border-radius: 45px;
+}
+.choice_window_card-text{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.choice_window_boxs{
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    width: 100%;
+}
+.choice_window_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    background: #f5f7f5;
+    border-radius: 18px;
+}
+.popular_materials_full{
+    background: #fafcfb;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular_materials{
+    width: 82%;
+    height: 340px;
+}
+.popular_materials-text {
+    height: 37px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.popular_materials-text h4{
+    font-size: 24px;
+    margin: 0;
+}
+.popular_materials-text button{
+    all: unset;             /* Скидаємо всі базові стилі браузера */
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.popular_materials_bloks{
+    margin-top: 24px;
+    height: 75%;
+    width: 100%;
+    background: #fafcfb;
+    display: flex;
+    justify-content: space-between;
+}
+.popular_materials_blok{
+    border-radius: 17px;
+    width: 281px;
+    height: 280px;
+}
+.popular_materials_blok_up{
+    height: 145px;
+    width: 280px;
+    background: #c9c4a9;
+    border-radius: 17px 17px 0px 0px;
+}
+.popular_materials_blok_down{
+    height: 132px;
+    width: 280px;
+    background: #fafcfb;
+    border-radius: 0px 0px 17px 17px;
+    border-left: 1px solid #e2e8f0;   
+    border-right: 1px solid #e2e8f0;  
+    border-bottom: 1px solid #e2e8f0;
+    box-sizing: border-box;
+}
+.popular_materials_blok_down button{
+    all: unset;
+    margin-top: 16px;
+    margin-left: 17px;
+    background: #ffe8dd;
+    border-radius: 12px;
+    font-size: 11px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 9px;
+}
+.popular_materials_blok_down h5{
+    margin-left: 17px;
+}
+
+.our_events_full{
+    height: 277px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our_events{
+    width: 82%;
+    height: 56%;
+    background: #ffffff;
+}
+.our_events_text {
+    height: 37px;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.our_events_text h4{
+    font-size: 24px;
+    margin: 0;
+}
+.our_events_text button{
+    all: unset;             /* Скидаємо всі базові стилі браузера */
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.our_events_bloks{
+    display: flex;
+    justify-content: space-between;
+}
+.our_events_blok{
+    width: 381px;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+}
+.our_events_blok_left{
+    width: 92px;
+    height: 94px;
+    background: #fff3e8;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: 1px solid #e2e8f0;
+    padding: auto;
+}
+.calendar-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.our_events_blok_right{
+    width: 289px;
+    height: 94px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: 1px solid #e2e8f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_text{
+    font-weight: bold;
+}
+.write_to_psychologist_full{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.write_to_psychologist{
+    width: 1180px;
+    height: 118px;
+    background: #166b59;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+.write_to_psychologist h5{
+    font-size: 19px;
+    margin-bottom: 0px;
+    color: white;
+}
+.write_to_psychologist p{
+    margin-top: 0px;
+    color: white;
+}
+.write_psychologist {
+    display: flex;
+    align-items: center;
+}
+.write_psychologist-button {
+    width: 230px;
+    height: 46px;
+    background: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.write_psychologist-button p{
+    color: #166b59;
+    font-weight: bold;
+    margin: auto;
+}
+
+.content_up_full{ 
+    width: 100%; 
+    height: 275px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(90deg, #f2f7f5 0%, #fafaf8 50%, #fbf3ed 100%); 
+} 
+
+.content_up{ 
+    width: 82%; 
+    height: 205px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+.content_up_left{     
+    height: 176px; 
+    width: 625px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+} 
+
+.content_up_left-text-up p{ 
+    margin: 0px; 
+} 
+
+.content_up_left-title h3{ 
+    margin: 0px; 
+    font-size: 48px; 
+    font-weight: bold; 
+} 
+
+.content_up_right{ 
+    width: 500px; 
+    height: 205px; 
+    background: #acb397; 
+    border-radius: 24px; 
+} 
+
+.content_topic-grid-full{ 
+    width: 100%; 
+    height: 200px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.content_topic-grid{ 
+    width: 82%; 
+    height: 130px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+.content_topic-card{ 
+    width: 185px; 
+    height: 130px; 
+    background: #f0f6f3; 
+    border-radius: 18px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;  
+    text-align: center;   
+} 
+
+.content_topic-card-img{ 
+    margin: 10px 0px 15px 0px; 
+} 
+
+.content_topic-card-text{ 
+    width: 115px; 
+    font-size: 15px; 
+    font-weight: bold; 
+    margin: 0; 
+} 
+
+.content_info-block-full{ 
+    width: 100%; 
+    height: 505px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(90deg, #f2f7f5 0%, #fafaf8 50%, #fbf3ed 100%); 
+    margin: 0; 
+} 
+
+.content_info-block{ 
+    width: 82%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+.content_info-block-left{ 
+    height: 100%; 
+    width: 625px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+} 
+
+.content_info-badge{ 
+    height: 34px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+} 
+
+.content_info-badge-bg-number{ 
+    display: inline-block; 
+    height: 34px; 
+    width: 40px; 
+    background: #dcece5; 
+    text-align: center; 
+    border-radius: 8px; 
+} 
+
+.content_info-badge-number{ 
+    margin: 5px 0px 0px 0px; 
+} 
+
+.content_info-badge-text{ 
+    margin: 0px 0px 0px 12px; 
+    font-size: 15px; 
+} 
+
+.content_info-block-title{ 
+    height: 41px; 
+    width: 100%; 
+} 
+
+.content_info-block-title{ 
+    margin: 0; 
+    font-size: 34px; 
+    font-weight: bold; 
+} 
+
+.content_info-block-title h5{ 
+    margin: 0; 
+} 
+
+.content_info-block-text{ 
+    margin: 0; 
+} 
+
+.content_info-buttons{ 
+    height: 49px; 
+    width: 100%; 
+} 
+
+.content_info-button-left{ 
+    width: 205px; 
+    height: 45px; 
+    background: #1c7864; 
+    border: none; 
+    color: white; 
+    border-radius: 24px; 
+} 
+
+.content_info-button-right{ 
+    width: 195px; 
+    height: 45px; 
+    background: #ffffff; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 24px; 
+    margin: 0px 0px 0px 12px; 
+} 
+
+.content_info-tips-box{ 
+    height: 178px; 
+    width: 100%; 
+    margin-top: 10px; 
+    padding-bottom: 18px; 
+    background: #eef6f2; 
+    border-radius: 18px; 
+} 
+
+.content_info-tips-box h6{ 
+    margin: 22px 23px 0px 23px; 
+    height: 29px; 
+    width: 579px; 
+    font-size: 14px; 
+    font-weight: bold; 
+} 
+
+.content_info-tips-box p{ 
+    margin: 0px 23px 0px 23px; 
+    height: 28px; 
+    width: 579px; 
+} 
+
+.content_info-block-right{ 
+    height: 360px; 
+    width: 500px; 
+    background: #d3c5a1; 
+    border-radius: 24px; 
+} 
+
+.content_info-block-full-invers{ 
+    width: 100%; 
+    height: 505px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: #ffffff; 
+    margin: 0; 
+}
+
+
+
+
+
+/*поради*/
+
+.window_advice_all_full {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.window_advice_up_full {
+    width: 100%;
+    background: linear-gradient(
+        100deg,
+        #f4faf5,
+        #fff5ea
+    );
+}
+
+.window_advice_up {
+    width: 1180px;
+    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+.window_advice_up_left-text-up {
+    font-size: 13px;
+    color: #315a53;
+}
+
+.window_advice_up_left-title h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-size: 52px;
+    color: #123f3b;
+}
+
+.window_advice_up_left-text {
+    font-size: 17px;
+    color: #315a53;
+}
+
+.window_advice_content_full {
+    width: 100%;
+}
+
+.window_advice_content {
+    width: 1180px;
+    margin: auto;
+
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+
+/* FILTER */
+
+.window_advice_filter {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.window_advice_filter-button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #eef4f1;
+
+    color: #234d47;
+
+    cursor: pointer;
+}
+
+.window_advice_filter-button.active {
+    background-color: #187a65;
+    color: white;
+}
+
+
+/* CARDS */
+
+.window_advice_cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.window_advice_card {
+    overflow: hidden;
+
+    border: 1px solid #e0e8e4;
+    border-radius: 18px;
+
+    background-color: white;
+}
+
+.window_advice_card-img {
+    width: 100%;
+    height: 190px;
+
+    background: linear-gradient(
+        135deg,
+        #aebfa3,
+        #e7ba8f
+    );
+}
+
+.window_advice_card-info {
+    padding: 18px;
+}
+
+.window_advice_card-category {
+    display: inline-block;
+
+    margin: 0;
+
+    padding: 5px 9px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+}
+
+.window_advice_card-category.student {
+    background-color: #e5f2ec;
+    color: #176954;
+}
+
+.window_advice_card-category.parents {
+    background-color: #fff0e7;
+    color: #9a5b3c;
+}
+
+.window_advice_card-category.teachers {
+    background-color: #eee7fa;
+    color: #6e5295;
+}
+
+.window_advice_card-info h3 {
+    margin-top: 13px;
+    margin-bottom: 10px;
+
+    font-size: 19px;
+    line-height: 1.35;
+
+    color: #123f3b;
+}
+
+.window_advice_card-description {
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #71827e;
+}
+
+.window_advice_card-bottom {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window_advice_card-bottom p {
+    font-size: 12px;
+    color: #71827e;
+}
+
+.window_advice_card-bottom button {
+    border: none;
+
+    background: transparent;
+
+    color: #187a65;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact_window_all_full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_window_full{
+    width: 82%;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contact_window_title{
+    width: 100%;
+}
+.contact_window_title h3{ 
+    font-size: 50px;
+    margin: 50px 0px 0px 0px;
+}
+.contact_window{
+    height: 550px;
+    width: 100%;
+}
+

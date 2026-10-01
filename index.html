@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="up_header">
+        <div class="logo_menu_button">
+            <div class="brand_logo">
+                <h5 class="brand_logo_h5">💚 Психологічна <h5>
+                <h5>служба</h5>
+                <p>нашої школи</p>
+            </div>
+            <nav class="menu">
+                <div>
+                <button onclick="showPage('home')">Головна</button>
+                <button onclick="showPage('students')">Учням</button>
+                <button onclick="showPage('parents')">Батькам</button>
+                <button onclick="showPage('teachers')">Педагогам</button>
+                <button onclick="showPage('advice')">Поради</button>
+                <button onclick="showPage('events')">Події</button>
+                <button onclick="showPage('about')">Про психолога</button>
+                </div>
+            </nav>
+
+            <div class="btn_apply"><button onclick="showPage('contact')" class="btn_apply-btn">Звернутися</button></div>
+        </div>
+    </header>
+    <main>
+
+        <section id="home" class="page">
+            <!--  головна --> 
+              <div >
+                <div class="hero">
+                    <div class="div_hero">
+                        <div class="text_hero">
+                            <div>
+                            <h1>Тут тебе розуміють ♡</h1>
+                            <p>Психологічна підтримка, поради та корисні матеріали для учнів,</p>
+                            <p>батьків і педагогів нашої школи</p>
+                            </div>
+                        </div>
+                        <div class="img_hero">
+                            <div><img class="img_hero-img" src="img/Знімок екрана 2026-09-26 195944.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice_window_full">
+                    <div class="choice_window">
+                        <div class="choice_window_text">
+                            <h2>Чим я можу вам допомогти?</h2>
+                            <p>Оберіть, хто Ви, щоб знайти потрібні матеріали</p>
+                        </div>
+                        <div class="choice_window_cards">
+                            <div class="choice_window_card1">
+                                <div class="choice_window_card-icon"></div>
+                                <h3 class="choice_window_card-text">Я учень</h3>
+                                <ul class="choice_window_card_list">
+                                    <li>Емоції та переживання</li>
+                                    <li>Стосунки з однолітками</li>
+                                    <li>Навчання та мотивація</li>
+                                    <li>Конфлікти</li>
+                                    <li>Допомога в складних ситуаціях</li>
+                                </ul>
+                                <div class="choice_window_card-button"><button onclick="showPage('students')">Перейти<span class="arrow">&rarr;</span></button></div>
+                            </div>
+
+                            <div class="choice_window_card2">
+                                <div class="choice_window_card-icon"></div>
+                                <h3 class="choice_window_card-text">Я батько / мама</h3>
+                                <ul class="choice_window_card_list">
+                                    <li>Як зрозуміти дитину</li>
+                                    <li>Спілкування з підлітком</li>
+                                    <li>Конфлікти</li>
+                                    <li>Навчання</li>
+                                    <li>Емоційна підтримка</li>
+                                </ul>
+                                <div class="choice_window_card-button"><button onclick="showPage('parents')">Перейти<span class="arrow">&rarr;</span></button></div>
+                            </div>
+
+                            <div class="choice_window_card3">
+                                <div class="choice_window_card-icon"></div>
+                                <h3 class="choice_window_card-text">Я педагог</h3>
+                                <ul class="choice_window_card_list">
+                                    <li>Робота з учнями</li>
+                                    <li>Психологічний клімат</li>
+                                    <li>Конфлікти у класі</li>
+                                    <li>Взаємодія з батьками</li>
+                                    <li>Профілактика булінгу</li>
+                                </ul>
+                                <div class="choice_window_card-button"><button onclick="showPage('teachers')">Перейти<span class="arrow">&rarr;</span></button></div>
+                            </div>
+                        </div>
+                        <div class="choice_window_boxs">
+                            <div class="choice_window_box"> <p>☀</p><h5>Психологічні поради</h5> </div>
+                            <div class="choice_window_box"> <p>▶</p><h5>Фільми та відео</h5> </div>
+                            <div class="choice_window_box"> <p>📅</p><h5>Наші події</h5> </div>
+                            <div class="choice_window_box"> <p>👤</p><h5>Про психолога</h5> </div>
+                            <div class="choice_window_box"> <p>💬</p><h5>Звернутись до психолога</h5> </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="popular_materials_full">
+                    <div class="popular_materials">
+                        <div class="popular_materials-text">
+                            <h4>Популярні матеріали</h4>
+                            <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                        </div>
+                        <div class="popular_materials_bloks_full">
+                            <div class="popular_materials_bloks">
+                                <div class="popular_materials_blok">
+                                    <div class="popular_materials_blok_up"></div>
+                                    <div class="popular_materials_blok_down">
+                                        <button>Поради</button>
+                                        <h5>Як впоратися зі стресом перед контрольною</h5>
+                                    </div>
+                                </div>
+                                <div class="popular_materials_blok">
+                                    <div class="popular_materials_blok_up"></div>
+                                    <div class="popular_materials_blok_down">
+                                        <button>Поради</button>
+                                        <h5>Як впоратися зі стресом перед контрольною</h5>
+                                    </div>
+                                </div>
+                                <div class="popular_materials_blok">
+                                    <div class="popular_materials_blok_up"></div>
+                                    <div class="popular_materials_blok_down">
+                                        <button>Поради</button>
+                                        <h5>Як впоратися зі стресом перед контрольною</h5>
+                                    </div>
+                                </div>
+                                <div class="popular_materials_blok">
+                                    <div class="popular_materials_blok_up"></div>
+                                    <div class="popular_materials_blok_down">
+                                        <button>Поради</button>
+                                        <h5>Як впоратися зі стресом перед контрольною</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="our_events_full">
+                    <div class="our_events">
+                        <div class="our_events_text">
+                            <h4>Наші події</h4>
+                            <button>Усі події<span class="arrow">&rarr;</span></button>
+                        </div>
+                        <div class="our_events_bloks">
+                            <div class="our_events_blok">
+                                <div class="our_events_blok_left">
+                                    <div class="calendar-card">
+                                      <div class="date-number">24</div>
+                                      <div class="date-month">ВЕРЕСНЯ</div>
+                                    </div>  
+                                </div>
+                                <div class="our_events_blok_right">
+                                    <div class="text_card">
+                                        <div class="title_text">Тренінг для учнів 8 класу</div>
+                                        <div class="text_text">«Впевненість у собі»</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_events_blok">
+                                <div class="our_events_blok_left">
+                                    <div class="calendar-card">
+                                      <div class="date-number">15</div>
+                                      <div class="date-month">ВЕРЕСНЯ</div>
+                                    </div>  
+                                </div>
+                                <div class="our_events_blok_right">
+                                    <div class="text_card">
+                                        <div class="title_text">Зустріч з батьками</div>
+                                        <div class="text_text">«Як порозумітися з підлітком»</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_events_blok">
+                                <div class="our_events_blok_left">
+                                    <div class="calendar-card">
+                                      <div class="date-number">5</div>
+                                      <div class="date-month">ВЕРЕСНЯ</div>
+                                    </div>  
+                                </div>
+                                <div class="our_events_blok_right">
+                                    <div class="text_card">
+                                        <div class="title_text">Семінар для педагогів</div>
+                                        <div class="text_text">«Психологічний клімат класу»</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="write_to_psychologist_full">
+                    <div class="write_to_psychologist">
+                        <div>
+                            <h5>Потрібна особиста допомога?</h5>
+                            <p>Ви можете написати мені про свою проблему</p>
+                        </div>
+                        <div class="write_psychologist">
+                            <div class="write_psychologist-button"><p>Написати психологу →</p></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="students" class="page" hidden>
+            <!-- Учням -->
+             <div class="content_all_full">
+                    <div class="content_up_full">
+                        <div class="content_up">
+                            <div class="content_up_left">
+                                <div class="content_up_left-text-up"><p>Головна　›　Учням</p></div>
+                                <div class="content_up_left-title"><h3>Учням</h3></div>
+                                <div><p>Корисні поради, матеріали та підтримка, які допоможуть краще розуміти себе та впевненіше рухатися вперед.</p></div>
+                            </div>
+                            <div class="content_up_right"></div>
+                        </div>
+                    </div>
+                
+                    <div class="content_topic-grid-full">
+                        <div class="content_topic-grid">
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">💙</p>
+                                <p class="content_topic-card-text">Емоції та переживання</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">👥</p>
+                                <p class="content_topic-card-text">Стосунки з однолітками</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🏠</p>
+                                <p class="content_topic-card-text">Стосунки з батьками</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">📈</p>
+                                <p class="content_topic-card-text">Навчання та мотивація</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🤝</p>
+                                <p class="content_topic-card-text">Конфлікти</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🛟</p>
+                                <p class="content_topic-card-text">Допомога в складних ситуаціях</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content_info-blocks-full">
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">01</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Емоції та переживання</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Розумій свої емоції</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Емоції — це нормальна реакція нашої психіки на події, людей і різні ситуації. Вони допомагають нам краще розуміти себе, свої потреби та приймати рішення.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Вести щоденник емоцій</p>
+                                        <p>● Практикувати дихальні вправи</p>
+                                        <p>● Більше рухатися та відпочивати</p>
+                                        <p>● Говорити про свої почуття з близькими або психологом</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">02</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Стосунки з однолітками</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Дружба та підтримка</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Стосунки з однолітками — важлива частина нашого життя. Вони допомагають відчувати підтримку, розвиватися, ділитися інтересами та бути собою.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Бути відкритим та чесним</p>
+                                        <p>● Поважати думку інших</p>
+                                        <p>● Не боятися просити підтримки</p>
+                                        <p>● Вміти вирішувати конфлікти спокійно</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">03</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Навчання та мотивація</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Знаходь свій шлях у навчанні</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Навчання — це не тільки оцінки, а й можливість розвиватися, відкривати нові інтереси та будувати своє майбутнє.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Ставити реалістичні цілі</p>
+                                        <p>● Планувати свій час</p>
+                                        <p>● Робити перерви та відпочивати</p>
+                                        <p>● Шукати те, що дійсно цікаво</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">04</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Конфлікти</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Вирішуй конфлікти спокійно</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Конфлікти — це природна частина спілкування. Вони можуть виникати через різні погляди, емоції або непорозуміння. Головне — вміти вирішувати їх конструктивно.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Слухати і чути іншу людину</p>
+                                        <p>● Спокійно говорити про свої почуття</p>
+                                        <p>● Шукати компроміс</p>
+                                        <p>● Не переходити на образи</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">05</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Допомога в складних ситуаціях</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Ти не один — є підтримка</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Складні ситуації можуть траплятися у кожного: тривога, стрес, булінг, проблеми в сім’ї, труднощі в навчанні. Важливо знати, що ти не сам і завжди можна отримати допомогу.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Говорити про проблему з дорослими, яким довіряєш</p>
+                                        <p>● Звертатися до шкільного психолога</p>
+                                        <p>● Шукати професійну допомогу</p>
+                                        <p>● Пам’ятати: твої почуття важливі</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                
+                    <div class="popular_materials_full">
+                        <div class="popular_materials">
+                        
+                            <div class="popular_materials-text">
+                                <h4>Популярні матеріали</h4>
+                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                            </div>
+                        
+                            <div class="popular_materials_bloks_full">
+                                <div class="popular_materials_bloks">
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="parents" class="page" hidden>
+            <!-- Батькам -->
+             <div class="content_all_full">
+                    <div class="content_up_full">
+                        <div class="content_up">
+                            <div class="content_up_left">
+                                <div class="content_up_left-text-up"><p>Головна　›　Батькам</p></div>
+                                <div class="content_up_left-title"><h3>Батькам</h3></div>
+                                <div><p>Рекомендації, матеріали та підтримка для гармонійного розвитку дитини та порозуміння в сім’ї.</p></div>
+                            </div>
+                            <div class="content_up_right"></div>
+                        </div>
+                    </div>
+                
+                    <div class="content_topic-grid-full">
+                        <div class="content_topic-grid">
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">💚</p>
+                                <p class="content_topic-card-text">Як зрозуміти дитину</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">💬</p>
+                                <p class="content_topic-card-text">Спілкування з підлітком</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">‍👨‍👩‍👧</p>
+                                <p class="content_topic-card-text">Конфлікти в родині</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">📖</p>
+                                <p class="content_topic-card-text">Навчання та мотивація</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🙂</p>
+                                <p class="content_topic-card-text">Емоційнапі дтримка</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🛟</p>
+                                <p class="content_topic-card-text">Допомога в складних ситуаціях</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content_info-blocks-full">
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">01</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Як зрозуміти свою дитину</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Як зрозуміти свою дитину</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Кожна дитина має свої потреби, емоції та унікальний темп розвитку. Важливо не лише слухати, а й чути. Розуміння допомагає зміцнити довіру, покращити стосунки та підтримати дитину на кожному етапі її життя.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Приділяйте якісний час спілкуванню</p>
+                                        <p>● Показуйте, що цікавитесь її думкою</p>
+                                        <p>● Поважайте почуття та особисті межі</p>
+                                        <p>● Слідкуйте за змінами у поведінці</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">02</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Спілкування з підлітком</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Як говорити, щоб вас почули</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Підлітковий вік — це період змін, пошуку себе та більшої самостійності. Важливо зберігати відкритий діалог, бути підтримкою, а не контролером, слухати без осуду та шукати спільні рішення.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Слухайте без критики та повчань</p>
+                                        <p>● Поважайте особистість підлітка</p>
+                                        <p>● Давайте можливість висловити свою думку</p>
+                                        <p>● Шукайте компроміси та спільні рішення</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">03</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Конфлікти в родині</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Як вирішувати конфлікти спокійно</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Конфлікти — це нормальна частина сімейного життя. Важливо вміти спокійно обговорювати проблеми, слухати іншу сторону та шукати рішення, які підходять усім. Спокійний діалог допомагає зберегти довіру та повагу в родині.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Зберігайте спокій під час емоційних розмов</p>
+                                        <p>● Висловлюйте свої почуття без звинувачень</p>
+                                        <p>● Слухайте та намагайтеся зрозуміти іншу сторону</p>
+                                        <p>● Шукайте рішення разом</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">04</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Навчання та мотивація</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Як підтримати навчання дитини</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Мотивація до навчання формується через підтримку, віру в сили дитини та створення сприятливого середовища. Важливо заохочувати цікавість, допомагати ставити цілі та радіти навіть невеликим успіхам.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Створюйте комфортні умови для навчання</p>
+                                        <p>● Підтримуйте та відзначайте досягнення</p>
+                                        <p>● Допомагайте планувати час і ставити реалістичні цілі</p>
+                                        <p>● Виявляйте цікавість до того, що дитині подобається</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">05</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Емоційна підтримка</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Як підтримати емоційно</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Діти також переживають стрес, тривогу та сум. Ваша підтримка, увага та розуміння допомагають їм відчувати себе в безпеці, розвивати впевненість у собі та краще справлятися з труднощами.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Будьте уважними до емоцій дитини</p>
+                                        <p>● Створюйте атмосферу довіри та прийняття</p>
+                                        <p>● Говоріть про почуття та переживання</p>
+                                        <p>● Підтримуйте у складних ситуаціях</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                
+                    <div class="popular_materials_full">
+                        <div class="popular_materials">
+                        
+                            <div class="popular_materials-text">
+                                <h4>Популярні матеріали</h4>
+                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                            </div>
+                        
+                            <div class="popular_materials_bloks_full">
+                                <div class="popular_materials_bloks">
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Стаття</button>
+                                            <h5>Як підтримати дитину у стресових ситуаціях</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Відео</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Як впоратися зі стресом перед контрольною</h5>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="teachers" class="page" hidden>
+            <!-- Педагогам -->
+             <div class="content_all_full">
+                    <div class="content_up_full">
+                        <div class="content_up">
+                            <div class="content_up_left">
+                                <div class="content_up_left-text-up"><p>Головна　›　Педагогам</p></div>
+                                <div class="content_up_left-title"><h3>Педагогам</h3></div>
+                                <div><p>Матеріали, рекомендації та практичні інструменти для створення комфортного, довірливого та безпечного освітнього середовища.</p></div>
+                            </div>
+                            <div class="content_up_right"></div>
+                        </div>
+                    </div>
+                
+                    <div class="content_topic-grid-full">
+                        <div class="content_topic-grid">
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">👥</p>
+                                <p class="content_topic-card-text">Психологічний стан класу</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">💬</p>
+                                <p class="content_topic-card-text">Спілкування з учнями</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🤝</p>
+                                <p class="content_topic-card-text">Конфлікти та їх вирішення</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">👪</p>
+                                <p class="content_topic-card-text">Взаємодія з батьками</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">🙂</p>
+                                <p class="content_topic-card-text">Емоційнапі дтримка</p>
+                            </div>
+                        
+                            <div class="content_topic-card">
+                                <p class="content_topic-card-img">️</p>
+                                <p class="content_topic-card-text">Профілактика булінгу</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content_info-blocks-full">
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">01</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Психологічний стан класу</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Створюй атмосферу довіри</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Психологічний стан класу впливає на навчання, мотивацію та самопочуття учнів. Важливо створювати середовище, у якому кожен почувається почутим, прийнятим і в безпеці.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Підтримуйте повагу між учнями</p>
+                                        <p>● Помічайте зміни в настрої та поведінці</p>
+                                        <p>● Заохочуйте співпрацю замість суперництва</p>
+                                        <p>● Створюйте простір для відкритого діалогу</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">02</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Спілкування з учнями</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Говори так, щоб тебе почули</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Спокійне й поважне спілкування допомагає будувати авторитет без тиску. Учням важливо розуміти правила, мати можливість висловитися та знати, що педагог готовий їх почути.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Формулюйте очікування чітко й спокійно</p>
+                                        <p>● Слухайте учня до кінця</p>
+                                        <p>● Критикуйте вчинок, а не особистість</p>
+                                        <p>● Пояснюйте причини правил і рішень</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">03</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Конфлікти та їх вирішення</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Допомагай вирішувати конфлікти</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Конфлікти між учнями можуть стати можливістю навчити їх домовлятися, слухати одне одного та відповідати за власні дії.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Дайте кожній стороні можливість висловитися</p>
+                                        <p>● Не робіть висновків до з’ясування обставин</p>
+                                        <p>● Допомагайте назвати проблему без образ</p>
+                                        <p>● Шукайте рішення разом з учнями</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full-invers">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-right"></div>
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">04</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Взаємодія з батьками</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Будуй партнерство з батьками</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Співпраця школи та сім’ї допомагає краще розуміти потреби дитини. Важливо говорити не лише про труднощі, а й про сильні сторони, прогрес та спільні способи підтримки учня.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Починайте розмову з конкретних фактів</p>
+                                        <p>● Говоріть про сильні сторони дитини</p>
+                                        <p>● Уникайте звинувачень і ярликів</p>
+                                        <p>● Домовляйтеся про спільні наступні кроки</p>
+                                    </span>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="content_info-block-full">
+                            <div class="content_info-block">
+                            
+                                <div class="content_info-block-left">
+                                
+                                    <span class="content_info-badge">
+                                        <span class="content_info-badge-bg-number">
+                                            <p class="content_info-badge-number">05</p>
+                                        </span>
+                                        <p class="content_info-badge-text">Профілактика булінгу</p>
+                                    </span>
+                                
+                                    <div class="content_info-block-title">
+                                        <h5>Створюй безпечне середовище</h5>
+                                    </div>
+                                
+                                    <span class="content_info-block-text">
+                                        <p>Профілактика булінгу починається з чітких правил, уважності до змін у поведінці та своєчасної реакції.</p>
+                                    </span>
+                                
+                                    <span class="content_info-buttons">
+                                        <button class="content_info-button-left">Дізнатися більше →</button>
+                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                    </span>
+                                
+                                    <span class="content_info-tips-box">
+                                        <h6>Що допоможе?</h6>
+                                        <p>● Не ігноруйте повторювані прояви агресії</p>
+                                        <p>● Фіксуйте факти та дійте за правилами школи</p>
+                                        <p>● Підтримуйте дитину, яка звернулася по допомогу</p>
+                                        <p>● Формуйте культуру взаємоповаги у класі</p>
+                                    </span>
+                                
+                                </div>
+                            
+                                <div class="content_info-block-right"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                
+                    <div class="popular_materials_full">
+                        <div class="popular_materials">
+                        
+                            <div class="popular_materials-text">
+                                <h4>Популярні матеріали</h4>
+                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                            </div>
+                        
+                            <div class="popular_materials_bloks_full">
+                                <div class="popular_materials_bloks">
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Стаття</button>
+                                            <h5>Як створити довірливу атмосферу в класі</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Конфлікти між учнями: як правильно реагувати</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Відео</button>
+                                            <h5>цікаво знати</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="popular_materials_blok">
+                                        <div class="popular_materials_blok_up"></div>
+                                        <div class="popular_materials_blok_down">
+                                            <button>Поради</button>
+                                            <h5>Профілактика булінгу: практичні рекомендації</h5>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="advice" class="page" hidden>
+            <!-- Психологічні поради -->
+             <div class="window_advice_all_full">
+
+                    <div class="window_advice_up_full">
+                        <div class="window_advice_up">
+                        
+                            <div class="window_advice_up_left">
+                                <div class="window_advice_up_left-text-up">
+                                    <p>Головна　›　Психологічні поради</p>
+                                </div>
+                            
+                                <div class="window_advice_up_left-title">
+                                    <h3>Психологічні поради</h3>
+                                </div>
+                            
+                                <div class="window_advice_up_left-text">
+                                    <p>
+                                        Статті, рекомендації та корисні матеріали
+                                        для учнів, батьків і педагогів.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                
+                
+                    <div class="window_advice_content_full">
+                    
+                        <div class="window_advice_content">
+                        
+                            <div class="window_advice_filter">
+                                <button class="window_advice_filter-button active">
+                                    Усі
+                                </button>
+                            
+                                <button class="window_advice_filter-button">
+                                    Учням
+                                </button>
+                            
+                                <button class="window_advice_filter-button">
+                                    Батькам
+                                </button>
+                            
+                                <button class="window_advice_filter-button">
+                                    Педагогам
+                                </button>
+                            </div>
+                        
+                        
+                            <div class="window_advice_cards">
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category student">
+                                            Учням
+                                        </p>
+                                    
+                                        <h3>
+                                            Як справлятися зі стресом
+                                            у підлітковому віці
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Прості способи знизити напруження
+                                            та краще впоратися з переживаннями.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category parents">
+                                            Батькам
+                                        </p>
+                                    
+                                        <h3>
+                                            Поради для батьків:
+                                            як підтримати дитину
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Як бути поруч у складні моменти
+                                            та зберігати довіру у спілкуванні.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>6 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category teachers">
+                                            Педагогам
+                                        </p>
+                                    
+                                        <h3>
+                                            Як підтримати учня
+                                            у складній ситуації
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Практичні рекомендації для спокійної
+                                            та коректної підтримки школяра.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category student">
+                                            Учням
+                                        </p>
+                                    
+                                        <h3>
+                                            Як справлятися зі стресом
+                                            у підлітковому віці
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Прості способи знизити напруження
+                                            та краще впоратися з переживаннями.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category parents">
+                                            Батькам
+                                        </p>
+                                    
+                                        <h3>
+                                            Поради для батьків:
+                                            як підтримати дитину
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Як бути поруч у складні моменти
+                                            та зберігати довіру у спілкуванні.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>6 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category teachers">
+                                            Педагогам
+                                        </p>
+                                    
+                                        <h3>
+                                            Як підтримати учня
+                                            у складній ситуації
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Практичні рекомендації для спокійної
+                                            та коректної підтримки школяра.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category student">
+                                            Учням
+                                        </p>
+                                    
+                                        <h3>
+                                            Як справлятися зі стресом
+                                            у підлітковому віці
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Прості способи знизити напруження
+                                            та краще впоратися з переживаннями.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category parents">
+                                            Батькам
+                                        </p>
+                                    
+                                        <h3>
+                                            Поради для батьків:
+                                            як підтримати дитину
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Як бути поруч у складні моменти
+                                            та зберігати довіру у спілкуванні.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>6 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            
+                                <div class="window_advice_card">
+                                
+                                    <div class="window_advice_card-img"></div>
+                                
+                                    <div class="window_advice_card-info">
+                                    
+                                        <p class="window_advice_card-category teachers">
+                                            Педагогам
+                                        </p>
+                                    
+                                        <h3>
+                                            Як підтримати учня
+                                            у складній ситуації
+                                        </h3>
+                                    
+                                        <p class="window_advice_card-description">
+                                            Практичні рекомендації для спокійної
+                                            та коректної підтримки школяра.
+                                        </p>
+                                    
+                                        <div class="window_advice_card-bottom">
+                                            <p>5 хв читання</p>
+                                            <button>Читати →</button>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+        </section>
+
+        <section id="events" class="page" hidden>
+            <!-- Події -->
+        </section>
+
+        <section id="about" class="page" hidden>
+            <!-- Про психолога -->
+        </section>
+
+        <section id="contact" class="page" hidden>
+            <!-- Звернутися -->
+             <div class="contact_window_all_full">
+                <div class="contact_window_full">
+                    <div class="contact_window_title">
+                        <h3>Звернутися до психолога</h3>
+                    </div>
+                    <div class="contact_window_text">
+                        <p>Ви можете написати мені про свою проблему, поставити запитання або записатися на консультацію.</p>
+                    </div>
+                    <div class="contact_window">
+                        <div class="apply_form"></div>
+                        <div class="massege_conf"></div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
