@@ -66,6 +66,7 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 30px;
+  margin-bottom: 150px;
 }
 
 
@@ -5038,5 +5039,604 @@ body {
 
   #home .write_psychologist-button {
     width: 100%;
+  }
+}
+/* =========================================
+   МОБІЛЬНЕ ВИПРАВЛЕННЯ:
+   Учням / Батькам / Педагогам / Звернутися / Поради
+   ВСТАВИТИ В САМИЙ КІНЕЦЬ style.css
+========================================= */
+
+@media (max-width: 700px) {
+
+  /* ---------------------------------
+     1. СТОРІНКИ: УЧНЯМ / БАТЬКАМ / ПЕДАГОГАМ
+  ---------------------------------- */
+  :is(#students, #parents, #teachers) .content_up_full {
+    height: auto;
+    min-height: 430px;
+    padding: 34px 0 28px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+  }
+
+  :is(#students, #parents, #teachers) .content_up {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+    display: block;
+  }
+
+  :is(#students, #parents, #teachers) .content_up_left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  :is(#students, #parents, #teachers) .content_up_left-text-up p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  :is(#students, #parents, #teachers) .content_up_left-title h3 {
+    margin: 0;
+    font-size: clamp(42px, 10vw, 56px);
+    line-height: 1.02;
+    letter-spacing: -1px;
+  }
+
+  :is(#students, #parents, #teachers) .content_up_left-text,
+  :is(#students, #parents, #teachers) .content_up_left-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  :is(#students, #parents, #teachers) .content_topic-grid-full {
+    height: auto;
+    padding: 22px 0;
+  }
+
+  :is(#students, #parents, #teachers) .content_topic-grid {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  :is(#students, #parents, #teachers) .content_topic-card {
+    width: 100%;
+    height: auto;
+    min-height: 118px;
+    padding: 14px 10px;
+    box-sizing: border-box;
+  }
+
+  :is(#students, #parents, #teachers) .content_topic-card-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+
+  /* ---------------------------------
+     2. СТОРІНКА: ЗВЕРНУТИСЯ ДО ПСИХОЛОГА
+  ---------------------------------- */
+  #contact .contact_window_all_full {
+    margin-top: 0;
+    padding: 28px 0 45px;
+    align-items: flex-start;
+  }
+
+  #contact .contact_window_full {
+    width: 90%;
+    height: auto;
+    gap: 22px;
+  }
+
+  #contact .contact_window_title h3 {
+    margin: 0;
+    font-size: clamp(34px, 11vw, 56px);
+    line-height: 1.06;
+    letter-spacing: -1px;
+  }
+
+  #contact .contact_window {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #contact .contact_window > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact .input_fullName,
+  #contact .input_classAge,
+  #contact .input_message {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  #contact .input_message {
+    padding-top: 12px;
+  }
+
+  #contact .role-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #contact .role-button span {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  #contact .form-button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact .massege_conf {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #contact .massege_conf h6 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+  }
+
+  #contact .massege_conf p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+
+  /* ---------------------------------
+     3. СТОРІНКА: ПСИХОЛОГІЧНІ ПОРАДИ
+  ---------------------------------- */
+  #advice .window_advice_all_full {
+    margin-top: 0;
+  }
+
+  #advice .window_advice_up_full {
+    margin-top: 0;
+  }
+
+  #advice .window_advice_up,
+  #advice .window_advice_content {
+    width: 90%;
+  }
+
+  #advice .window_advice_up {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  #advice .window_advice_up_left-title h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: 1.06;
+    overflow-wrap: anywhere;
+  }
+
+  #advice .window_advice_up_left-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  #advice .window_advice_filter {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  #advice .window_advice_filter-button,
+  #advice .window_advice_filter-button-all,
+  #advice .window_advice_filter-button-student,
+  #advice .window_advice_filter-button-parents {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  #advice .window_advice_cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+
+  /* ---------------------------------
+     4. ЩОБ ВЕРХНЄ МЕНЮ НА ТЕЛЕФОНІ ВИГЛЯДАЛО ОХАЙНІШЕ
+  ---------------------------------- */
+  .psy-menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+
+  .psy-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .psy-menu > div {
+    width: max-content;
+    min-width: max-content;
+    padding-right: 10px;
+  }
+}
+
+
+/* Дуже вузькі телефони */
+@media (max-width: 430px) {
+  :is(#students, #parents, #teachers) .content_topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .contact_window_title h3 {
+    font-size: clamp(32px, 12vw, 46px);
+  }
+
+  #advice .window_advice_up_left-title h3 {
+    font-size: clamp(32px, 11vw, 44px);
+  }
+}
+/* =============================================
+   МОБІЛЬНІ ВИПРАВЛЕННЯ: ПРО ПСИХОЛОГА + БУЛІНГ
+   Додати у самий КІНЕЦЬ наявного style.css
+   Не змінює десктопну верстку
+   ============================================= */
+@media (max-width: 700px) {
+
+  /* ПРО ПСИХОЛОГА: фото й текст окремими блоками */
+  #about .about_psychologist_full {
+    min-height: 0;
+    margin: 0;
+    padding: 28px 0 48px;
+    box-sizing: border-box;
+  }
+
+  #about .about_psychologist {
+    width: 90%;
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  #about .about_psychologist_title h3 {
+    margin: 0 0 24px;
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.7px;
+  }
+
+  #about .about_psychologist_content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+  }
+
+  #about .about_psychologist_left,
+  #about .about_psychologist_right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #about .about_psychologist_right {
+    padding-top: 0;
+  }
+
+  #about .about_psychologist_img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+  #about .about_psychologist_img img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+  }
+
+  #about .about_psychologist_name h2 {
+    font-size: clamp(25px, 7vw, 32px);
+    line-height: 1.18;
+    overflow-wrap: break-word;
+  }
+
+  #about .about_psychologist_name h5 {
+    margin: 8px 0 16px;
+    font-size: 14px;
+  }
+
+  #about .about_psychologist_description {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #526963;
+    overflow-wrap: break-word;
+  }
+
+  #about .about_psychologist_description p {
+    margin: 0 0 12px;
+  }
+
+  #about .about_psychologist_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0 18px;
+  }
+
+  #about .about_psychologist_buttons button {
+    flex: 1 1 145px;
+    min-height: 44px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  /* БУЛІНГ: прибираємо подвійний верхній відступ */
+  #bullying .bullying-page,
+  #bullying .bullying-hero {
+    margin-top: 0;
+  }
+
+  #bullying .bullying-hero {
+    min-height: 340px;
+    padding: 30px 0 40px;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(248, 244, 239, 0.98) 0%,
+        rgba(248, 244, 239, 0.95) 36%,
+        rgba(248, 244, 239, 0.68) 65%,
+        rgba(248, 244, 239, 0.12) 100%
+      ),
+      url("img/bullying-hero.jpg");
+    background-size: cover;
+    background-position: center, 65% center;
+    background-repeat: no-repeat;
+  }
+
+  #bullying .bullying-hero h1 {
+    max-width: 100%;
+    margin: 0 0 16px;
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.14;
+    letter-spacing: -0.65px;
+    overflow-wrap: break-word;
+  }
+
+  #bullying .bullying-hero h1 span {
+    display: block;
+    margin-top: 3px;
+  }
+
+  #bullying .bullying-hero p {
+    max-width: 32ch;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #34474c;
+  }
+
+  #bullying .bullying-breadcrumb {
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  #bullying .bullying-content {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  #bullying .bullying-hero h1 {
+    font-size: 29px;
+  }
+  #about .about_psychologist_title h3 {
+    font-size: 34px;
+  }
+}
+/* =====================================================
+   МОБІЛЬНА ВЕРСІЯ: банери Учням / Батькам / Педагогам
+   + модальні вікна «Напрямки роботи» і «Сертифікати»
+   ВСТАВИТИ В КІНЕЦЬ style.css
+   Десктопна верстка не змінюється.
+   ===================================================== */
+@media (max-width: 700px) {
+  /* 1. Замість фотографії під текстом — окрема фотокартка */
+  #content_up_full-students,
+  #content_up_full-perents,
+  #content_up_full-teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 26px 0 28px;
+    box-sizing: border-box;
+    background-image: none;
+  }
+
+  #content_up_full-students { background-color: #f3f8f5; }
+  #content_up_full-perents { background-color: #fff8f1; }
+  #content_up_full-teachers { background-color: #f7f5fa; }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up {
+    display: block;
+    width: 90%;
+    max-width: 620px;
+    height: auto;
+    margin: 0 0 23px;
+  }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 12px;
+  }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up_left-text-up p {
+    margin: 0;
+    color: #577268;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up_left-title h3 {
+    margin: 0;
+    color: #153c32;
+    font-size: clamp(37px, 10vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+  }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up_left > div:last-child p {
+    max-width: 36ch;
+    margin: 0;
+    color: #526963;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  :is(#content_up_full-students, #content_up_full-perents, #content_up_full-teachers) .content_up_right {
+    display: none;
+  }
+
+  /* Використовуємо ті САМІ зображення, які є у тебе в img/ */
+  #content_up_full-students::after,
+  #content_up_full-perents::after,
+  #content_up_full-teachers::after {
+    content: "";
+    display: block;
+    flex: none;
+    width: 90%;
+    max-width: 620px;
+    aspect-ratio: 16 / 10;
+    min-height: 185px;
+    box-sizing: border-box;
+    border: 1px solid rgba(35, 75, 58, .08);
+    border-radius: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 30px rgba(36, 57, 49, .09);
+  }
+
+  #content_up_full-students::after {
+    background-image: url("img/bg_photo_student.png");
+    background-position: 70% center;
+  }
+
+  #content_up_full-perents::after {
+    background-image: url("img/bg_photo_parent.png");
+    background-position: 75% center;
+  }
+
+  #content_up_full-teachers::after {
+    background-image: url("img/bg_photo_teacher.png");
+    background-position: 70% center;
+  }
+
+  /* 2. Модальні вікна — замість обрізання по горизонталі */
+  #workModal,
+  #certificatesModal {
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  #workModal .about_modal_window,
+  #certificatesModal .about_modal_window {
+    width: 100%;
+    max-width: 620px;
+    max-height: calc(100dvh - 24px);
+    padding: 22px 16px 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 22px;
+  }
+
+  #workModal .about_modal_title,
+  #certificatesModal .about_modal_title {
+    padding-right: 45px;
+    margin-bottom: 22px;
+  }
+
+  #workModal .about_modal_title h2,
+  #certificatesModal .about_modal_title h2 {
+    font-size: clamp(25px, 7.5vw, 34px);
+    line-height: 1.18;
+    overflow-wrap: break-word;
+  }
+
+  #workModal .about_modal_title p,
+  #certificatesModal .about_modal_title p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #workModal .about_work_grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  #workModal .about_work_card {
+    min-width: 0;
+    min-height: 0;
+    padding: 16px;
+  }
+
+  #certificatesModal .about_certificates_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  #certificatesModal .about_certificate_card {
+    min-width: 0;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  #certificatesModal .about_certificate_img {
+    height: 140px;
+    padding: 7px;
+  }
+
+  #certificatesModal .about_certificate_card h3 {
+    overflow-wrap: anywhere;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 360px) {
+  #certificatesModal .about_certificates_grid {
+    grid-template-columns: 1fr;
   }
 }
