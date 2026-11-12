@@ -7,47 +7,148 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="up_header">
-        <div class="logo_menu_button">
-            <div class="brand_logo">
-                <h5 class="brand_logo_h5">💚 Психологічна <h5>
-                <h5>служба</h5>
-                <p>нашої школи</p>
+    <header class="psy-header">
+        <div class="psy-topbar">
+            <div class="psy-brand">
+                <div class="psy-brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41 15C32 3 16 5 10 17C4 30 11 41 20 51L41 73L62 51C71 41 78 30 72 17C66 5 50 3 41 15Z" stroke="currentColor" stroke-width="2.7" stroke-linejoin="round"/>
+                    <path d="M40 16C34 12 26 13 23 19C18 19 15 25 18 30C12 36 16 44 22 45C21 51 27 55 33 54C36 58 39 64 41 71M42 16C48 12 56 13 59 19C64 19 67 25 64 30C70 36 66 44 60 45C61 51 55 55 49 54C46 58 43 64 41 71" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M26 21C29 25 27 29 23 31M32 32C28 32 26 37 28 41M32 49C35 45 39 45 41 48M56 21C53 25 55 29 59 31M50 32C54 32 56 37 54 41M50 49C47 45 43 45 41 48M41 16V70" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="psy-brand-info">
+                    <h5>Шкільний психолог</h5>
+                    <p>Підтримка. Розуміння. Розвиток.</p>
+                </div>
             </div>
-            <nav class="menu">
+
+            <nav class="psy-menu" aria-label="Основне меню">
                 <div>
-                <button onclick="showPage('home')">Головна</button>
-                <button onclick="showPage('students')">Учням</button>
-                <button onclick="showPage('parents')">Батькам</button>
-                <button onclick="showPage('teachers')">Педагогам</button>
-                <button onclick="showPage('advice')">Поради</button>
-                <button onclick="showPage('events')">Події</button>
-                <button onclick="showPage('about')">Про психолога</button>
+                    <button class="psy-active" onclick="showPage('home')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Головна
+                    </button>
+                    <button onclick="showPage('students')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M4 21v-2c0-4 3.6-6 8-6s8 2 8 6v2H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Учням
+                    </button>
+                    <button onclick="showPage('parents')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="8.5" r="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M1.5 20v-2c0-3.2 2.8-5.3 6.5-5.3 3.4 0 6.5 2.1 6.5 5.3v2h-13ZM15 14c3.8-1 7 1.2 7 5v1h-6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Батькам
+                    </button>
+                    <button onclick="showPage('teachers')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5L2 8ZM6 11v7c4 3 8 3 12 0v-7M22 8v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Педагогам
+                    </button>
+                    <button onclick="showPage('advice')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 19h6M10 22h4M8 16c-2.3-1.4-3.5-3.5-3.5-6A7.5 7.5 0 0 1 12 2.5a7.5 7.5 0 0 1 7.5 7.5c0 2.5-1.2 4.6-3.5 6l-1 2H9l-1-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Психологічні поради
+                    </button>
+                    <!-- <button onclick="showPage('events')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M7 2v6M17 2v6M3 10h18M7.5 14h3M13.5 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Події
+                    </button> -->
+                    <button onclick="showPage('about')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v6M12 7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Про психолога
+                    </button>
+                    <button onclick="showPage('bullying')">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 4 5v6c0 5 2.8 8 8 11 5.2-3 8-6 8-11V5l-8-3Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v8M9 10l3-3 3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Булінг
+                    </button>
                 </div>
             </nav>
 
-            <div class="btn_apply"><button onclick="showPage('contact')" class="btn_apply-btn">Звернутися</button></div>
+            <div class="psy-contact">
+                <button onclick="showPage('contact')" class="psy-contact-button">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v12H9l-5 4V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 10h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    Звернутися
+                </button>
+            </div>
         </div>
     </header>
-    <main>
 
-        <section id="home" class="page">
-            <!--  головна --> 
-              <div >
-                <div class="hero">
-                    <div class="div_hero">
-                        <div class="text_hero">
-                            <div>
-                            <h1>Тут тебе розуміють ♡</h1>
-                            <p>Психологічна підтримка, поради та корисні матеріали для учнів,</p>
-                            <p>батьків і педагогів нашої школи</p>
-                            </div>
+    <section id="home" class="page">
+        <div class="psy-hero"><div class="psy-wave psy-wave-back" aria-hidden="true"></div>
+            <div class="psy-wave psy-wave-front" aria-hidden="true"></div>
+            <svg class="psy-leaf psy-leaf-left" viewBox="0 0 160 580" fill="none" aria-hidden="true">
+                <path d="M0 10c35 38 58 108 46 173M0 211c57 18 87 68 98 130M0 419c48-22 84-11 121 37" stroke="#64913d" stroke-width="8" opacity=".3"/>
+                <ellipse cx="36" cy="79" rx="25" ry="62" transform="rotate(-48 36 79)" fill="#8da934"/>
+                <ellipse cx="20" cy="179" rx="30" ry="73" transform="rotate(-52 20 179)" fill="#6d9a32"/>
+                <ellipse cx="60" cy="301" rx="29" ry="75" transform="rotate(-45 60 301)" fill="#a8b94c"/>
+                <ellipse cx="27" cy="422" rx="30" ry="72" transform="rotate(-51 27 422)" fill="#729d35"/>
+                <ellipse cx="71" cy="504" rx="24" ry="62" transform="rotate(-63 71 504)" fill="#89a846"/>
+            </svg>
+            <svg class="psy-leaf psy-leaf-right" viewBox="0 0 130 300" fill="none" aria-hidden="true">
+                <path d="M124 13C89 72 84 164 105 287" stroke="#557a3d" stroke-width="5"/>
+                <ellipse cx="83" cy="68" rx="21" ry="43" transform="rotate(-44 83 68)" fill="#648c42"/>
+                <ellipse cx="64" cy="151" rx="21" ry="47" transform="rotate(-48 64 151)" fill="#7b9a51"/>
+                <ellipse cx="97" cy="225" rx="20" ry="41" transform="rotate(-55 97 225)" fill="#648c42"/>
+            </svg>
+
+            <div class="psy-hero-inner">
+                <div class="psy-hero-text">
+                    <div class="psy-hero-content">
+                        <span class="psy-badge">♡&nbsp; Психологічна підтримка</span>
+
+                        <div class="psy-title-wrap">
+                        <h1>Тут тебе<br><span>розуміють</span></h1>
+                            <svg class="psy-heart"
+                                viewBox="0 0 225 155"
+                                fill="none"
+                                aria-hidden="true">
+
+                            <path
+                                d="M103 104
+                                C90 94 50 71 47 43
+                                C45 23 57 15 72 17
+                                C88 20 95 35 98 42
+                                C105 23 122 17 136 24
+                                C155 33 153 54 139 72
+                                C129 84 115 96 103 104"
+                                stroke="#086542"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M18 140
+                                C48 124 74 109 103 104
+                                C138 119 175 111 214 84"
+                                stroke="#086542"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            </svg>
                         </div>
-                        <div class="img_hero">
-                            <div><img class="img_hero-img" src="img/Знімок екрана 2026-09-26 195944.png" alt=""></div>
+
+                        <p class="psy-description">Підтримка, поради та допомога<br>у будь-яких життєвих ситуаціях</p>
+
+                        <div class="psy-features">
+                        <div class="psy-feature">
+                            <div class="psy-feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2.1"/><path d="M12 40v-5c0-7 5-11 12-11s12 4 12 11v5H12Z" stroke="currentColor" stroke-width="2.1"/><circle cx="9" cy="19" r="5" stroke="currentColor" stroke-width="2"/><circle cx="39" cy="19" r="5" stroke="currentColor" stroke-width="2"/><path d="M9 26c-4 1-7 4-7 10v3h8M39 26c4 1 7 4 7 10v3h-8" stroke="currentColor" stroke-width="2"/></svg></div>
+                            <p>Тут тебе<br>підтримають</p>
                         </div>
+                        <div class="psy-feature">
+                            <div class="psy-feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 41 6.8 24C-2 13.5 10 3 20 12l4 4 4-4c10-9 22 1.5 13.2 12L24 41Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
+                            <p>Тут ти можеш<br>почувати себе<br>в безпеці</p>
+                        </div>
+                        <div class="psy-feature">
+                            <div class="psy-feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 43V23M24 28C10 29 7 22 7 10c11 0 17 4 17 18ZM24 24c0-12 8-16 18-16 0 12-5 19-18 16Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <p>Тут ти можеш<br>поплакати</p>
+                        </div>
+                        <div class="psy-feature">
+                            <div class="psy-feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="2.2"/><circle cx="17" cy="19" r="2" fill="currentColor"/><circle cx="31" cy="19" r="2" fill="currentColor"/><path d="M15 29c4 9 14 9 18 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+                            <p>Тут тебе<br>вислухають</p>
+                        </div>
+                        </div>
+
+                        <button class="psy-button" onclick="document.querySelector('.choice_window_full')?.scrollIntoView({behavior:'smooth'})">
+                        Дізнатися більше<span aria-hidden="true">→</span>
+                        </button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+
                 <div class="choice_window_full">
                     <div class="choice_window">
                         <div class="choice_window_text">
@@ -104,47 +205,19 @@
                         </div>
                     </div>
                 </div>
+                <!-- Популярні матеріали: наповнюються зі списку articles у index.js -->
                 <div class="popular_materials_full">
                     <div class="popular_materials">
                         <div class="popular_materials-text">
                             <h4>Популярні матеріали</h4>
-                            <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                            <button type="button" onclick="showPage('advice')">Усі матеріали <span class="arrow">&rarr;</span></button>
                         </div>
                         <div class="popular_materials_bloks_full">
-                            <div class="popular_materials_bloks">
-                                <div class="popular_materials_blok">
-                                    <div class="popular_materials_blok_up"></div>
-                                    <div class="popular_materials_blok_down">
-                                        <button>Поради</button>
-                                        <h5>Як впоратися зі стресом перед контрольною</h5>
-                                    </div>
-                                </div>
-                                <div class="popular_materials_blok">
-                                    <div class="popular_materials_blok_up"></div>
-                                    <div class="popular_materials_blok_down">
-                                        <button>Поради</button>
-                                        <h5>Як впоратися зі стресом перед контрольною</h5>
-                                    </div>
-                                </div>
-                                <div class="popular_materials_blok">
-                                    <div class="popular_materials_blok_up"></div>
-                                    <div class="popular_materials_blok_down">
-                                        <button>Поради</button>
-                                        <h5>Як впоратися зі стресом перед контрольною</h5>
-                                    </div>
-                                </div>
-                                <div class="popular_materials_blok">
-                                    <div class="popular_materials_blok_up"></div>
-                                    <div class="popular_materials_blok_down">
-                                        <button>Поради</button>
-                                        <h5>Як впоратися зі стресом перед контрольною</h5>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="popular_materials_bloks" id="popularArticlesContainer"></div>
                         </div>
                     </div>
                 </div>
-                <div class="our_events_full">
+                <!-- <div class="our_events_full">
                     <div class="our_events">
                         <div class="our_events_text">
                             <h4>Наші події</h4>
@@ -195,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="write_to_psychologist_full">
                     <div class="write_to_psychologist">
                         <div>
@@ -203,7 +276,7 @@
                             <p>Ви можете написати мені про свою проблему</p>
                         </div>
                         <div class="write_psychologist">
-                            <div class="write_psychologist-button"><p>Написати психологу →</p></div>
+                            <div class="write_psychologist-button" onclick="showPage('contact')"><p>Написати психологу →</p></div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +286,7 @@
         <section id="students" class="page" hidden>
             <!-- Учням -->
              <div class="content_all_full">
-                    <div class="content_up_full">
+                    <div id="content_up_full-students" class="content_up_full">
                         <div class="content_up">
                             <div class="content_up_left">
                                 <div class="content_up_left-text-up"><p>Головна　›　Учням</p></div>
@@ -224,7 +297,7 @@
                         </div>
                     </div>
                 
-                    <div class="content_topic-grid-full">
+                    <!-- <div class="content_topic-grid-full">
                         <div class="content_topic-grid">
                             <div class="content_topic-card">
                                 <p class="content_topic-card-img">💙</p>
@@ -256,7 +329,7 @@
                                 <p class="content_topic-card-text">Допомога в складних ситуаціях</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 
                     <div class="content_info-blocks-full">
                     
@@ -281,7 +354,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -323,7 +396,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -339,7 +412,7 @@
                         </div>
                     
                     
-                        <div class="content_info-block-full">
+                        <!-- <div class="content_info-block-full">
                             <div class="content_info-block">
                             
                                 <div class="content_info-block-left">
@@ -361,7 +434,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -403,7 +476,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -441,7 +514,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -456,7 +529,7 @@
                             
                                 <div class="content_info-block-right"></div>
                             </div>
-                        </div>
+                        </div> -->
                     
                     </div>
                 
@@ -466,7 +539,7 @@
                         
                             <div class="popular_materials-text">
                                 <h4>Популярні матеріали</h4>
-                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                                <button onclick="showPage('advice')">Усі матеріали<span class="arrow">&rarr;</span></button>
                             </div>
                         
                             <div class="popular_materials_bloks_full">
@@ -515,18 +588,17 @@
         <section id="parents" class="page" hidden>
             <!-- Батькам -->
              <div class="content_all_full">
-                    <div class="content_up_full">
+                    <div id="content_up_full-perents" class="content_up_full ">
                         <div class="content_up">
                             <div class="content_up_left">
                                 <div class="content_up_left-text-up"><p>Головна　›　Батькам</p></div>
                                 <div class="content_up_left-title"><h3>Батькам</h3></div>
                                 <div><p>Рекомендації, матеріали та підтримка для гармонійного розвитку дитини та порозуміння в сім’ї.</p></div>
                             </div>
-                            <div class="content_up_right"></div>
                         </div>
                     </div>
                 
-                    <div class="content_topic-grid-full">
+                    <!-- <div class="content_topic-grid-full">
                         <div class="content_topic-grid">
                             <div class="content_topic-card">
                                 <p class="content_topic-card-img">💚</p>
@@ -558,7 +630,7 @@
                                 <p class="content_topic-card-text">Допомога в складних ситуаціях</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 
                     <div class="content_info-blocks-full">
                     
@@ -583,7 +655,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -625,7 +697,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -641,7 +713,7 @@
                         </div>
                     
                     
-                        <div class="content_info-block-full">
+                        <!-- <div class="content_info-block-full">
                             <div class="content_info-block">
                             
                                 <div class="content_info-block-left">
@@ -663,7 +735,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -705,7 +777,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -743,7 +815,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -758,7 +830,7 @@
                             
                                 <div class="content_info-block-right"></div>
                             </div>
-                        </div>
+                        </div> -->
                     
                     </div>
                 
@@ -768,7 +840,7 @@
                         
                             <div class="popular_materials-text">
                                 <h4>Популярні матеріали</h4>
-                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                                <button onclick="showPage('advice')">Усі матеріали<span class="arrow">&rarr;</span></button>
                             </div>
                         
                             <div class="popular_materials_bloks_full">
@@ -817,7 +889,7 @@
         <section id="teachers" class="page" hidden>
             <!-- Педагогам -->
              <div class="content_all_full">
-                    <div class="content_up_full">
+                    <div id="content_up_full-teachers" class="content_up_full">
                         <div class="content_up">
                             <div class="content_up_left">
                                 <div class="content_up_left-text-up"><p>Головна　›　Педагогам</p></div>
@@ -885,7 +957,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -927,7 +999,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -943,7 +1015,7 @@
                         </div>
                     
                     
-                        <div class="content_info-block-full">
+                        <!-- <div class="content_info-block-full">
                             <div class="content_info-block">
                             
                                 <div class="content_info-block-left">
@@ -965,7 +1037,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -1007,7 +1079,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -1045,7 +1117,7 @@
                                 
                                     <span class="content_info-buttons">
                                         <button class="content_info-button-left">Дізнатися більше →</button>
-                                        <button class="content_info-button-right">Корисні матеріали</button>
+                                        <button onclick="showPage('advice')" class="content_info-button-right">Корисні матеріали</button>
                                     </span>
                                 
                                     <span class="content_info-tips-box">
@@ -1060,7 +1132,7 @@
                             
                                 <div class="content_info-block-right"></div>
                             </div>
-                        </div>
+                        </div> -->
                     
                     </div>
                 
@@ -1070,7 +1142,7 @@
                         
                             <div class="popular_materials-text">
                                 <h4>Популярні матеріали</h4>
-                                <button>Усі матеріали<span class="arrow">&rarr;</span></button>
+                                <button onclick="showPage('advice')">Усі матеріали<span class="arrow">&rarr;</span></button>
                             </div>
                         
                             <div class="popular_materials_bloks_full">
@@ -1180,6 +1252,257 @@
 
         <section id="events" class="page" hidden>
             <!-- Події -->
+
+                    <div class="window_events_all_full">
+
+                        <div class="window_events_up_full">
+                            <div class="window_events_up">
+
+                                <div class="window_events_up_left">
+                                    <h1>Наші події</h1>
+                                    <p>Заходи, зустрічі, тренінги та фото з життя психологічної служби.</p>
+                                </div>
+
+                                <div class="window_events_up_right">
+                                    <span>📷</span>
+                                    <span>🌿</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="window_events_content_full">
+                            <div class="window_events_content">
+
+                                <div class="window_events_filter">
+
+                                    <button class="window_events_filter-button active">Усі</button>
+                                    <button class="window_events_filter-button">Учні</button>
+                                    <button class="window_events_filter-button">Батьки</button>
+                                    <button class="window_events_filter-button">Педагоги</button>
+
+                                </div>
+
+                                <div class="window_events_cards" id="eventsContainer">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                
+
+        </section>
+
+        <section id="bullying" class="page" hidden>
+            <section class="bullying-page" id="bullyingPage">
+            <div class="bullying-hero">
+                <div class="bullying-container">
+                <div class="bullying-breadcrumb">
+                    Головна › Булінг
+                </div>
+
+                <h1>Булінг <span>— це не норма</span></h1>
+
+                <p>
+                    Кожен має право на безпечне, комфортне та дружнє
+                    середовище. Тут ти знайдеш важливу інформацію,
+                    поради та підтримку.
+                </p>
+                </div>
+            </div>
+
+            <div class="bullying-container bullying-content">
+                <section class="bullying-intro">
+                <div>
+                    <h2>Що таке булінг?</h2>
+                    <p>
+                    Булінг — це систематичне цькування: образи, погрози,
+                    приниження, фізичне насильство або переслідування
+                    в інтернеті. Людині, яка з цим зіткнулася,
+                    може бути складно захистити себе самостійно.
+                    </p>
+                </div>
+
+                <blockquote>
+                    Справжня сила — у повазі.<br>
+                    Кожен заслуговує на безпеку.
+                </blockquote>
+                </section>
+
+                <section>
+                <h2>Види булінгу</h2>
+
+                <div class="bullying-grid">
+                    <article class="bullying-card">
+                    <span class="bullying-icon">✋</span>
+                    <h3>Фізичний</h3>
+                    <p>
+                        Удари, штовхання та інші дії,
+                        які завдають фізичної шкоди.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-icon">💬</span>
+                    <h3>Психологічний</h3>
+                    <p>
+                        Образи, приниження, погрози,
+                        ігнорування та поширення чуток.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-icon">💰</span>
+                    <h3>Економічний</h3>
+                    <p>
+                        Вимагання грошей, відбирання
+                        або пошкодження особистих речей.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-icon">📱</span>
+                    <h3>Кібербулінг</h3>
+                    <p>
+                        Цькування в інтернеті: образи, погрози,
+                        поширення принизливих фото та повідомлень.
+                    </p>
+                    </article>
+                </div>
+                </section>
+
+                <div class="bullying-columns">
+                <section>
+                    <h2>Як розпізнати булінг?</h2>
+
+                    <ul class="bullying-signs">
+                    <li>Дії повторюються (щонайменше 2 рази на рік)</li>
+                    <li>Є нерівність сил або впливу</li>
+                    <li>Людину принижують, залякують чи ізолюють</li>
+                    <li>Людина відчуває страх і безпорадність</li>
+                    <li>Цькування може відбуватися і онлайн</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Булінг чи конфлікт?</h2>
+
+                    <div class="bullying-comparison">
+                    <article class="bullying-card conflict-card">
+                        <h3>Конфлікт</h3>
+                        <ul>
+                        <li>Суперечка через розбіжності</li>
+                        <li>Сторони можуть відстоювати свою думку</li>
+                        <li>Можливо знайти спільне рішення</li>
+                        </ul>
+                    </article>
+
+                    <article class="bullying-card bullying-red-card">
+                        <h3>Булінг</h3>
+                        <ul>
+                        <li>Повторюване цькування</li>
+                        <li>Нерівність сил або впливу</li>
+                        <li>Потрібні допомога та захист</li>
+                        </ul>
+                    </article>
+                    </div>
+                </section>
+                </div>
+
+                <section>
+                <h2>Що робити, якщо ти зіткнувся з булінгом?</h2>
+
+                <div class="bullying-grid">
+                    <article class="bullying-card">
+                    <span class="bullying-step">1</span>
+                    <h3>Не мовчи</h3>
+                    <p>
+                        Розкажи дорослому, якому довіряєш:
+                        батькам, учителю або шкільному психологу.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-step">2</span>
+                    <h3>Збережи докази</h3>
+                    <p>
+                        Збережи повідомлення та скриншоти.
+                        Запиши, що сталося, коли та хто був свідком.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-step">3</span>
+                    <h3>Попроси допомоги</h3>
+                    <p>
+                        Звернися до психолога, учителя
+                        або адміністрації школи.
+                    </p>
+                    </article>
+
+                    <article class="bullying-card">
+                    <span class="bullying-step">4</span>
+                    <h3>Пам’ятай</h3>
+                    <p>
+                        Ти не винен у цькуванні.
+                        Ти маєш право на підтримку та безпеку.
+                        Ти можеш подати заяву в поліцію
+                    </p>
+                    </article>
+                </div>
+                </section>
+
+                <section class="bullying-law">
+                <img
+                    src="img/bullying-law.jpg"
+                    alt="Суддівський молоток і книги"
+                    loading="lazy"
+                >
+
+                <div>
+                    <span class="bullying-label-full">
+                        <span class="bullying-label">ВАЖЛИВО</span>
+                        <span class="bullying-label-valid-from"><h4>Дійсний від 18 червня</h4></span>
+                    </span>
+                    <h2>Правила протидії булінгу</h2>
+                    <p>
+                    Ознайомся з офіційним документом про протидію
+                    булінгу та порядок реагування на випадки цькування.
+                    </p>
+
+                    <!-- Заміни посилання адресою документа, який ти надсилав -->
+                    <button
+                        class="bullying-button"
+                        type="button"
+                        onclick="openBullyingModal()"
+                    >
+                        Переглянути документ
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+                </section>
+            </div>
+
+            <section class="bullying-support">
+                <div class="bullying-container bullying-support-inner">
+                <div>
+                    <h2>Ти не сам(а)</h2>
+                    <p>
+                    Завжди є люди, які готові вислухати
+                    та підтримати.
+                    </p>
+                </div>
+
+                <!-- Заміни на ID секції з твоєю формою -->
+                <a onclick="showPage('contact')" class="bullying-button" href="#psychologistForm">
+                    Звернутися до психолога <span aria-hidden="true">→</span>
+                </a>
+                </div>
+            </section>
+            </section>
         </section>
 
         <section id="about" class="page" hidden>
@@ -1198,7 +1521,7 @@
                             <div class="about_psychologist_left">
                             
                                 <div class="about_psychologist_img">
-                                
+                                    <img src="img/bg_photo-avatar.jpg" alt="фото психолога">
                                 </div>
                             
                             </div>
@@ -1207,23 +1530,25 @@
                             <div class="about_psychologist_right">
                             
                                 <div class="about_psychologist_name">
-                                    <h2>Наталія Олександрівна</h2>
+                                    <h2>Тамара Степанівна</h2>
                                     <h5>Практичний психолог</h5>
                                 </div>
                             
                                 <div class="about_psychologist_description">
                                 
                                     <p>
-                                        Коротко розповім про принципи моєї освіти,
-                                        досвід роботи та напрямки діяльності.
-                                        Моє завдання —
+                                        Тамара Василишина- практичний психолог Жовківського ЗЗСО І-ІІІ ступенів N 2.
+                                        Стаж роботи психологом 21 рік.Педагогічний стаж+36 років
+                                        Маю вищу категорію та звання психолог-методист
+                                        В школі  займаюсь психологічним супроводом освітнього процесу,допомагаю у створенні безпечного середовища .
+                                        Допомагаю в адаптації учням, проводжу індивідуальні консультації з учнями,батьками,педагогами-( за запитом.)
+                                        Навчаю як впоратись зі стресом та вмінням керувати своїм емоційним станом.
+                                        Як психолог допомагаю не тільки вирішувати конфлікти, в й попередити їх.
+                                        До мене можна звернутись старшокласникам про допомогу у виборі професії.
+                                        Батькам та педагогам радо надам рекомендації як підтримати дітей та створити довірливі стосунки.
+                                        Люблю свою роботу.Люблю допомагати тим,хто цього дійсно потребує
                                     </p>
-                                
-                                    <p>
-                                        створити безпечний простір, у якому можна
-                                        отримати підтримку та знайти рішення.
-                                    </p>
-                                
+                                        Моя робота в школі- це постійне вдосконалення і навчання!!
                                 </div>
                             
                             
@@ -1242,14 +1567,7 @@
                             
                                 <div class="about_psychologist_help">
                                 
-                                    <h4>Чим я можу допомогти?</h4>
-                                
-                                    <p>
-                                        Індивідуальні консультації, підтримка учнів,
-                                        робота з батьками та педагогами,
-                                        профілактичні заходи й психологічна просвіта.
-                                    </p>
-                                
+                                    <h4>Моя робота в школі- це постійне вдосконалення і навчання!!</h4>
                                 </div>
                             
                             </div>
@@ -1337,6 +1655,40 @@
                 </div>
              </div>
         </section>
+
+        <!-- Модальне вікно події -->
+
+                <div class="window_events_modal" id="eventModal">
+
+                    <div class="window_events_modal-content">
+
+                        <button class="window_events_modal-close" onclick="closeEvent()">
+                            ×
+                        </button>
+
+                        <div class="window_events_modal-img" id="eventModalImg">
+                        </div>
+
+                        <div class="window_events_modal-info">
+
+                            <p class="window_events_modal-date" id="eventModalDate"></p>
+
+                            <h2 id="eventModalTitle"></h2>
+
+                            <p class="window_events_modal-description" id="eventModalDescription"></p>
+
+                            <h3>Фотографії з події</h3>
+
+                            <div class="window_events_modal-gallery" id="eventModalGallery">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
 
         <!-- МОДАЛКА НАПРЯМКИ РОБОТИ -->
 
@@ -1477,11 +1829,11 @@
             </div>
         
         </div>
-        
-        
-        
+
+
+
         <!-- МОДАЛКА СЕРТИФІКАТИ -->
-        
+
         <div class="about_modal" id="certificatesModal">
         
             <div class="about_modal_window">
@@ -1512,12 +1864,12 @@
                     <div class="about_certificate_card">
                     
                         <div class="about_certificate_img">
-                            Сертифікат
+                            <img  src="img/certificate1.jpg" alt="сертифікат">
                         </div>
                     
-                        <h3>Основи практичної психології</h3>
+                        <h3>про підвищення кваліфікації</h3>
                     
-                        <p>2021 рік</p>
+                        <p>2013 рік</p>
                     
                     </div>
                 
@@ -1525,10 +1877,10 @@
                     <div class="about_certificate_card">
                     
                         <div class="about_certificate_img">
-                            Сертифікат
+                            <img  src="img/certificate2.jpg" alt="сертифікат">
                         </div>
                     
-                        <h3>Робота з підлітками</h3>
+                        <h3>участь в обласних науково-практичних семінарах</h3>
                     
                         <p>2022 рік</p>
                     
@@ -1538,125 +1890,195 @@
                     <div class="about_certificate_card">
                     
                         <div class="about_certificate_img">
-                            Сертифікат
+                            <img  src="img/certificate3.jpg" alt="сертифікат">
                         </div>
                     
-                        <h3>Психологічна підтримка</h3>
+                        <h3>підвищення кваліфікації</h3>
+                    
+                        <p>2009 - 2010 роки</p>
+                    
+                    </div>
+                    <div class="about_certificate_card">
+                    
+                        <div class="about_certificate_img">
+                            <img  src="img/certificate4.jpg" alt="сертифікат">
+                        </div>
+                    
+                        <h3>подяка за правдивий приклад християнського життя</h3>
+                    
+                        <p>2025 рік</p>
+                    
+                    </div>
+                    <div class="about_certificate_card">
+                    
+                        <div class="about_certificate_img">
+                            <img  src="img/certificate5.jpg" alt="сертифікат">
+                        </div>
+                    
+                        <h3>РОБОТА З ПСИХОСОМАТИЧНИМИ СИМПТОМАМИ У ПРОЦЕСУАЛЬНІЙ ПСИХОТЕРАПІЇ</h3>
+                    
+                        <p>2016 рік</p>
+                    
+                    </div>
+                    <div class="about_certificate_card">
+                    
+                        <div class="about_certificate_img">
+                            <img  src="img/certificate6.jpg" alt="сертифікат">
+                        </div>
+                    
+                        <h3>ІНТЕГРАТИВНИЙ ПІДХІД У РОБОТІ ПРАКТИЧНОГО ПСИХОЛОГА З ТРАВМОЮ РОЗВИТКУ ТА ШОКОВОЮ ТРАВМОЮ РОЗВИТКУ</h3>
+                    
+                        <p>2019 рік</p>
+                    
+                    </div>
+                    <div class="about_certificate_card">
+                    
+                        <div class="about_certificate_img">
+                            <img  src="img/certificate7.jpg" alt="сертифікат">
+                        </div>
+                    
+                        <h3>подяка</h3>
                     
                         <p>2023 рік</p>
                     
                     </div>
-                
-                
                     <div class="about_certificate_card">
                     
                         <div class="about_certificate_img">
-                            Сертифікат
+                            <img  src="img/certificate8.jpg" alt="сертифікат">
                         </div>
                     
-                        <h3>Профілактика булінгу</h3>
+                        <h3>ПРОЦЕСУАЛЬНИЙ ПІДХІД У СІМЕЙНІЙ ПСИХОТЕРАПІЇ</h3>
                     
-                        <p>2023 рік</p>
-                    
-                    </div>
-                
-                
-                    <div class="about_certificate_card">
-                    
-                        <div class="about_certificate_img">
-                            Сертифікат
-                        </div>
-                    
-                        <h3>Арт-терапевтичні методики</h3>
-                    
-                        <p>2024 рік</p>
+                        <p>2016 рік</p>
                     
                     </div>
-                
-                
-                    <div class="about_certificate_card">
                     
-                        <div class="about_certificate_img">
-                            Сертифікат
-                        </div>
-                    
-                        <h3>Підвищення кваліфікації</h3>
-                    
-                        <p>2024 рік</p>
-                    
-                    </div>
-                
-                
                 </div>
             
             </div>
         
         </div>
 
-        <div class="modal-overlay" id="articleModal">
+        <div class="modal-overlay" id="articleModal" style="display: none;">
+            <div
+                class="article-modal"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="articleModalTitle"
+                tabindex="-1"
+            >
+                <button
+                    class="modal-close"
+                    onclick="closeArticle()"
+                    aria-label="Закрити статтю"
+                >×</button>
 
-            <div class="article-modal">
-
-                <button class="modal-close" onclick="closeArticle()">
-                    ×
-                </button>
-
-                <div class="article-header">
-                    <p>Учням</p>
-
-                    <h2>
-                        Як справлятися зі стресом
-                        у підлітковому віці
-                    </h2>
-                </div>
-
-                <div class="article-content">
-
-                    <div class="article-main">
-
-                        <h3>Що таке стрес?</h3>
-
-                        <p>
-                            Стрес — це природна реакція нашого організму
-                            на складні або незвичні ситуації.
-                        </p>
-
-                        <h3>Як зрозуміти, що ви відчуваєте стрес?</h3>
-
-                        <p>
-                            Він може проявлятися втомою,
-                            проблемами зі сном або складністю
-                            зосередитися.
-                        </p>
-
-                        <h3>Що може допомогти?</h3>
-
-                        <p>
-                            Відпочинок, фізична активність,
-                            спілкування та підтримка близьких.
-                        </p>
-
+                <header class="article-header">
+                    <div class="article-meta">
+                        <span id="articleModalCategory"></span>
+                        <span id="articleModalReadingTime"></span>
                     </div>
 
-                    <div class="article-side">
+                    <h2 id="articleModalTitle"></h2>
+                    <p id="articleModalDescription"></p>
+                </header>
 
-                        <h3>У цій статті:</h3>
+                <div class="article-content">
+                    <main id="articleModalSections"></main>
 
-                        <p>1. Що таке стрес?</p>
-                        <p>2. Ознаки стресу</p>
-                        <p>3. Як допомогти собі?</p>
-                        <p>4. Коли звернутися по допомогу?</p>
+                    <aside class="article-side">
+                        <span class="article-side-symbol" aria-hidden="true">❧</span>
+                        <h3>Маленькі крок сьогодні</h3>
+
+                        <ul id="articleModalSteps"></ul>
+
+                        <p class="article-side-note">
+                            Турбота починається з малого.
+                        </p>
+                    </aside>
+                </div>
+
+                <blockquote id="articleModalQuote"></blockquote>
+
+                <footer class="article-footer">
+                    <button class="article-close-button" onclick="closeArticle()">
+                        Закрити
+                    </button>
+
+                    <button
+                        class="article-contact-button"
+                        onclick="closeArticle(); showPage('contact')"
+                    >
+                        Звернутися до психолога →
+                    </button>
+                </footer>
+            </div>
+        </div>
+        <div class="bullying-modal" id="bullyingModal">
+            <div class="bullying-modal-content">
+
+                <div class="bullying-modal-header">
+                    <h2>Документ щодо протидії булінгу</h2>
+
+                    <button
+                        class="bullying-modal-close"
+                        type="button"
+                        onclick="closeBullyingModal()"
+                        aria-label="Закрити"
+                    >
+                        &times;
+                    </button>
+                </div>
+
+                <div class="bullying-modal-body" style="flex: 1; min-height: 0; height: 100%; display: flex;">
+                    <iframe
+                        src="documents/bullying-rules.pdf#navpanes=0&toolbar=0&view=FitH"
+                        title="Документ щодо протидії булінгу"
+                        style="width: 100%; height: 100%; min-height: 500px; border: none; display: block;"
+                    ></iframe>
+                </div>
+
+                <div class="bullying-modal-footer">
+                    <a
+                        href="documents/bullying-rules.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bullying-download"
+                    >
+                        Відкрити в новій вкладці ↗
+                    </a>
+                </div>
+
+                <!-- Модалка перегляду сертифікатів -->
+                <div class="certificate-viewer" id="certificateViewer">
+
+                    <div class="certificate-viewer-content">
+
+                        <button 
+                            class="certificate-viewer-close"
+                            type="button"
+                            aria-label="Закрити"
+                        >
+                            &times;
+                        </button>
+
+                        <img
+                            id="certificateViewerImage"
+                            alt="Збільшений сертифікат"
+                        >
 
                     </div>
 
                 </div>
 
             </div>
-
         </div>
+    </div>
 
     </main>
     <footer></footer>
     <script src="index.js"></script>
+    <script src="new_advice.js"></script>
 </body>
 </html>

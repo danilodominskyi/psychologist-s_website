@@ -1,1431 +1,5042 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333333;
   background-color: #ffffff;
   min-height: 100vh;
-
-}
-.up_header{
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-  
-    height: 82px;            
-    width: 100%;             
-    background-color: #ffffff;
-}
-.logo_menu_button{
-    width: 78%;              
-    height: 50px;            
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-}
-.brand_logo{
-    width: 41.1%;
-    background: #ffffff;
-}
-.brand_logo h5 {
-    margin: 0;
-    padding: 0;
-}
-.brand_logo_h5{
-    font-size: 14px;
-}
-.brand_logo p{
-    margin: 0;
-    padding: 0;
-    font-size: 9px;
 }
 .menu div {
-  list-style: none;        /* Видаляє стандартні крапки списку */
-  margin: 0;               /* Скидає зовнішні відступи */
-  padding: 0;  
-  height: 100%;            /* Скидає внутрішні відступи */
-  
-  display: flex;           /* Вибудовує пункти меню в один рядок */
-  justify-content: center; /* Центрує всі пункти по горизонталі */
-  align-items: center;     /* Центрує по вертикалі */
-  gap: 20px;               /* Створює однакові відступи МІЖ пунктами меню */
+  list-style: none;
+  margin: 0;
 }
-
 .menu button {
-  text-decoration: none;   /* Прибирає стандартне підкреслення посилань */
-  color: #333333;          /* Колір тексту як на вашому макеті */
-  font-size: 14px;
-  display: inline-block;     
-  border: none; 
-  background: #ffffff;   /* Розмір тексту (можна налаштувати) */
+  text-decoration: none;
+  display: inline-block;
 }
 
-.btn_apply{
-    width: 11.9%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center; /* Центрує всі пункти по горизонталі */
-    align-items: center;
+
+/* ГОЛОВНИЙ БАНЕР */
+
+/* ФОТОГРАФІЯ СПРАВА */
+
+/* РОЗТАШУВАННЯ ТЕКСТУ */
+
+/* БЕЙДЖ */
+
+/* ЗАГОЛОВОК */
+
+/* ОПИС */
+
+/* КАРТКИ */
+
+/* КНОПКА */
+
+/* ТЕЛЕФОНИ */
+
+/* АДАПТАЦІЯ */
+.choice_window_full {
+  width: 100%;
+  height: 840px;
+  display: flex;
+  justify-content: center;
 }
-.btn_apply-btn{
-    height: 90%;
-    width: 90%;
-    background: #19705e;
-    border-radius: 24px;
-    border: none;
-    color: #ffffff;
+.choice_window {
+  margin-top: 15px;
+  height: 810px;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.choice_window_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero{
-    background: #faf4e9;
-    height: 430px;
-    display: flex;
-    justify-content: center;
-}
-.div_hero{
-    width: 82%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-.text_hero{
-    display: flex;
-    align-items: center;
-    width: 55%;
-}
-.img_hero {
-    display: flex;
-    align-items: flex-end; 
-    
-    overflow: hidden;      
+
+/* Контейнер карток */
+.choice_window_cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
 }
 
-.img_hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-    display: block;        
-}
-.choice_window_full{
-    width: 100%;
-    height: 840px;
-    display: flex;
-    justify-content: center;
-}
-.choice_window{
-    margin-top: 15px;
-    height: 810px;
-    width: 82%;
-    display: flex;
-    flex-direction: column;         
-    justify-content: space-between;
 
+/* Загальні стилі карток */
+.choice_window_card1,
+.choice_window_card2,
+.choice_window_card3 {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 30%;
+  height: 440px;
+  min-width: 0;
+  box-sizing: border-box;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
-.choice_window_text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+
+/* Картка учня */
+.choice_window_card1 {
+  background-color: #dff5ed;
+  background-image: linear-gradient(
+            90deg,
+            rgba(223,245,237,0.96) 0%,
+            rgba(223,245,237,0.80) 45%,
+            rgba(223,245,237,0.08) 100%
+        ),
+        url("img/student-bg.png");
 }
-.choice_window_cards{
-    height: 440px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+
+/* Картка батьків */
+.choice_window_card2 {
+  background-color: #ffe8dd;
+  background-image: linear-gradient(
+            90deg,
+            rgba(255,232,221,0.96) 0%,
+            rgba(255,232,221,0.80) 45%,
+            rgba(255,232,221,0.08) 100%
+        ),
+        url("img/parent-bg.png");
 }
-.choice_window_card_list{
-    margin-left: 30px;
+
+
+/* Картка педагога */
+.choice_window_card3 {
+  background-color: #eee4ff;
+  background-image: linear-gradient(
+            90deg,
+            rgba(238,228,255,0.96) 0%,
+            rgba(238,228,255,0.80) 45%,
+            rgba(238,228,255,0.08) 100%
+        ),
+        url("img/teacher-bg.png");
 }
-.choice_window_card-button{
-    background: #ffffff;
-    font-family: sans-serif;
-    width: 133px;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 22px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+
+
+/* Коло зверху */
+.choice_window_card-icon {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 26px;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.65);
+  border-radius: 50%;
+}
+
+
+/* Заголовок */
+.choice_window_card-text {
+  position: relative;
+  z-index: 1;
+  margin: 0 30px 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2530;
+}
+
+
+/* Список */
+.choice_window_card_list {
+  position: relative;
+  z-index: 1;
+  margin: 0 20px 20px 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #1a2530;
+}
+
+
+/* Кнопка */
+.choice_window_card-button {
+  position: relative;
+  z-index: 1;
+  width: 133px;
+  height: 42px;
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease,
+        transform 0.3s ease;
 }
 .choice_window_card-button button {
-    all: unset;             /* Скидаємо всі базові стилі браузера */
-    box-sizing: border-box;
-    cursor: pointer;        /* Робимо курсор-палець при наведенні */
-    
-    width: 100%;            /* Кнопка розтягується на всю ширину div */
-    height: 100%;           /* Кнопка розтягується на всю висоту div */
-    
-    display: flex;          /* Вирівнюємо текст і стрілку всередині кнопки */
-    justify-content: center;
-    align-items: center;
-    gap: 6px;               /* Відступ між словом "Перейти" та стрілкою */
-    
-    color: #1a2530;         /* Темний колір тексту (налаштуйте під себе) */
-    font-size: 14px;        /* Розмір шрифту */
-    font-weight: 600;       /* Робимо текст трохи жирнішим, як на макеті */
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #1a2530;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.choice_window_card1{
-    background: #dff5ed;
-    height: 100%;
-    width: 30%;
-    border-radius: 24px;
+
+/* Наведення на картку */
+.choice_window_card1:hover,
+.choice_window_card2:hover,
+.choice_window_card3:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.10);
 }
-.choice_window_card2{
-    background: #ffe8dd;
-    height: 100%;
-    width: 30%;
-    border-radius: 24px;
+
+
+/* Наведення на кнопку */
+.choice_window_card-button:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
 }
-.choice_window_card3{
-    background: #eee4ff;
-    height: 100%;
-    width: 30%;
-    border-radius: 24px;
+
+
+/* Адаптація під планшети */
+@media (max-width: 1100px) {
+  .choice_window_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .choice_window_card1,
+    .choice_window_card2,
+    .choice_window_card3 {
+    width: calc(50% - 12px);
+    height: 440px;
+  }
 }
-.choice_window_card-icon{
-    margin-top: 30px;
-    margin-left: 30px;
-    height: 90px;
-    width: 90px;
-    background: #f2fbf8;
-    border-radius: 45px;
-}
-.choice_window_card-text{
-    margin-left: 30px;
-    font-size: 24px;
-}
-.choice_window_boxs{
-    display: flex;
-    justify-content: space-between;
-    height: 125px;
-    width: 100%;
-}
-.choice_window_box{
-    display: flex;
+
+
+/* Адаптація під телефони */
+@media (max-width: 700px) {
+  .choice_window_cards {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 223px;
-    background: #f5f7f5;
-    border-radius: 18px;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .choice_window_card1,
+    .choice_window_card2,
+    .choice_window_card3 {
+    width: 100%;
+    height: 440px;
+  }
 }
-.popular_materials_full{
-    background: #fafcfb;
-    height: 460px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/* Вузькі екрани */
+@media (max-width: 380px) {
+  .choice_window_card1,
+    .choice_window_card2,
+    .choice_window_card3 {
+    height: auto;
+    min-height: 440px;
+  }
+  .choice_window_card-text {
+    font-size: 22px;
+  }
+  .choice_window_card_list {
+    font-size: 15px;
+  }
 }
-.popular_materials{
-    width: 82%;
-    height: 340px;
+.choice_window_boxs {
+  display: flex;
+  justify-content: space-between;
+  height: 125px;
+  width: 100%;
+}
+.choice_window_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 223px;
+  background: #f5f7f5;
+  border-radius: 18px;
+}
+.popular_materials_full {
+  display: flex;
+  justify-content: center;
+}
+.popular_materials {
+  width: 82%;
+  height: 340px;
 }
 .popular_materials-text {
-    height: 37px;
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
+  height: 37px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
 }
-.popular_materials-text h4{
-    font-size: 24px;
-    margin: 0;
+.popular_materials-text h4 {
+  font-size: 24px;
+  margin: 0;
 }
-.popular_materials-text button{
-    all: unset;             /* Скидаємо всі базові стилі браузера */
-    box-sizing: border-box;
-    cursor: pointer;  
+.popular_materials-text button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.popular_materials_bloks{
-    margin-top: 24px;
-    height: 75%;
-    width: 100%;
-    background: #fafcfb;
-    display: flex;
-    justify-content: space-between;
+.popular_materials_bloks {
+  margin-top: 24px;
+  height: 75%;
+  background: #fafcfb;
+  display: flex;
+  justify-content: space-between;
 }
-.popular_materials_blok{
-    border-radius: 17px;
-    width: 281px;
-    height: 280px;
+.popular_materials_blok {
+  border-radius: 17px;
+  width: 281px;
+  height: 280px;
 }
-.popular_materials_blok_up{
-    height: 145px;
-    width: 280px;
-    background: #c9c4a9;
-    border-radius: 17px 17px 0px 0px;
+.popular_materials_blok_up {
+  height: 145px;
+  width: 280px;
+  background: #c9c4a9;
+  border-radius: 17px 17px 0px 0px;
 }
-.popular_materials_blok_down{
-    height: 132px;
-    width: 280px;
-    background: #fafcfb;
-    border-radius: 0px 0px 17px 17px;
-    border-left: 1px solid #e2e8f0;   
-    border-right: 1px solid #e2e8f0;  
-    border-bottom: 1px solid #e2e8f0;
-    box-sizing: border-box;
+.popular_materials_blok_down {
+  height: 132px;
+  width: 280px;
+  background: #fafcfb;
+  border-radius: 0px 0px 17px 17px;
+  border-left: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  box-sizing: border-box;
 }
-.popular_materials_blok_down button{
-    all: unset;
-    margin-top: 16px;
-    margin-left: 17px;
-    background: #ffe8dd;
-    border-radius: 12px;
-    font-size: 11px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px 9px;
+.popular_materials_blok_down button {
+  all: unset;
+  margin-top: 16px;
+  margin-left: 17px;
+  background: #ffe8dd;
+  border-radius: 12px;
+  font-size: 11px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px 9px;
 }
-.popular_materials_blok_down h5{
-    margin-left: 17px;
+.popular_materials_blok_down h5 {
+  margin-left: 17px;
 }
-
-.our_events_full{
-    height: 277px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.our_events_full {
+  height: 277px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.our_events{
-    width: 82%;
-    height: 56%;
-    background: #ffffff;
+.our_events {
+  width: 82%;
+  height: 56%;
+  background: #ffffff;
 }
 .our_events_text {
-    height: 37px;
-    margin: 0px 0px 20px 0px;
-    display: flex;
-    justify-content: space-between;
+  height: 37px;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
 }
-.our_events_text h4{
-    font-size: 24px;
-    margin: 0;
+.our_events_text h4 {
+  font-size: 24px;
+  margin: 0;
 }
-.our_events_text button{
-    all: unset;             /* Скидаємо всі базові стилі браузера */
-    box-sizing: border-box;
-    cursor: pointer;  
+.our_events_text button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.our_events_bloks{
-    display: flex;
-    justify-content: space-between;
+.our_events_bloks {
+  display: flex;
+  justify-content: space-between;
 }
-.our_events_blok{
-    width: 381px;
-    height: 94px;
-    display: flex;
-    justify-content: center;
+.our_events_blok {
+  width: 381px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
 }
-.our_events_blok_left{
-    width: 92px;
-    height: 94px;
-    background: #fff3e8;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-    border: 1px solid #e2e8f0;
-    padding: auto;
+.our_events_blok_left {
+  width: 92px;
+  height: 94px;
+  background: #fff3e8;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border: 1px solid #e2e8f0;
+  padding: auto;
 }
-.calendar-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 18px;
+.our_events_blok_right {
+  width: 289px;
+  height: 94px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.our_events_blok_right{
-    width: 289px;
-    height: 94px;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-    border: 1px solid #e2e8f0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.write_to_psychologist_full {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
-.title_text{
-    font-weight: bold;
+.write_to_psychologist {
+  width: 1180px;
+  height: 118px;
+  background: #166b59;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  margin-bottom: 40px;
 }
-.write_to_psychologist_full{
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
+.write_to_psychologist h5 {
+  font-size: 19px;
+  margin-bottom: 0px;
+  color: white;
 }
-.write_to_psychologist{
-    width: 1180px;
-    height: 118px;
-    background: #166b59;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    margin-bottom: 40px;
-}
-.write_to_psychologist h5{
-    font-size: 19px;
-    margin-bottom: 0px;
-    color: white;
-}
-.write_to_psychologist p{
-    margin-top: 0px;
-    color: white;
+.write_to_psychologist p {
+  margin-top: 0px;
+  color: white;
 }
 .write_psychologist {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .write_psychologist-button {
-    width: 230px;
-    height: 46px;
-    background: #ffffff;
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 230px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.write_psychologist-button p{
-    color: #166b59;
-    font-weight: bold;
-    margin: auto;
+.write_psychologist-button p {
+  color: #166b59;
+  font-weight: bold;
+  margin: auto;
 }
-
-.content_up_full{ 
-    width: 100%; 
-    height: 275px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background: linear-gradient(90deg, #f2f7f5 0%, #fafaf8 50%, #fbf3ed 100%); 
-} 
-
-.content_up{ 
-    width: 82%; 
-    height: 205px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-} 
-
-.content_up_left{     
-    height: 176px; 
-    width: 625px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-} 
-
-.content_up_left-text-up p{ 
-    margin: 0px; 
-} 
-
-.content_up_left-title h3{ 
-    margin: 0px; 
-    font-size: 48px; 
-    font-weight: bold; 
-} 
-
-.content_up_right{ 
-    width: 500px; 
-    height: 205px; 
-    background: #acb397; 
-    border-radius: 24px; 
-} 
-
-.content_topic-grid-full{ 
-    width: 100%; 
-    height: 200px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-} 
-
-.content_topic-grid{ 
-    width: 82%; 
-    height: 130px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-} 
-
-.content_topic-card{ 
-    width: 185px; 
-    height: 130px; 
-    background: #f0f6f3; 
-    border-radius: 18px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start;  
-    text-align: center;   
-} 
-
-.content_topic-card-img{ 
-    margin: 10px 0px 15px 0px; 
-} 
-
-.content_topic-card-text{ 
-    width: 115px; 
-    font-size: 15px; 
-    font-weight: bold; 
-    margin: 0; 
-} 
-
-.content_info-block-full{ 
-    width: 100%; 
-    height: 505px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background: linear-gradient(90deg, #f2f7f5 0%, #fafaf8 50%, #fbf3ed 100%); 
-    margin: 0; 
-} 
-
-.content_info-block{ 
-    width: 82%; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-} 
-
-.content_info-block-left{ 
-    height: 100%; 
-    width: 625px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-} 
-
-.content_info-badge{ 
-    height: 34px; 
-    width: 100%; 
-    display: flex; 
-    justify-content: start; 
-    align-items: center; 
-} 
-
-.content_info-badge-bg-number{ 
-    display: inline-block; 
-    height: 34px; 
-    width: 40px; 
-    background: #dcece5; 
-    text-align: center; 
-    border-radius: 8px; 
-} 
-
-.content_info-badge-number{ 
-    margin: 5px 0px 0px 0px; 
-} 
-
-.content_info-badge-text{ 
-    margin: 0px 0px 0px 12px; 
-    font-size: 15px; 
-} 
-
-.content_info-block-title{ 
-    height: 41px; 
-    width: 100%; 
-} 
-
-.content_info-block-title{ 
-    margin: 0; 
-    font-size: 34px; 
-    font-weight: bold; 
-} 
-
-.content_info-block-title h5{ 
-    margin: 0; 
-} 
-
-.content_info-block-text{ 
-    margin: 0; 
-} 
-
-.content_info-buttons{ 
-    height: 49px; 
-    width: 100%; 
-} 
-
-.content_info-button-left{ 
-    width: 205px; 
-    height: 45px; 
-    background: #1c7864; 
-    border: none; 
-    color: white; 
-    border-radius: 24px; 
-} 
-
-.content_info-button-right{ 
-    width: 195px; 
-    height: 45px; 
-    background: #ffffff; 
-    border: 1px solid #cbd5e1; 
-    border-radius: 24px; 
-    margin: 0px 0px 0px 12px; 
-} 
-
-.content_info-tips-box{ 
-    height: 178px; 
-    width: 100%; 
-    margin-top: 10px; 
-    padding-bottom: 18px; 
-    background: #eef6f2; 
-    border-radius: 18px; 
-} 
-
-.content_info-tips-box h6{ 
-    margin: 22px 23px 0px 23px; 
-    height: 29px; 
-    width: 579px; 
-    font-size: 14px; 
-    font-weight: bold; 
-} 
-
-.content_info-tips-box p{ 
-    margin: 0px 23px 0px 23px; 
-    height: 28px; 
-    width: 579px; 
-} 
-
-.content_info-block-right{ 
-    height: 360px; 
-    width: 500px; 
-    background: #d3c5a1; 
-    border-radius: 24px; 
-} 
-
-.content_info-block-full-invers{ 
-    width: 100%; 
-    height: 505px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background: #ffffff; 
-    margin: 0; 
+.content_up_full {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content_up_full-students {
+  background-image: url(img/bg_photo_student.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#content_up_full-perents {
+  background-image: url(img/bg_photo_parent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#content_up_full-teachers {
+  background-image: url(img/bg_photo_teacher.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content_up {
+  width: 82%;
+  height: 205px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.content_up_left {
+  height: 176px;
+  width: 625px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_up_left-text-up p {
+  margin: 0px;
+}
+.content_up_left-title h3 {
+  margin: 0px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.content_topic-grid-full {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content_topic-grid {
+  width: 82%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_topic-card {
+  width: 185px;
+  height: 130px;
+  background: #f0f6f3;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.content_topic-card-img {
+  margin: 10px 0px 15px 0px;
+}
+.content_topic-card-text {
+  width: 115px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+.content_info-block-full {
+  width: 100%;
+  height: 505px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #f2f7f5 0%, #fafaf8 50%, #fbf3ed 100%);
+  margin: 0;
+}
+.content_info-badge {
+  height: 34px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.content_info-badge-bg-number {
+  display: inline-block;
+  height: 34px;
+  width: 40px;
+  background: #dcece5;
+  text-align: center;
+  border-radius: 8px;
+}
+.content_info-badge-number {
+  margin: 5px 0px 0px 0px;
+}
+.content_info-badge-text {
+  margin: 0px 0px 0px 12px;
+  font-size: 15px;
+}
+.content_info-block-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+}
+.content_info-block-title h5 {
+  overflow-wrap: anywhere;
+}
+.content_info-block-text {
+  margin: 0;
+}
+.content_info-button-left {
+  width: 205px;
+  height: 45px;
+  background: #1c7864;
+  border: none;
+  color: white;
+  border-radius: 24px;
+}
+.content_info-button-right {
+  width: 195px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 24px;
+}
+.content_info-tips-box {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 18px;
+  background: #eef6f2;
+  border-radius: 18px;
+}
+.content_info-tips-box h6 {
+  margin: 22px 23px 0px 23px;
+  height: 29px;
+  width: 579px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content_info-tips-box p {
+  margin: 0px 23px 0px 23px;
+  height: 28px;
+  width: 579px;
+}
+.content_info-block-right {
+  background: #d3c5a1;
+}
+.content_info-block-full-invers {
+  width: 100%;
+  height: 505px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin: 0;
 }
 
 
-
-
-
-/*поради*/
-
+/* поради */
 .window_advice_all_full {
-    width: 100%;
-    min-height: 100vh;
-    background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  margin-top: 100px;
+}
+.window_advice_up_full {
+  width: 100%;
+  background: linear-gradient(
+        100deg,
+        #f4faf5,
+        #fff5ea
+    );
+  margin-top: 120px;
+}
+.window_advice_up {
+  width: 1180px;
+  margin: auto;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+.window_advice_up_left-text-up {
+  font-size: 13px;
+  color: #315a53;
+}
+.window_advice_up_left-title h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 52px;
+  color: #123f3b;
+}
+.window_advice_up_left-text {
+  font-size: 17px;
+  color: #315a53;
+}
+.window_advice_content_full {
+  width: 100%;
+}
+.window_advice_content {
+  width: 1180px;
+  margin: auto;
+  padding-top: 35px;
+  padding-bottom: 60px;
 }
 
-.window_advice_up_full {
-    width: 100%;
-    background: linear-gradient(
+
+/* FILTER */
+.window_advice_filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.window_advice_filter-button-all {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eef4f1;
+  color: #234d47;
+  cursor: pointer;
+}
+.window_advice_filter-button-student {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eef4f1;
+  color: #234d47;
+  cursor: pointer;
+}
+.window_advice_filter-button-parents {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eef4f1;
+  color: #234d47;
+  cursor: pointer;
+}
+.window_advice_filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eef4f1;
+  color: #234d47;
+  cursor: pointer;
+}
+.window_advice_filter-button.active {
+  background-color: #187a65;
+}
+
+
+/* CARDS */
+.window_advice_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.window_advice_card {
+  background-color: white;
+}
+.window_advice_card-info {
+  padding: 18px;
+}
+.window_advice_card-category {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 9px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+.window_advice_card-category.student {
+  background-color: #e5f2ec;
+  color: #176954;
+}
+.window_advice_card-category.parents {
+  background-color: #fff0e7;
+  color: #9a5b3c;
+}
+.window_advice_card-category.teachers {
+  background-color: #eee7fa;
+  color: #6e5295;
+}
+.window_advice_card-info h3 {
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 1.35;
+  color: #123f3b;
+}
+.window_advice_card-description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #71827e;
+}
+.window_advice_card-bottom p {
+  font-size: 12px;
+  color: #71827e;
+}
+.window_advice_card-bottom button {
+  border: none;
+  background: transparent;
+  color: #187a65;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* ПОДІЇ */
+.window_events_all_full {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+
+/* ВЕРХНЯ ЧАСТИНА */
+.window_events_up_full {
+  width: 100%;
+  background: linear-gradient(
         100deg,
         #f4faf5,
         #fff5ea
     );
 }
-
-.window_advice_up {
-    width: 1180px;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 45px;
+.window_events_up {
+  width: 82%;
+  margin: auto;
+  min-height: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.window_advice_up_left-text-up {
-    font-size: 13px;
-    color: #315a53;
+.window_events_up_left h1 {
+  font-size: 48px;
+  color: #123f3b;
+  margin: 0 0 12px 0;
 }
-
-.window_advice_up_left-title h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-
-    font-size: 52px;
-    color: #123f3b;
+.window_events_up_left p {
+  font-size: 17px;
+  color: #315a53;
+  margin: 0;
 }
-
-.window_advice_up_left-text {
-    font-size: 17px;
-    color: #315a53;
-}
-
-.window_advice_content_full {
-    width: 100%;
-}
-
-.window_advice_content {
-    width: 1180px;
-    margin: auto;
-
-    padding-top: 35px;
-    padding-bottom: 60px;
+.window_events_up_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 48px;
 }
 
 
-/* FILTER */
-
-.window_advice_filter {
-    display: flex;
-    gap: 10px;
-
-    margin-bottom: 30px;
+/* ОСНОВНИЙ КОНТЕНТ */
+.window_events_content_full {
+  width: 100%;
+  background: #ffffff;
 }
-
-.window_advice_filter-button-all {
-    padding: 10px 20px;
-
-    border: none;
-    border-radius: 20px;
-
-    background-color: #eef4f1;
-
-    color: #234d47;
-
-    cursor: pointer;
-}
-.window_advice_filter-button-student {
-    padding: 10px 20px;
-
-    border: none;
-    border-radius: 20px;
-
-    background-color: #eef4f1;
-
-    color: #234d47;
-
-    cursor: pointer;
-}
-.window_advice_filter-button-parents {
-    padding: 10px 20px;
-
-    border: none;
-    border-radius: 20px;
-
-    background-color: #eef4f1;
-
-    color: #234d47;
-
-    cursor: pointer;
-}
-.window_advice_filter-button {
-    padding: 10px 20px;
-
-    border: none;
-    border-radius: 20px;
-
-    background-color: #eef4f1;
-
-    color: #234d47;
-
-    cursor: pointer;
-}
-
-.window_advice_filter-button.active {
-    background-color: #187a65;
-    color: white;
+.window_events_content {
+  width: 82%;
+  margin: auto;
+  padding-top: 55px;
+  padding-bottom: 80px;
 }
 
 
-
-/* CARDS */
-
-.window_advice_cards {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 22px;
+/* ФІЛЬТРИ */
+.window_events_filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.window_events_filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #eef4f1;
+  color: #234d47;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.window_events_filter-button:hover {
+  background: #dcece5;
+}
+.window_events_filter-button.active {
+  background: #187a65;
+  color: white;
 }
 
-.window_advice_card {
-    overflow: hidden;
 
-    border: 1px solid #e0e8e4;
-    border-radius: 18px;
-
-    background-color: white;
+/* КАРТКИ ПОДІЙ */
+.window_events_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.window_events_card {
+  overflow: hidden;
+  border: 1px solid #e0e8e4;
+  border-radius: 18px;
+  background: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.window_events_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+.window_events_card-img {
+  width: 100%;
+  height: 190px;
+  background: linear-gradient(
+        135deg,
+        #aebfa3,
+        #e7ba8f
+    );
+  overflow: hidden;
+}
+.window_events_card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.window_events_card-info {
+  padding: 18px;
+}
+.window_events_card-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: #187a65;
+  margin: 0 0 12px 0;
+}
+.window_events_card-info h3 {
+  font-size: 19px;
+  line-height: 1.35;
+  color: #123f3b;
+  margin: 0 0 12px 0;
+}
+.window_events_card-description {
+  font-size: 13px;
+  color: #71827e;
+  line-height: 1.5;
+}
+.window_events_card-bottom {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.window_events_card-category {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+.window_events_card-category.student {
+  background: #e5f2ec;
+  color: #176954;
+}
+.window_events_card-category.parents {
+  background: #fff0e7;
+  color: #9a5b3c;
+}
+.window_events_card-category.teachers {
+  background: #eee7fa;
+  color: #6e5295;
+}
+.window_events_card-bottom button {
+  border: none;
+  background: transparent;
+  color: #187a65;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.window_advice_card-img {
-    width: 100%;
-    height: 190px;
 
-    background: linear-gradient(
+/* МОДАЛЬНЕ ВІКНО */
+.window_events_modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 36, 31, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.window_events_modal-content {
+  width: 760px;
+  max-width: 100%;
+  max-height: 90vh;
+  background: white;
+  border-radius: 24px;
+  overflow-y: auto;
+  position: relative;
+}
+.window_events_modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #123f3b;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+.window_events_modal-img {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(
         135deg,
         #aebfa3,
         #e7ba8f
     );
 }
-
-.window_advice_card-info {
-    padding: 18px;
+.window_events_modal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.window_events_modal-info {
+  padding: 35px;
+}
+.window_events_modal-date {
+  color: #187a65;
+  font-weight: 600;
+  font-size: 14px;
+}
+.window_events_modal-info h2 {
+  font-size: 30px;
+  color: #123f3b;
+  margin: 10px 0 20px;
+}
+.window_events_modal-description {
+  color: #526963;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+.window_events_modal-info h3 {
+  margin-top: 30px;
+  color: #123f3b;
+}
+.window_events_modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+.window_events_modal-gallery img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.window_advice_card-category {
-    display: inline-block;
 
-    margin: 0;
-
-    padding: 5px 9px;
-
-    border-radius: 12px;
-
-    font-size: 11px;
+/* АДАПТИВНІСТЬ */
+@media (max-width: 900px) {
+  .window_events_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .window_events_up {
+    width: 90%;
+  }
+  .window_events_content {
+    width: 90%;
+  }
 }
 
-.window_advice_card-category.student {
-    background-color: #e5f2ec;
-    color: #176954;
-}
-
-.window_advice_card-category.parents {
-    background-color: #fff0e7;
-    color: #9a5b3c;
-}
-
-.window_advice_card-category.teachers {
-    background-color: #eee7fa;
-    color: #6e5295;
-}
-
-.window_advice_card-info h3 {
-    margin-top: 13px;
-    margin-bottom: 10px;
-
-    font-size: 19px;
-    line-height: 1.35;
-
-    color: #123f3b;
-}
-
-.window_advice_card-description {
-    font-size: 13px;
-    line-height: 1.5;
-
-    color: #71827e;
-}
-
-.window_advice_card-bottom {
-    margin-top: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.window_advice_card-bottom p {
+@media (max-width: 600px) {
+  .window_events_up {
+    min-height: 180px;
+  }
+  .window_events_up_left h1 {
+    font-size: 34px;
+  }
+  .window_events_up_left p {
+    font-size: 14px;
+  }
+  .window_events_up_right {
+    display: none;
+  }
+  .window_events_cards {
+    grid-template-columns: 1fr;
+  }
+  .window_events_filter-button {
+    padding: 9px 14px;
     font-size: 12px;
-    color: #71827e;
+  }
+  .window_events_modal-info {
+    padding: 22px;
+  }
+  .window_events_modal-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.window_advice_card-bottom button {
-    border: none;
-
-    background: transparent;
-
-    color: #187a65;
-
-    font-weight: 600;
-
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* ПРО ПСИХОЛОГА */
-
-.about_psychologist_full{
-    width: 100%;
-    min-height: 650px;
-
-    display: flex;
-    justify-content: center;
-
-    background: #ffffff;
+.about_psychologist_full {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
-
-
-.about_psychologist{
-    width: 82%;
+.about_psychologist {
+  width: 82%;
 }
-
-
-.about_psychologist_title h3{
-    font-size: 48px;
-    color: #123f3b;
-
-    margin: 55px 0px 30px 0px;
+.about_psychologist_title h3 {
+  font-size: 48px;
+  color: #123f3b;
+  margin: 55px 0px 15px 0px;
 }
-
-
-.about_psychologist_content{
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.about_psychologist_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 
 /* ЛІВА ЧАСТИНА */
-
-.about_psychologist_left{
-    width: 30%;
+.about_psychologist_left {
+  width: 30%;
 }
-
-
-.about_psychologist_img{
-    width: 100%;
-    height: 380px;
-
-    background: linear-gradient(
-        135deg,
-        #e2c4a6,
-        #c98f72
-    );
-
-    border-radius: 20px;
+.about_psychologist_img {
+  width: 100%;
+  height: 340px;
+  border-radius: 20px;
+}
+.about_psychologist_img img {
+  width: 380px;
+  border-radius: 12px;
 }
 
 
 /* ПРАВА ЧАСТИНА */
-
-.about_psychologist_right{
-    width: 65%;
-
-    padding-top: 5px;
+.about_psychologist_right {
+  width: 65%;
+  padding-top: 5px;
 }
-
-
-.about_psychologist_name h2{
-    margin: 0;
-
-    font-size: 32px;
-    color: #123f3b;
+.about_psychologist_name h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #123f3b;
 }
-
-
-.about_psychologist_name h5{
-    margin: 5px 0px 18px 0px;
-
-    font-size: 14px;
-    color: #123f3b;
+.about_psychologist_name h5 {
+  margin: 5px 0px 18px 0px;
+  font-size: 14px;
+  color: #123f3b;
 }
-
-
-.about_psychologist_description{
-    color: #71827e;
-
-    font-size: 14px;
-    line-height: 1.7;
+.about_psychologist_description {
+  color: #71827e;
+  font-size: 14px;
+  line-height: 1.7;
 }
-
-
-.about_psychologist_description p{
-    margin: 0px 0px 15px 0px;
+.about_psychologist_description p {
+  margin: 0px 0px 15px 0px;
 }
 
 
 /* КНОПКИ */
-
-.about_psychologist_buttons{
-    display: flex;
-
-    gap: 10px;
-
-    margin-top: 15px;
-    margin-bottom: 18px;
+.about_psychologist_buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 18px;
 }
-
-
-.about_psychologist_buttons button{
-    padding: 8px 15px;
-
-    border: none;
-    border-radius: 20px;
-
-    background: #eef4f1;
-
-    color: #234d47;
-
-    cursor: pointer;
+.about_psychologist_buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #eef4f1;
+  color: #234d47;
+  cursor: pointer;
 }
-
-
-.about_psychologist_buttons button:hover{
-    background: #dcece5;
+.about_psychologist_buttons button:hover {
+  background: #dcece5;
 }
 
 
 /* ЧИМ МОЖУ ДОПОМОГТИ */
-
-.about_psychologist_help h4{
-    margin: 0px 0px 12px 0px;
-
-    color: #123f3b;
-
-    font-size: 16px;
+.about_psychologist_help h4 {
+  margin: 0px 0px 12px 0px;
+  color: #123f3b;
+  font-size: 16px;
 }
-
-
-.about_psychologist_help p{
-    margin: 0;
-
-    color: #71827e;
-
-    font-size: 14px;
-    line-height: 1.8;
+.about_psychologist_help p {
+  margin: 0;
+  color: #71827e;
+  font-size: 14px;
+  line-height: 1.8;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact_window_all_full{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+.contact_window_all_full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
-.contact_window_full{
-    width: 82%;
-    height: 665px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+.contact_window_full {
+  width: 82%;
+  height: 665px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.contact_window_title{
-    width: 100%;
+.contact_window_title {
+  width: 100%;
 }
-.contact_window_title h3{ 
-    font-size: 50px;
-    margin: 50px 0px 0px 0px;
+.contact_window_title h3 {
+  font-size: 50px;
+  margin: 50px 0px 0px 0px;
 }
-.contact_window{
-    height: 550px;
-    width: 100%;
-    display: flex;
+.contact_window {
+  height: 550px;
+  width: 100%;
+  display: flex;
 }
-.input_fullName{
-    height: 50px;
-    width: 700px;
-    border-radius: 12px;
-    border: 1.5px solid #e0e8e4c6;
-    display: block;
-    clear: both;
+.input_fullName {
+  height: 50px;
+  width: 700px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e8e4c6;
+  display: block;
+  clear: both;
+  margin: 12px 0px;
 }
 .role-buttons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
+  margin: 12px 0px;
+}
+.role-button {
+  cursor: pointer;
 }
 
-.role-button {
-    cursor: pointer;
-}
 
 /* Ховаємо стандартний radio */
 .role-button input {
-    display: none;
+  display: none;
 }
+
 
 /* Звичайна кнопка */
 .role-button span {
-    display: block;
-
-    padding: 9px 16px;
-
-    background-color: #f0f4f2;
-    color: #234b47;
-
-    border-radius: 20px;
-
-    font-size: 14px;
-
-    transition: 0.2s;
+  display: block;
+  padding: 9px 16px;
+  background-color: #f0f4f2;
+  color: #234b47;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.2s;
 }
+
 
 /* Вибрана кнопка */
 .role-button input:checked + span {
-    background-color: #187a65;
-    color: white;
+  background-color: #187a65;
+  color: white;
 }
-
-.input_classAge{
-    height: 50px;
-    width: 700px;
-    border-radius: 12px;
-    border: 1.5px solid #e0e8e4c6;
-    display: block;
-    clear: both;
+.input_classAge {
+  height: 50px;
+  width: 700px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e8e4c6;
+  display: block;
+  clear: both;
+  margin: 12px 0px;
 }
-.input_message{
-    height: 160px;
-    width: 700px;
-    border-radius: 12px;
-    border: 1.5px solid #e0e8e4c6;
-    display: block;
-    clear: both;
+.input_message {
+  height: 160px;
+  width: 700px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e8e4c6;
+  display: block;
+  clear: both;
+  margin: 12px 0px;
 }
-
-.form-button{
-    height: 44px;
-    width: 263px;
-    border-radius: 24px;
-    border: none;
-    color: white;
-    background: #19705e;
-    margin-top: 8px;
+.form-button {
+  height: 44px;
+  width: 263px;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  background: #19705e;
+  margin-top: 8px;
 }
-.massege_conf{
-    background: #fff0ee;
-    width: 330px;
-    height: 213px;
-    margin-left: 45px;
-    border-radius: 16px;
+.massege_conf {
+  background: #fff0ee;
+  width: 330px;
+  height: 213px;
+  margin-left: 45px;
+  border-radius: 16px;
 }
-.massege_conf h6{
-    margin: 38px 20px 0px 20px;
-    font-size: 18px;
+.massege_conf h6 {
+  margin: 38px 20px 0px 20px;
+  font-size: 18px;
 }
-.massege_conf p{
-    margin: 13px 20px 0px 20px;
+.massege_conf p {
+  margin: 13px 20px 0px 20px;
 }
-
-
-
-
-
-
-
 
 
 /* ================================= */
+
 /* МОДАЛКИ ПРО ПСИХОЛОГА */
+
 /* ================================= */
-
-.about_modal{
-    display: none;
-
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.55);
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 1000;
+.about_modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
-
-
-.about_modal_window{
-    width: 1100px;
-    max-height: 82vh;
-
-    background: #ffffff;
-
-    border-radius: 24px;
-
-    padding: 35px;
-
-    box-sizing: border-box;
-
-    position: relative;
-
-    overflow-y: auto;
+.about_modal_window {
+  width: 1100px;
+  max-height: 82vh;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 35px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
 }
 
 
 /* КНОПКА ЗАКРИТТЯ */
-
-.about_modal_close{
-    position: absolute;
-
-    top: 20px;
-    right: 20px;
-
-    width: 42px;
-    height: 42px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #eef4f1;
-
-    color: #123f3b;
-
-    font-size: 25px;
-
-    cursor: pointer;
+.about_modal_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #eef4f1;
+  color: #123f3b;
+  font-size: 25px;
+  cursor: pointer;
 }
-
-
-.about_modal_close:hover{
-    background: #dcece5;
+.about_modal_close:hover {
+  background: #dcece5;
 }
 
 
 /* ЗАГОЛОВОК */
-
-.about_modal_title{
-    margin-bottom: 25px;
+.about_modal_title {
+  margin-bottom: 25px;
 }
-
-
-.about_modal_title h2{
-    margin: 0px 0px 8px 0px;
-
-    font-size: 34px;
-
-    color: #123f3b;
+.about_modal_title h2 {
+  margin: 0px 0px 8px 0px;
+  font-size: 34px;
+  color: #123f3b;
 }
-
-
-.about_modal_title p{
-    width: 75%;
-
-    margin: 0;
-
-    color: #71827e;
-
-    font-size: 14px;
-
-    line-height: 1.6;
+.about_modal_title p {
+  width: 75%;
+  margin: 0;
+  color: #71827e;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 
 /* ================================= */
+
 /* НАПРЯМКИ РОБОТИ */
-/* ================================= */
-
-.about_work_grid{
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 15px;
-}
-
-
-.about_work_card{
-    min-height: 150px;
-
-    background: #f7faf8;
-
-    border-radius: 18px;
-
-    padding: 22px;
-
-    display: flex;
-
-    gap: 15px;
-
-    box-sizing: border-box;
-}
-
-
-.about_work_icon{
-    min-width: 45px;
-    height: 45px;
-
-    background: #dcece5;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    font-size: 20px;
-}
-
-
-.about_work_card h3{
-    margin: 5px 0px 10px 0px;
-
-    font-size: 16px;
-
-    color: #123f3b;
-}
-
-
-.about_work_card p{
-    margin: 0;
-
-    font-size: 13px;
-
-    line-height: 1.6;
-
-    color: #71827e;
-}
-
 
 /* ================================= */
+.about_work_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.about_work_card {
+  min-height: 150px;
+  background: #f7faf8;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  gap: 15px;
+  box-sizing: border-box;
+}
+.about_work_icon {
+  min-width: 45px;
+  height: 45px;
+  background: #dcece5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.about_work_card h3 {
+  margin: 5px 0px 10px 0px;
+  font-size: 16px;
+  color: #123f3b;
+}
+.about_work_card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #71827e;
+}
+
+
 /* СЕРТИФІКАТИ */
+
 /* ================================= */
-
-.about_certificates_grid{
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
+.about_certificates_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
-
-
-.about_certificate_card{
-    padding: 10px;
-
-    border-radius: 18px;
-
-    background: #f7faf8;
+.about_certificate_card {
+  padding: 10px;
+  border-radius: 18px;
+  background: #f7faf8;
 }
-
-
-.about_certificate_img{
-    width: 100%;
-    height: 160px;
-
-    background: #eef4f1;
-
-    border: 1px solid #dce5e1;
-
-    border-radius: 12px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    color: #71827e;
-
-    font-size: 15px;
+.about_certificate_img {
+  width: 100%;
+  height: 160px;
+  background: #eef4f1;
+  border: 1px solid #dce5e1;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #71827e;
+  font-size: 15px;
+  overflow: hidden;
+  padding: 12px;
+  box-sizing: border-box;
 }
-
-
-.about_certificate_card h3{
-    margin: 12px 5px 3px 5px;
-
-    color: #123f3b;
-
-    font-size: 15px;
+.about_certificate_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
-
-
-.about_certificate_card p{
-    margin: 0px 5px 5px 5px;
-
-    color: #71827e;
-
-    font-size: 12px;
+.about_certificate_card h3 {
+  margin: 12px 5px 3px 5px;
+  color: #123f3b;
+  font-size: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about_certificate_card p {
+  margin: 0px 5px 5px 5px;
+  color: #71827e;
+  font-size: 12px;
+}
 .modal-overlay {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.55);
-
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 .article-modal {
-    width: 900px;
-    max-width: 90%;
-
-    max-height: 90vh;
-    overflow-y: auto;
-
-    background: white;
-
-    border-radius: 24px;
-
-    padding: 35px;
-
-    position: relative;
+  width: 900px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 24px;
+  padding: 35px;
+  position: relative;
 }
 .article-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
 }
 .article-side {
-    background: #eef8f4;
-
-    padding: 20px;
-
-    border-radius: 16px;
+  background: #eef8f4;
+  padding: 20px;
+  border-radius: 16px;
 }
 .modal-close {
-    position: absolute;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #eef5f2;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-    top: 20px;
-    right: 20px;
 
-    width: 35px;
-    height: 35px;
+/* ===== ПОРАДИ: АНІМАЦІЇ ТА ЕФЕКТИ ===== */
+.window_advice_card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e4ebe7;
+  border-radius: 20px;
+  transition: transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+  animation: adviceCardAppear 0.5s ease both;
+}
+.window_advice_card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.window_advice_card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+.window_advice_card:nth-child(4) {
+  animation-delay: 0.24s;
+}
+.window_advice_card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 35px rgba(22, 107, 89, 0.12);
+  border-color: #b8d8ca;
+}
 
-    border: none;
-    border-radius: 50%;
+@keyframes adviceCardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 
-    background: #eef5f2;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    font-size: 24px;
+/* ФОТОГРАФІЯ КАРТКИ */
+.window_advice_card-img {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.3s ease;
+}
+.window_advice_card:hover .window_advice_card-img {
+  filter: brightness(1.06);
+}
+.window_advice_card-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+        135deg,
+        transparent,
+        rgba(255,255,255,0.18)
+    );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.window_advice_card:hover .window_advice_card-img::after {
+  opacity: 1;
+}
 
-    cursor: pointer;
+
+/* ЗАГОЛОВОК КАРТКИ */
+.window_advice_card-info h3 {
+  transition: color 0.25s ease;
+}
+.window_advice_card:hover .window_advice_card-info h3 {
+  color: #187a65;
+}
+
+
+/* КНОПКА ЧИТАТИ */
+.window_advice_card-bottom button {
+  transition: color 0.25s ease,
+        transform 0.25s ease;
+}
+.window_advice_card-bottom button:hover {
+  color: #105a4b;
+  transform: translateX(4px);
+}
+
+
+/* ФІЛЬТРИ */
+.window_advice_filter-button {
+  transition: background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.window_advice_filter-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(22,107,89,0.10);
+}
+.window_advice_filter-button.active {
+  background: #187a65;
+  color: white;
+  box-shadow: 0 4px 12px rgba(24,122,101,0.20);
+}
+
+
+/* ДОСТУПНІСТЬ */
+.window_advice_filter-button:focus-visible,
+.window_advice_card-bottom button:focus-visible {
+  outline: 3px solid #81cbb5;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .window_advice_card,
+    .window_advice_card-img,
+    .window_advice_card-info h3,
+    .window_advice_card-bottom button,
+    .window_advice_filter-button {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+/* ==========================================
+   СУЧАСНІ ЕФЕКТИ САЙТУ
+   Сторінку "Звернутися" не змінюємо
+========================================== */
+:root {
+  --effect-green: #19705e;
+  --effect-shadow: 0 16px 35px rgba(25, 112, 94, 0.12);
+}
+
+
+/* ПЛАВНЕ ПЕРЕМИКАННЯ СТОРІНОК */
+.page:not(#contact):not([hidden]) {
+  animation: pageFadeIn 0.45s ease both;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* МЕНЮ */
+.menu button {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.menu button::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--effect-green);
+  border-radius: 5px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.menu button:hover {
+  color: var(--effect-green);
+}
+.menu button:hover::after,
+.menu button.effect-active::after {
+  width: 100%;
+  left: 0;
+}
+.menu button.effect-active {
+  color: var(--effect-green);
+}
+
+
+/* КАРТКИ ГОЛОВНОЇ */
+#home .choice_window_card1,
+#home .choice_window_card2,
+#home .choice_window_card3,
+#home .choice_window_box,
+#home .popular_materials_blok,
+#home .our_events_blok {
+  transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+#home .choice_window_card1:hover,
+#home .choice_window_card2:hover,
+#home .choice_window_card3:hover,
+#home .choice_window_box:hover,
+#home .popular_materials_blok:hover,
+#home .our_events_blok:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--effect-shadow);
+}
+
+
+/* КАРТКИ ТЕМ ДЛЯ УЧНІВ,
+   БАТЬКІВ І ПЕДАГОГІВ */
+#students .content_topic-card,
+#parents .content_topic-card,
+#teachers .content_topic-card {
+  transition: transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+#students .content_topic-card:hover,
+#parents .content_topic-card:hover,
+#teachers .content_topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--effect-shadow);
+  background-color: #e6f3ec;
+}
+.content_topic-card-img {
+  transition: transform 0.3s ease;
+}
+.content_topic-card:hover .content_topic-card-img {
+  transform: scale(1.18) rotate(-5deg);
+}
+
+
+/* КАРТКИ ПОРАД І ПОДІЙ */
+#advice .window_advice_card,
+#events .window_events_card {
+  transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+#advice .window_advice_card:hover,
+#events .window_events_card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--effect-shadow);
+}
+
+
+/* КНОПКИ ВСІХ СТОРІНОК, КРІМ CONTACT */
+.page:not(#contact) button {
+  transition: transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+.page:not(#contact) button:hover {
+  transform: translateY(-2px);
+}
+.page:not(#contact) button:active {
+  transform: scale(0.97);
+}
+
+
+/* КНОПКИ ФІЛЬТРІВ */
+.window_advice_filter-button,
+.window_events_filter-button {
+  transition: transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.window_advice_filter-button:hover,
+.window_events_filter-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(25, 112, 94, 0.12);
+}
+
+
+/* ЗОБРАЖЕННЯ */
+#home .img_hero-img {
+  transition: transform 0.6s ease;
+}
+#home .img_hero:hover .img_hero-img {
+  transform: scale(1.035);
+}
+#about img,
+#events .window_events_card img,
+#advice .window_advice_card img {
+  transition: transform 0.5s ease;
+}
+#about img:hover,
+#events .window_events_card img:hover,
+#advice .window_advice_card img:hover {
+  transform: scale(1.035);
+}
+
+
+/* ПОЯВА БЛОКІВ ПРИ ПРОКРУЧУВАННІ */
+.page:not(#contact) .effect-reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.65s ease,
+        transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--effect-delay, 0ms);
+}
+.page:not(#contact) .effect-reveal.effect-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* МОДАЛЬНІ ВІКНА */
+#articleModal[style*="flex"],
+#eventModal[style*="flex"],
+#workModal[style*="flex"],
+#certificatesModal[style*="flex"] {
+  animation: effectModalFade 0.3s ease both;
+}
+#articleModal[style*="flex"] > div,
+#eventModal[style*="flex"] > div,
+#workModal[style*="flex"] > div,
+#certificatesModal[style*="flex"] > div {
+  animation: effectModalSlide 0.35s ease both;
+}
+
+@keyframes effectModalFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes effectModalSlide {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ДОСТУПНІСТЬ */
+@media (prefers-reduced-motion: reduce) {
+  .page:not(#contact),
+    .page:not(#contact) *,
+    .menu button,
+    .menu button::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .effect-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+.bullying-page {
+  --bullying-red: #ad3734;
+  --bullying-text: #101c27;
+  --bullying-muted: #59616a;
+  background: #fdfaf8;
+  color: var(--bullying-text);
+  font-family: inherit;
+  line-height: 1.6;
+}
+.bullying-page {
+  margin-top: 100px;
+}
+.bullying-page,
+.bullying-page * {
+  box-sizing: border-box;
+}
+.bullying-container {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+.bullying-page h1,
+.bullying-page h2,
+.bullying-page h3,
+.bullying-page p {
+  margin: 0;
+}
+.bullying-page h2 {
+  margin-bottom: 16px;
+  font-size: clamp(22px, 2.3vw, 28px);
+  line-height: 1.25;
+}
+.bullying-page h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 1.3;
+}
+.bullying-page p {
+  color: var(--bullying-muted);
+}
+.bullying-hero {
+  min-height: 370px;
+  padding: 42px 0 65px;
+  background: linear-gradient(
+      90deg,
+      rgba(248, 244, 239, 0.96) 0%,
+      rgba(248, 244, 239, 0.88) 38%,
+      rgba(248, 244, 239, 0.08) 75%
+    ),
+    url("img/bullying-hero.jpg") center / cover no-repeat;
+  margin-top: 120px;
+}
+.bullying-breadcrumb {
+  margin-bottom: 28px;
+  color: var(--bullying-muted);
+  font-size: 14px;
+}
+.bullying-hero h1 {
+  max-width: 750px;
+  margin-bottom: 16px;
+  font-size: clamp(32px, 4.4vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+.bullying-hero h1 span {
+  color: var(--bullying-red);
+}
+.bullying-hero p {
+  max-width: 520px;
+  font-size: 18px;
+}
+.bullying-content {
+  display: grid;
+  gap: 30px;
+  padding-block: 30px;
+}
+.bullying-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 28px;
+  border-radius: 20px;
+  background: #f5eeea;
+}
+.bullying-intro p {
+  color: var(--bullying-text);
+}
+.bullying-intro blockquote {
+  margin: 0;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fae6e2;
+  color: var(--bullying-red);
+  font-size: 18px;
+}
+.bullying-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.bullying-card {
+  padding: 24px;
+  border: none;
+  border-radius: 18px;
+  background: #f5efeb;
+}
+.bullying-card p {
+  font-size: 15px;
+}
+.bullying-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: #fbe1d8;
+  font-size: 24px;
+}
+.bullying-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.bullying-signs {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bullying-signs li {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  padding: 11px 16px;
+  border-radius: 12px;
+  background: #f5efeb;
+}
+.bullying-signs li::before {
+  content: "✓";
+  color: var(--bullying-red);
+  font-weight: 700;
+}
+.bullying-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.conflict-card {
+  background: #edf0ef;
+}
+.bullying-red-card {
+  background: #fae8e4;
+}
+.bullying-comparison ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--bullying-muted);
+  font-size: 14px;
+}
+.bullying-step {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--bullying-red);
+  color: white;
+  font-weight: 700;
+}
+.bullying-law {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 26px;
+  align-items: center;
+  padding: 24px;
+  border-radius: 22px;
+  background: #fae8e4;
+}
+.bullying-law img {
+  width: 100%;
+  height: 210px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.bullying-label-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bullying-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 12px;
+  border-radius: 30px;
+  background: var(--bullying-red);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+.bullying-label-valid-from {
+  background: #ad3734;
+  color: white;
+  border-radius: 40px;
+}
+.bullying-label-valid-from h4 {
+  margin: 0;
+  padding: 10px 14px;
+}
+.bullying-law p {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+.bullying-button {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 40px;
+  background: var(--bullying-red);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.bullying-button:hover {
+  background: #922b28;
+  transform: translateY(-2px);
+}
+.bullying-button:focus-visible {
+  outline: 3px solid #d4826d;
+  outline-offset: 4px;
+}
+
+
+/* Затемнений фон */
+.bullying-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+
+/* Відкрита модалка */
+.bullying-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Основне вікно */
+.bullying-modal-content {
+  width: 100%;
+  max-width: 1000px;
+  height: min(850px, 90vh);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+  transform: translateY(25px) scale(0.97);
+  transition: transform 0.3s ease;
+}
+.bullying-modal.active .bullying-modal-content {
+  transform: translateY(0) scale(1);
+}
+
+
+/* Заголовок */
+.bullying-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 30px;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+.bullying-modal-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+}
+
+
+/* Закриття */
+.bullying-modal-close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #333;
+  font-size: 28px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.bullying-modal-close:hover {
+  background: #fee2e2;
+  transform: rotate(90deg);
+}
+
+
+/* PDF — займає всю доступну висоту */
+.bullying-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.bullying-modal-body iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  border: none;
+}
+
+
+/* Нижня частина */
+.bullying-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 30px;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+
+/* Адаптація для телефонів */
+.bullying-download {
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #196b59;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.bullying-download:hover {
+  background: #115344;
+}
+
+
+/* Телефони */
+@media (max-width: 600px) {
+  .bullying-modal {
+    padding: 10px;
+  }
+  .bullying-modal-content {
+    height: 95vh;
+    border-radius: 16px;
+  }
+  .bullying-modal-header {
+    padding: 16px;
+  }
+  .bullying-modal-header h2 {
+    font-size: 17px;
+  }
+  .bullying-modal-footer {
+    padding: 12px 16px;
+  }
+}
+.bullying-support {
+  padding-block: 44px;
+  background: linear-gradient(
+      90deg,
+      rgba(15, 20, 23, 0.86),
+      rgba(15, 20, 23, 0.3)
+    ),
+    url("img/bullying-support.jpg") center / cover no-repeat;
+}
+.bullying-support-inner {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.bullying-support h2 {
+  color: white;
+  font-size: 32px;
+}
+.bullying-support p {
+  max-width: 380px;
+  color: white;
+}
+.bullying-support .bullying-button {
+  flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+  .bullying-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bullying-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .bullying-container {
+    width: calc(100% - 32px);
+  }
+  .bullying-hero {
+    min-height: 340px;
+    padding-block: 28px 40px;
+    background-position: 65% center;
+  }
+  .bullying-hero p {
+    font-size: 16px;
+  }
+  .bullying-intro,
+  .bullying-law {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .bullying-grid,
+  .bullying-comparison {
+    grid-template-columns: 1fr;
+  }
+  .bullying-law img {
+    height: 180px;
+  }
+  .bullying-support-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bullying-support .bullying-button {
+    align-self: flex-end;
+  }
+}
+#articleModal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 38, 32, 0.58);
+  backdrop-filter: blur(5px);
+  font-family: inherit;
+}
+#articleModal,
+#articleModal * {
+  box-sizing: border-box;
+}
+#articleModal .article-modal {
+  position: relative;
+  padding: 0;
+  border-radius: 28px;
+  background: #fdfaf3;
+  color: #253a2d;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.25);
+  scrollbar-width: thin;
+  scrollbar-color: #b7c3a5 #fdfaf3;
+}
+#articleModal .modal-close {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #fffaf0;
+  color: #253a2d;
+  font-size: 28px;
+  cursor: pointer;
+}
+#articleModal .article-header {
+  margin: 0;
+  border: none;
+  border-radius: 28px 28px 0 0;
+  background: linear-gradient(
+            90deg,
+            #faf4e7 0%,
+            rgba(250, 244, 231, 0.97) 42%,
+            rgba(250, 244, 231, 0.18) 75%
+        ),
+        url("img/article-default.png") center right / cover no-repeat;
+}
+#articleModal .article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+#articleModalCategory {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 16px;
+  border-radius: 30px;
+  background: #d0dbc1;
+  color: #263b2c;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#articleModalReadingTime {
+  margin: 0;
+  color: #72766c;
+  font-size: 13px;
+}
+#articleModalReadingTime::before {
+  content: "◷";
+  margin-right: 7px;
+  font-size: 18px;
+}
+#articleModalTitle {
+  max-width: 650px;
+  margin: 0 0 18px;
+  color: #203526;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  overflow-wrap: anywhere;
+}
+#articleModalDescription {
+  max-width: 530px;
+  margin: 0;
+  color: #485044;
+}
+#articleModal .article-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  align-items: start;
+}
+#articleModalSections {
+  display: grid;
+  min-width: 0;
+}
+#articleModal .article-section {
+  display: grid;
+  align-items: start;
+  border-radius: 20px;
+  background: #f6f1e7;
+}
+#articleModal .article-section-icon {
+  display: grid;
+  place-items: center;
+  background: #f4e5cd;
+}
+#articleModal .article-section-heading {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+#articleModal .article-section-number {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #d4dec6;
+  font-size: 13px;
+  font-weight: 700;
+}
+#articleModal .article-section h3 {
+  margin: 0;
+  color: #263b2c;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.3;
+}
+#articleModal .article-section p {
+  margin: 0;
+  color: #65665c;
+  white-space: pre-line;
+}
+#articleModal .article-side {
+  width: auto;
+  height: auto;
+  min-height: 0;
+  border-radius: 22px;
+  background: #eceee1;
+}
+#articleModal .article-side-symbol {
+  display: block;
+  margin-bottom: 8px;
+  color: #71845e;
+  line-height: 1;
+}
+#articleModal .article-side h3 {
+  margin: 0 0 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+}
+#articleModalSteps {
+  margin: 0;
+  padding: 8px 18px;
+  border-radius: 18px;
+  background: #fffaf2;
+  list-style: none;
+}
+#articleModalSteps li {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  color: #46513d;
+  line-height: 1.5;
+}
+#articleModalSteps li + li {
+  border-top: 1px solid #e8e5d9;
+}
+#articleModalSteps li::before {
+  content: "✓";
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #d3ddc4;
+  color: #36543d;
+  font-weight: 700;
+}
+#articleModal .article-side-note {
+  margin: 22px 0 0;
+  border-radius: 20px;
+  background: #dce2cd;
+  color: #536148;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+#articleModalQuote {
+  position: relative;
+  border: none;
+  border-radius: 18px;
+  background: #e6eadc;
+  color: #364d35;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+#articleModalQuote::before {
+  content: "“";
+  position: absolute;
+  top: 5px;
+  color: #93a17e;
+  line-height: 1;
+}
+#articleModal .article-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+#articleModal .article-footer button {
+  padding: 13px 22px;
+  border-radius: 15px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#articleModal .article-close-button {
+  min-width: 130px;
+  border: 1px solid #456652;
+  background: transparent;
+  color: #355341;
+}
+#articleModal .article-close-button:hover {
+  background: #e9eddf;
+}
+#articleModal .article-contact-button {
+  border: 1px solid #365642;
+  background: #365642;
+  color: #fff;
+}
+#articleModal .article-contact-button:hover {
+  background: #274331;
+}
+#articleModal button:focus-visible {
+  outline: 3px solid #91a97b;
+  outline-offset: 3px;
+}
+#articleModal [hidden] {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  #articleModal {
+    padding: 12px;
+  }
+  #articleModal .article-header {
+    min-height: 250px;
+    padding: 34px 24px;
+    background: linear-gradient(
+                90deg,
+                rgba(250, 244, 231, 0.98),
+                rgba(250, 244, 231, 0.85)
+            ),
+            url("img/article-default.png") center / cover no-repeat;
+  }
+  #articleModal .article-content {
+    padding: 20px 18px 0;
+  }
+  #articleModal .article-section {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+  #articleModal .article-section-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 26px;
+  }
+  #articleModalQuote {
+    padding: 22px 20px 22px 56px;
+  }
+  #articleModalQuote::before {
+    left: 14px;
+    font-size: 68px;
+  }
+  #articleModal .article-contact-button {
+    flex-grow: 1;
+  }
+}
+
+
+/* Компактніший вигляд на звичайних екранах ноутбука */
+
+/* Прибирає чорну рамку після відкриття через JS */
+#articleModal {
+  padding: 12px;
+}
+#articleModal .article-modal {
+  width: min(1040px, 100%);
+  max-width: 100%;
+  max-height: calc(100dvh - 24px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#articleModal .article-modal:focus {
+  outline: none;
+}
+#articleModal .article-header {
+  min-height: 0;
+  padding: clamp(20px, 3vh, 36px)
+        clamp(20px, 3vw, 40px);
+}
+#articleModal .article-meta {
+  margin-bottom: clamp(10px, 1.6vh, 20px);
+  padding-right: 40px;
+}
+#articleModalTitle {
+  font-size: clamp(30px, 5vh, 52px);
+  margin-bottom: 12px;
+}
+#articleModalDescription {
+  font-size: 15px;
+  line-height: 1.6;
+}
+#articleModal .article-content {
+  padding: 18px 24px 0;
+  gap: 18px;
+}
+#articleModalSections {
+  gap: 10px;
+}
+#articleModal .article-section {
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+}
+#articleModal .article-section-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  font-size: 26px;
+}
+#articleModal .article-section h3 {
+  font-size: 19px;
+}
+#articleModal .article-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+#articleModal .article-side {
+  padding: 18px;
+}
+#articleModal .article-side-symbol {
+  font-size: 28px;
+}
+#articleModal .article-side h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+#articleModalSteps li {
+  padding: 10px 0;
+  font-size: 14px;
+}
+#articleModal .article-side-note {
+  margin-top: 14px;
+  padding: 10px;
+}
+#articleModalQuote {
+  margin: 16px 24px 0;
+  padding: 16px 20px 16px 58px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+#articleModalQuote::before {
+  left: 14px;
+  font-size: 66px;
+}
+#articleModal .article-footer {
+  position: sticky;
+  bottom: 0;
+  padding: 14px 24px;
+  background: #fdfaf3;
+  border-top: 1px solid #e7e8dc;
+  z-index: 2;
+}
+
+@media (max-width: 760px) {
+  #articleModal .article-content {
+    grid-template-columns: 1fr;
+    padding-inline: 16px;
+  }
+  #articleModalQuote {
+    margin-inline: 16px;
+  }
+  #articleModal .article-footer {
+    padding-inline: 16px;
+  }
+}
+
+
+/* Універсальна адаптивність статей */
+.article-section {
+  min-width: 0;
+}
+.article-section > div {
+  min-width: 0;
+}
+.article-section p,
+.article-section h3 {
+  overflow-wrap: anywhere;
+}
+.article-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.article-side[hidden],
+#articleModalQuote[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .article-section {
+    gap: 12px;
+  }
+  .article-section-heading {
+    gap: 8px;
+  }
+  .article-section h3 {
+    font-size: clamp(16px, 4vw, 20px);
+  }
+  .article-section p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+.content_info-tips-box {
+  height: auto;
+  min-height: 178px;
+  padding: 18px 0;
+  box-sizing: border-box;
+}
+.content_info-tips-box h6,
+.content_info-tips-box p {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+
+/* Виправлення висоти PDF у модалці */
+.bullying-modal .bullying-modal-content {
+  height: 90vh;
+  max-height: 850px;
+  display: flex;
+  flex-direction: column;
+}
+.bullying-modal .bullying-modal-header,
+.bullying-modal .bullying-modal-footer {
+  flex: 0 0 auto;
+}
+.bullying-modal .bullying-modal-body {
+  flex: 1 1 0;
+  min-height: 0;
+  height: auto;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+}
+.bullying-modal .bullying-modal-body iframe {
+  display: block;
+  flex: 1 1 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+}
+
+
+/* Сертифікати — ефект наведення */
+.about_certificate_img img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+.about_certificate_img:hover img {
+  transform: scale(1.04);
+}
+
+
+/* Фон модального вікна */
+.certificate-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  background: rgba(12, 25, 24, 0.82);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+
+/* Відкрита модалка */
+.certificate-viewer.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Контейнер */
+.certificate-viewer-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  max-width: 95vw;
+  max-height: 92vh;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+.certificate-viewer.active .certificate-viewer-content {
+  transform: scale(1);
+}
+
+
+/* Збільшене зображення */
+.certificate-viewer-content img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Кнопка закриття */
+.certificate-viewer-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #123f3b;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, background 0.2s;
+}
+.certificate-viewer-close:hover {
+  transform: rotate(90deg);
+  background: #e7f3ee;
+}
+
+
+/* Телефони */
+@media (max-width: 600px) {
+  .certificate-viewer {
+    padding: 15px;
+  }
+  .certificate-viewer-content img {
+    max-width: 94vw;
+    max-height: 85vh;
+  }
+  .certificate-viewer-close {
+    top: -15px;
+    right: 0;
+  }
+}
+
+
+/* Збільшений сертифікат поверх усіх модалок */
+#certificateViewer {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 25, 24, 0.88);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#certificateViewer.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+#certificateViewer .certificate-viewer-content {
+  position: relative;
+  width: fit-content;
+  max-width: 94vw;
+  max-height: 94dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#certificateViewerImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 88dvh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+#certificateViewer .certificate-viewer-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #173c35;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+/* Фотографія у верхньому банері модалки */
+.article-modal .article-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Прибираємо фотографію з основної частини */
+.article-modal .article-body {
+  background-image: none;
+}
+
+
+/* Фото зверху картки поради */
+.window_advice_card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+/* Верхня фотографія */
+.window_advice_card-img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  flex-shrink: 0;
+  background-color: #e8eee7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+
+/* Текст під фотографією */
+.window_advice_card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Бейдж Батькам, Учням, Педагогам */
+.window_advice_card-category {
+  align-self: flex-start;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+
+/* Нижній рядок картки */
+.window_advice_card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+
+/* Час читання зліва */
+.window_advice_card-bottom p {
+  margin: 0;
+}
+
+
+/* Кнопка Читати справа */
+.window_advice_card-bottom button {
+  margin-left: auto;
+}
+.content_info-blocks-full .content_info-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(26, 89, 70, .12);
+}
+.content_info-blocks-full .content_info-tips-box {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 23px 26px;
+  box-sizing: border-box;
+  border: 1px solid #dfece4;
+  border-radius: 22px;
+  background: rgba(229, 243, 235, .78);
+}
+
+
+/* ОСНОВНИЙ БЛОК СТАТТІ */
+
+/* ===== ОНОВЛЕНІ БЛОКИ СТАТЕЙ ===== */
+.content_info-block-full,
+.content_info-block-full-invers {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 35px 0;
+  box-sizing: border-box;
+}
+
+
+/* Контейнер */
+.content_info-block {
+  width: 82%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+
+/* Текст */
+.content_info-block-left {
+  width: 52%;
+  max-width: none;
+  height: auto;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+
+/* Заголовок */
+.content_info-block-title {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+}
+.content_info-block-title h5 {
+  margin: 0;
+  font-size: clamp(26px, 2.2vw, 34px);
+  line-height: 1.2;
+  color: #203d32;
+}
+
+
+/* Опис */
+.content_info-block-text p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* Кнопки */
+.content_info-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+}
+.content_info-button-right {
+  margin: 0;
+}
+
+
+/* Блок порад */
+.content_info-tips-box,
+.content_info-blocks-full .content_info-tips-box {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  background: #eaf4ee;
+}
+.content_info-tips-box h6,
+.content_info-tips-box p {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.content_info-tips-box h6 {
+  margin-bottom: 8px;
+}
+.content_info-tips-box p {
+  margin-top: 5px;
+}
+
+
+/* Фото */
+.content_info-block-right {
+  width: 42%;
+  height: 320px;
+  flex: 0 0 42%;
+  min-width: 0;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Мобільна версія */
+@media (max-width: 768px) {
+  .content_info-block {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .content_info-block-left,
+    .content_info-block-right {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+  .content_info-block-right {
+    height: 240px;
+  }
+  .content_info-block-title h5 {
+    font-size: 27px;
+  }
+}
+
+
+/* ===== ФІНАЛЬНЕ ВИПРАВЛЕННЯ ГОЛОВНОЇ ===== */
+
+/* ===== ШАПКА ===== */
+
+/* ЛОГОТИП */
+
+/* МЕНЮ */
+.menu {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.menu div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 17px !important;
+  padding: 15px 25px !important;
+  height: auto !important;
+  border-radius: 50px !important;
+  background: rgba(255,255,255,0.94) !important;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.06) !important;
+}
+.menu button {
+  background: transparent !important;
+  color: #26353a !important;
+  border: none !important;
+  white-space: nowrap !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+
+/* КНОПКА ЗВЕРНЕННЯ */
+
+/* АДАПТАЦІЯ */
+@media (max-width: 1100px) {
+  .menu div {
+    gap: 7px !important;
+    padding: 12px !important;
+  }
+  .menu button {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu {
+    display: none !important;
+  }
+}
+
+
+/* КОМПАКТНІ КАРТКИ ГОЛОВНОГО БАНЕРА */
+
+/* ТЕЛЕФОН */
+
+/* ЛОГОТИП */
+
+/* ЗЕЛЕНИЙ СИМВОЛ */
+
+/* ТЕКСТ */
+
+/* ТЕЛЕФОН */
+
+/* ========================================================================
+   ДИЗАЙН З МАКЕТА: ШАПКА + ГОЛОВНИЙ БАНЕР
+   Додати В САМИЙ КІНЕЦЬ style.css. Перекриває старі !important.
+   ФОТО: img/bg_home.jpg — оригінальне фото, яке вже використовується.
+   ======================================================================== */
+.up_header *, .up_header *::before, .up_header *::after,
+#home .hero *, #home .hero *::before, #home .hero *::after {
+  box-sizing: border-box;
+}
+
+
+/* ШАПКА */
+
+/* БАНЕР */
+#home .hero {
+  position: relative !important;
+  isolation: isolate;
+  display: block !important;
+  width: 100% !important;
+  min-height: 768px !important;
+  overflow: hidden !important;
+  background: linear-gradient(112deg,#fbfaf3 4%,#f6f0df 27%,#e7d1a0 56%,#e4c49c 100%) !important;
+}
+
+
+/* ПРАВЕ ФОТО. Зберігається оригінальний файл, не потрібна нова картинка. */
+#home .hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68%;
+  height: 100%;
+  z-index: 0;
+  background-image: url("img/bg_home.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.22) 8%,rgba(0,0,0,.8) 25%,#000 39%);
+  mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.22) 8%,rgba(0,0,0,.8) 25%,#000 39%);
+  pointer-events: none;
+}
+#home .hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 36% 41% at 29% 75%,rgba(144,165,95,.26),transparent 80%),
+   linear-gradient(90deg,rgba(255,252,238,.24) 0%,rgba(255,252,238,.18) 33%,transparent 67%);
+}
+#home .hero .div_hero {
+  position: relative;
+  z-index: 5;
+  width: 86.6% !important;
+  max-width: 1680px;
+  min-height: 768px !important;
+  margin: 0 auto !important;
+  padding: 145px 0 54px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+#home .hero .text_hero {
+  width: 690px !important;
+  max-width: 100% !important;
+  flex: 0 1 690px;
+}
+#home .hero .hero_content {
+  width: 100%;
+  max-width: 690px !important;
+  padding: 0 !important;
+  color: #203039 !important;
+}
+#home .hero .hero_badge {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 53px;
+  padding: 8px 27px !important;
+  margin: 0 0 18px !important;
+  border-radius: 60px !important;
+  background: rgba(124,156,128,.20) !important;
+  backdrop-filter: none;
+  color: #557f70 !important;
+  font-size: 18px !important;
+  line-height: 1.25;
+  font-weight: 700 !important;
+  white-space: nowrap;
+}
+#home .hero .hero_title_wrap {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}
+#home .hero .hero_content h1 {
+  margin: 0 0 12px !important;
+  color: #1e2e35 !important;
+  font-size: clamp(62px,5.1vw,96px) !important;
+  font-weight: 850 !important;
+  line-height: .97 !important;
+  letter-spacing: -3.8px !important;
+}
+#home .hero .hero_content h1 span {
+  color: #075f37 !important;
+}
+#home .hero .hero_heart {
+  position: absolute;
+  left: calc(100% + 9px);
+  top: 12px;
+  width: 195px;
+  height: 145px;
+  overflow: visible;
+  pointer-events: none;
+}
+#home .hero .hero_content > p.hero_description {
+  margin: 0 0 25px !important;
+  max-width: 690px !important;
+  font-size: 24px !important;
+  line-height: 1.33 !important;
+  font-weight: 650 !important;
+  color: #37454c !important;
+}
+#home .hero .hero_features {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  flex-wrap: nowrap !important;
+  width: 690px !important;
+  max-width: 100%;
+  gap: 13px !important;
+  margin: 0 0 20px !important;
+}
+#home .hero .hero_feature {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 123px !important;
+  height: 123px !important;
+  flex: none !important;
+  padding: 10px 7px 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  border-radius: 23px !important;
+  background: rgba(255,255,255,.80) !important;
+  box-shadow: 0 8px 19px rgba(54,66,37,.095) !important;
+  backdrop-filter: blur(5px);
+}
+#home .hero .feature_icon {
+  height: 43px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 7px;
+  color: #096542;
+}
+#home .hero .feature_icon svg {
+  height: 42px;
+  width: 42px;
+  display: block;
+}
+#home .hero .hero_feature p {
+  max-width: none !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 15.7px !important;
+  line-height: 1.17 !important;
+  font-weight: 700 !important;
+  color: #213039 !important;
+  text-align: center;
+}
+#home .hero .hero_button {
+  display: inline-flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 26px;
+  min-width: 335px;
+  min-height: 70px;
+  padding: 15px 37px !important;
+  border: none !important;
+  border-radius: 50px !important;
+  background: #086340 !important;
+  color: #fff !important;
+  font-size: 22px !important;
+  line-height: 1.2 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 13px 26px rgba(7,65,38,.13) !important;
+  cursor: pointer;
+  transition: transform .25s,background .25s;
+}
+#home .hero .hero_button:hover {
+  background: #054e31 !important;
+  transform: translateY(-3px);
+}
+#home .hero .hero_button span {
+  font-size: 27px;
+  line-height: 1;
+}
+
+
+/* ОЗДОБЛЕННЯ НА КРАЯХ БАНЕРА */
+#home .hero .hero_leaf {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  filter: blur(5px);
+  opacity: .74;
+}
+#home .hero .hero_leaf_left {
+  left: -62px;
+  top: 76px;
+  width: 164px;
+  height: 610px;
+}
+#home .hero .hero_leaf_right {
+  right: -23px;
+  top: 105px;
+  width: 125px;
+  height: 325px;
+  filter: blur(2px);
+  opacity: .86;
+}
+#home .hero .hero_wave {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+#home .hero .hero_wave_back {
+  bottom: -195px;
+  left: -95px;
+  width: 55%;
+  height: 325px;
+  border-radius: 53% 65% 0 0 / 75% 85% 0 0;
+  background: linear-gradient(25deg,#80aa66 0%,#588856 85%);
+  transform: rotate(-10deg);
+  opacity: .72;
+}
+#home .hero .hero_wave_front {
+  bottom: -227px;
+  left: -55px;
+  width: 47%;
+  height: 300px;
+  border-radius: 50% 70% 0 0 / 62% 85% 0 0;
+  background: linear-gradient(25deg,#679448 0%,#2e784e 85%);
+  transform: rotate(-11deg);
+  opacity: .46;
+}
+
+
+/* НОУТБУКИ */
+@media (max-width: 1700px) {
+  #home .hero .hero_content h1 {
+    font-size: clamp(63px,5.8vw,88px) !important;
+  }
+}
+
+
+/* ПЛАНШЕТИ */
+@media (max-width: 1050px) {
+  #home .hero .div_hero {
+    padding-top: 180px !important;
+  }
+  #home .hero .hero_heart {
+    width: 142px;
+    left: calc(100% + 2px);
+  }
+  #home .hero::before {
+    width: 81%;
+    opacity: .55;
+  }
+}
+
+
+/* ТЕЛЕФОНИ */
+@media (max-width: 700px) {
+  #home .hero {
+    min-height: 0 !important;
+  }
+  #home .hero::before {
+    width: 100%;
+    opacity: .19;
+    mask-image: none;
+    -webkit-mask-image: none;
+    background-position: center;
+  }
+  #home .hero .div_hero {
+    min-height: 0 !important;
+    width: 91% !important;
+    padding: 41px 0 65px !important;
+  }
+  #home .hero .text_hero {
+    width: 100% !important;
+    flex: 1 1 100%;
+  }
+  #home .hero .hero_badge {
+    min-height: 39px;
+    font-size: 13px !important;
+    padding: 7px 15px !important;
+    margin-bottom: 18px !important;
+  }
+  #home .hero .hero_content h1 {
+    font-size: clamp(44px,10.5vw,62px) !important;
+    letter-spacing: -2.4px !important;
+  }
+  #home .hero .hero_heart {
+    display: none;
+  }
+  #home .hero .hero_content > p.hero_description {
+    font-size: clamp(16px,4.6vw,20px) !important;
+    margin-bottom: 25px !important;
+  }
+  #home .hero .hero_features {
+    width: 100% !important;
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 12px !important;
+  }
+  #home .hero .hero_feature {
+    min-height: 114px !important;
+    height: 114px !important;
+  }
+  #home .hero .hero_feature p {
+    font-size: 14px !important;
+  }
+  #home .hero .hero_button {
+    min-width: 0;
+    width: 100%;
+    min-height: 57px;
+    padding: 13px 25px !important;
+    font-size: 18px !important;
+  }
+  #home .hero .hero_leaf_left {
+    opacity: .3;
+    left: -91px;
+  }
+  #home .hero .hero_leaf_right {
+    display: none;
+  }
+  #home .hero .hero_wave_back {
+    width: 95%;
+    bottom: -232px;
+  }
+  #home .hero .hero_wave_front {
+    width: 90%;
+    bottom: -253px;
+  }
+}
+
+@media (max-width:360px) {
+  #home .hero .hero_content h1 {
+    font-size: 42px !important;
+  }
+}
+
+
+/* Точне вирівнювання на широких екранах: додано у версії 2 */
+@media (min-width: 1701px) {
+  #home .hero .hero_title_wrap {
+    margin-left: 15px;
+  }
+  #home .hero .hero_content > p.hero_description {
+    margin-left: 15px !important;
+  }
+  #home .hero .hero_heart {
+    left: calc(100% + 0px);
+  }
+  #home .hero .hero_wave_back {
+    bottom: -230px;
+  }
+  #home .hero .hero_wave_front {
+    bottom: -250px;
+  }
+}
+.psy-header, .psy-header *, .psy-hero, .psy-hero * {
+  box-sizing: border-box;
+}
+.psy-header {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  width: 100%;
+  height: 98px;
+  background: transparent;
+}
+.psy-topbar {
+  width: min(95%,1820px);
+  height: 98px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: clamp(10px,1.5vw,25px);
+  justify-content: space-between;
+}
+.psy-brand {
+  flex: 0 0 auto;
+  width: min(395px,24vw);
+  min-width: 320px;
+  height: 95px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 11px 22px;
+  border-radius: 55px;
+  background: rgba(255,255,255,.88);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 7px 24px rgba(25,70,48,.03);
+}
+.psy-brand-icon {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  color: #09603a;
+}
+.psy-brand-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.psy-brand-info {
+  min-width: 0;
+}
+.psy-brand-info h5 {
+  margin: 0;
+  font-size: clamp(17px,1.25vw,23px);
+  line-height: 1.13;
+  font-weight: 800;
+  color: #1d272b;
+  white-space: nowrap;
+  letter-spacing: -.5px;
+}
+.psy-brand-info p {
+  margin: 5px 0 0;
+  font-size: clamp(10px,.68vw,13px);
+  font-weight: 650;
+  color: #33383d;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+.psy-menu {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.psy-menu > div {
+  max-width: 100%;
+  height: 59px;
+  padding: 7px clamp(10px,1.1vw,24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(7px,.9vw,19px);
+  border-radius: 50px;
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 6px 25px rgba(40,70,51,.04);
+}
+.psy-menu button {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: #293136;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 1px;
+  white-space: nowrap;
+  font: 700 clamp(10px,.72vw,14px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;
+  cursor: pointer;
+}
+.psy-menu button svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+}
+.psy-menu button .psy-chevron {
+  width: 11px;
+  height: 11px;
+  flex: 0 0 11px;
+}
+.psy-menu button.psy-active,.psy-menu button:hover {
+  color: #086240;
+}
+.psy-menu button.psy-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #086240;
+}
+.psy-contact {
+  flex: 0 0 198px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.psy-contact-button {
+  width: 100%;
+  height: 58px;
+  border: 0;
+  border-radius: 45px;
+  background: #075f3b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font: 750 17px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.psy-contact-button:hover {
+  background: #03492d;
+}
+.psy-contact-button svg {
+  width: 23px;
+  height: 23px;
+}
+
+
+/* БАНЕР: не використовуємо класи .hero, .div_hero тощо */
+.psy-hero {
+  isolation: isolate;
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 768px;
+  overflow: hidden;
+  background: linear-gradient(110deg,#f9f9f3 0%,#f6f4e9 27%,#e4d6a5 57%,#dfcfa8 100%);
+}
+.psy-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  z-index: 0;
+  width: 69%;
+  background-image: url("img/bg_home.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.26) 12%,rgba(0,0,0,.88) 36%,black 48%);
+  mask-image: linear-gradient(to right,transparent 0%,rgba(0,0,0,.26) 12%,rgba(0,0,0,.88) 36%,black 48%);
+  pointer-events: none;
+}
+.psy-hero::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse 46% 43% at 25% 72%,rgba(161,184,115,.15),transparent 90%);
+}
+.psy-hero-inner {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: min(86.6%,1650px);
+  min-height: 768px;
+  margin: 0 auto;
+  padding: 145px 0 50px;
+}
+.psy-hero-text {
+  width: 690px;
+  flex: 0 0 690px;
+  max-width: 100%;
+}
+.psy-hero-content {
+  width: 100%;
+  max-width: 690px;
+  color: #223239;
+}
+.psy-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 53px;
+  padding: 10px 27px;
+  margin-bottom: 18px;
+  background: rgba(126,157,129,.20);
+  border-radius: 40px;
+  color: #567e71;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.psy-title-wrap {
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+}
+.psy-title-wrap h1 {
+  margin: 0 0 12px;
+  color: #1e2c32;
+  font: 850 clamp(65px,5.1vw,96px)/.98 system-ui,-apple-system,"Segoe UI",sans-serif;
+  letter-spacing: -3.5px;
+}
+.psy-title-wrap h1 span {
+  color: #066039;
+}
+.psy-heart {
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 10px;
+  width: 195px;
+  height: 145px;
+  overflow: visible;
+  pointer-events: none;
+}
+.psy-description {
+  margin: 0 0 24px;
+  color: #37464d;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.psy-features {
+  width: 690px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 13px;
+  margin: 0 0 20px;
+}
+.psy-feature {
+  width: auto;
+  min-width: 0;
+  height: 123px;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 23px;
+  background: rgba(255,255,255,.81);
+  box-shadow: 0 9px 20px rgba(52,73,46,.08);
+  backdrop-filter: blur(4px);
+}
+.psy-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 7px;
+  color: #086544;
+}
+.psy-feature-icon svg {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+.psy-feature p {
+  margin: 0;
+  color: #243138;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.18;
+}
+.psy-button {
+  min-width: 335px;
+  min-height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 14px 35px;
+  border: 0;
+  border-radius: 55px;
+  background: #086340;
+  color: white;
+  font: 750 22px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(9,70,38,.12);
+  transition: transform .2s,background .2s;
+}
+.psy-button:hover {
+  background: #064a2f;
+  transform: translateY(-2px);
+}
+.psy-button span {
+  font-size: 27px;
+}
+.psy-leaf {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  display: block;
+  filter: blur(6px);
+  opacity: .76;
+}
+.psy-leaf-left {
+  width: 155px;
+  height: 565px;
+  left: -60px;
+  top: 75px;
+}
+.psy-leaf-right {
+  width: 122px;
+  height: 305px;
+  right: -20px;
+  top: 100px;
+  filter: blur(3px);
+}
+.psy-wave {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.psy-wave-back {
+  bottom: -216px;
+  left: -70px;
+  width: 55%;
+  height: 320px;
+  background: linear-gradient(25deg,#85a86a,#3e804d);
+  border-radius: 55% 68% 0 0 / 75% 85% 0 0;
+  transform: rotate(-10deg);
+  opacity: .67;
+}
+.psy-wave-front {
+  bottom: -240px;
+  left: -38px;
+  width: 46%;
+  height: 315px;
+  background: linear-gradient(20deg,#679d4b,#126d49);
+  border-radius: 52% 70% 0 0 / 68% 87% 0 0;
+  transform: rotate(-12deg);
+  opacity: .48;
+}
+
+
+/* ПЛАНШЕТИ ТА НЕВЕЛИКІ НОУТБУКИ */
+@media (max-width:1650px) {
+  .psy-topbar {
+    width: 96%;
+    gap: 10px;
+  }
+  .psy-brand {
+    width: 305px;
+    min-width: 305px;
+    height: 80px;
+    padding: 8px 13px;
+    gap: 9px;
+  }
+  .psy-brand-icon {
+    width: 62px;
+    height: 62px;
+    flex-basis: 62px;
+  }
+  .psy-brand-info h5 {
+    font-size: 18px;
+  }
+  .psy-brand-info p {
+    font-size: 10px;
+  }
+  .psy-menu {
+    overflow-x: auto;
+    scrollbar-width: none;
+    justify-content: flex-start;
+  }
+  .psy-menu::-webkit-scrollbar {
+    display: none;
+  }
+  .psy-menu > div {
+    flex-shrink: 0;
+    gap: 9px;
+  }
+  .psy-menu button {
+    font-size: 12px;
+  }
+  .psy-menu button svg {
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
+  }
+  .psy-contact {
+    flex-basis: 162px;
+  }
+  .psy-contact-button {
+    font-size: 14px;
+  }
+  .psy-heart {
+    width: 155px;
+    left: calc(100% + 8px);
+  }
+}
+
+@media (max-width:1060px) {
+  .psy-header {
+    top: 8px;
+    height: 132px;
+  }
+  .psy-topbar {
+    height: 132px;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    grid-template-rows: 75px 49px;
+    gap: 4px 12px;
+  }
+  .psy-brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .psy-contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .psy-menu {
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 100%;
+  }
+  .psy-menu > div {
+    height: 46px;
+  }
+  .psy-hero-inner {
+    padding-top: 180px;
+  }
+  .psy-hero::before {
+    width: 78%;
+    opacity: .72;
+  }
+}
+
+@media (max-width:700px) {
+  .psy-header {
+    position: relative;
+    top: 0;
+    height: auto;
+    padding: 7px 0;
+    background: #faf7ed;
+  }
+  .psy-topbar {
+    width: 94%;
+    height: auto;
+    grid-template-columns: minmax(0,1fr) 114px;
+    grid-template-rows: 62px 44px;
+    gap: 5px 8px;
+  }
+  .psy-brand {
+    width: 100%;
+    min-width: 0;
+    height: 61px;
+    padding: 6px 7px;
+    gap: 4px;
+  }
+  .psy-brand-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+  .psy-brand-info h5 {
+    font-size: clamp(12px,3.5vw,17px);
+  }
+  .psy-brand-info p {
+    font-size: clamp(7px,1.85vw,10px);
+  }
+  .psy-contact {
+    width: 114px;
+    flex-basis: auto;
+  }
+  .psy-contact-button {
+    height: 44px;
+    font-size: 12px;
+    padding: 0 5px;
+    gap: 3px;
+  }
+  .psy-contact-button svg {
+    height: 17px;
+    width: 17px;
+  }
+  .psy-menu {
+    grid-row: 2;
+    min-height: 44px;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  .psy-menu > div {
+    height: 42px;
+    max-width: none;
+    width: max-content;
+    min-width: max-content;
+    justify-content: flex-start;
+  }
+  .psy-hero {
+    min-height: 0;
+  }
+  .psy-hero::before {
+    width: 100%;
+    opacity: .22;
+    mask-image: none;
+    -webkit-mask-image: none;
+    background-position: center;
+  }
+  .psy-hero-inner {
+    min-height: 0;
+    padding: 43px 0 70px;
+    width: 91%;
+  }
+  .psy-hero-text {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+  .psy-badge {
+    font-size: 13px;
+    min-height: 40px;
+    padding: 7px 16px;
+    margin-bottom: 18px;
+  }
+  .psy-title-wrap h1 {
+    font-size: clamp(43px,10.4vw,62px);
+    letter-spacing: -2px;
+  }
+  .psy-heart {
+    display: none;
+  }
+  .psy-description {
+    font-size: clamp(16px,4.5vw,20px);
+    margin-bottom: 24px;
+  }
+  .psy-features {
+    width: 100%;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 11px;
+  }
+  .psy-feature {
+    height: 116px;
+  }
+  .psy-feature p {
+    font-size: 14px;
+  }
+  .psy-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 58px;
+    font-size: 18px;
+    padding: 13px 22px;
+  }
+  .psy-leaf-left {
+    opacity: .25;
+    left: -100px;
+  }
+  .psy-leaf-right {
+    display: none;
+  }
+  .psy-wave-back {
+    width: 95%;
+  }
+  .psy-wave-front {
+    width: 90%;
+  }
+}
+.psy-menu button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #086240;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.psy-menu button.psy-active::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+
+/* Стилі тільки для карток «Популярні матеріали». Підключати ПІСЛЯ style.css. */
+#home .popular_materials_full {
+  height: auto;
+  min-height: 460px;
+  padding: 48px 0 58px;
+  box-sizing: border-box;
+}
+#home .popular_materials {
+  width: 82%;
+  height: auto;
+  margin-inline: auto;
+}
+#home .popular_materials_bloks {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 30px);
+  justify-content: initial;
+  align-items: stretch;
+  background: transparent;
+  margin-top: 24px;
+}
+#home .popular_materials_blok {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 276px;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  color: #21313a;
+  border: 1px solid #e2e8f0;
+  border-radius: 17px;
+  background: #fafcfb70;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+#home .popular_materials_blok:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(24, 75, 58, .12);
+}
+#home .popular_materials_blok:focus-visible {
+  outline: 3px solid #187a65;
+  outline-offset: 3px;
+}
+#home .popular_materials_blok_up {
+  display: block;
+  width: 100%;
+  height: 145px;
+  flex: 0 0 145px;
+  border-radius: 0;
+  overflow: hidden;
+  background: #c9c4a9;
+}
+#home .popular_materials_blok_up img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#home .popular_materials_blok_down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 130px;
+  padding: 16px 18px 20px;
+  border: 0;
+  border-radius: 0;
+  background: #fafcfb;
+}
+#home .popular_materials_blok-category {
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 11px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #23614b;
+  background: #e5f2ec;
+}
+#home .popular_materials_blok-category.parents {
+  color: #9a5b3c;
+  background: #fff0e7;
+}
+#home .popular_materials_blok-category.teachers {
+  color: #6e5295;
+  background: #eee7fa;
+}
+#home .popular_materials_blok-title {
+  display: -webkit-box;
+  margin-top: 14px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #26353a;
+}
+
+@media (max-width: 1050px) {
+  #home .popular_materials_bloks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  #home .popular_materials_full {
+    padding: 30px 0 45px;
+  }
+  #home .popular_materials {
+    width: 90%;
+  }
+  #home .popular_materials_bloks {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  #home .popular_materials-text h4 {
+    font-size: 20px;
+  }
+  #home .popular_materials-text button {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #home .popular_materials_blok {
+    transition: none;
+  }
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_full {
+  height: auto;
+  min-height: 460px;
+  padding: 48px 0 58px;
+  box-sizing: border-box;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials {
+  width: 82%;
+  height: auto;
+  margin-inline: auto;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_bloks {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 30px);
+  justify-content: initial;
+  align-items: stretch;
+  background: transparent;
+  margin-top: 24px;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 276px;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  color: #21313a;
+  border: 1px solid #e2e8f0;
+  border-radius: 17px;
+  background: #fafcfb;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(24, 75, 58, .12);
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok:focus-visible {
+  outline: 3px solid #187a65;
+  outline-offset: 3px;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok_up {
+  display: block;
+  width: 100%;
+  height: 145px;
+  flex: 0 0 145px;
+  border-radius: 0;
+  overflow: hidden;
+  background: #c9c4a9;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok_up img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok_down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 130px;
+  padding: 16px 18px 20px;
+  border: 0;
+  border-radius: 0;
+  background: #fafcfb;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok-category {
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 11px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #23614b;
+  background: #e5f2ec;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok-category.parents {
+  color: #9a5b3c;
+  background: #fff0e7;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok-category.teachers {
+  color: #6e5295;
+  background: #eee7fa;
+}
+:is(#home, #students, #parents, #teachers) .popular_materials_blok-title {
+  display: -webkit-box;
+  margin-top: 14px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #26353a;
+}
+
+@media (max-width: 1050px) {
+  :is(#home, #students, #parents, #teachers) .popular_materials_bloks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  :is(#home, #students, #parents, #teachers) .popular_materials_full {
+    padding: 30px 0 45px;
+  }
+  :is(#home, #students, #parents, #teachers) .popular_materials {
+    width: 90%;
+  }
+  :is(#home, #students, #parents, #teachers) .popular_materials_bloks {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  :is(#home, #students, #parents, #teachers) .popular_materials-text h4 {
+    font-size: 20px;
+  }
+  :is(#home, #students, #parents, #teachers) .popular_materials-text button {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(#home, #students, #parents, #teachers) .popular_materials_blok {
+    transition: none;
+  }
+}
+
+
+/* Тільки для чотирьох нових інфографік — не змінює старі картки */
+
+/* Ілюстрація всередині вікна «Читати» */
+
+/* Тільки для чотирьох нових інфографік — не змінює старі картки */
+.window_advice_card-img[style*="advice-anger.png"],
+.window_advice_card-img[style*="advice-anxiety.png"],
+.window_advice_card-img[style*="advice-sadness.png"],
+.window_advice_card-img[style*="advice-joy.png"] {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #fff7ef !important;
+}
+
+
+/* Ілюстрація всередині вікна «Читати» */
+.new-advice-visual {
+  margin: 14px auto 24px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.new-advice-visual a {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.new-advice-visual img {
+  display: block;
+  max-width: 100%;
+  max-height: min(48vh, 490px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid #efe5df;
+  background: #fff7ef;
+}
+
+
+/* Значок загальних порад на сторінці «Психологічні поради» */
+.window_advice_card-category.all {
+  background: #e7f0f5;
+  color: #24576b;
+}
+
+
+/* Значок загальних порад у блоці «Популярні матеріали» */
+.popular_materials_blok-category.all,
+.popular_materials_blok-category.other {
+  background: #e7f0f5 !important;
+  color: #24576b !important;
+}
+
+
+/* Стилі лише для нових статей ID 9–16 */
+.window_advice_card-img[style*="advice-09-"],
+.window_advice_card-img[style*="advice-10-"],
+.window_advice_card-img[style*="advice-11-"],
+.window_advice_card-img[style*="advice-12-"],
+.window_advice_card-img[style*="advice-13-"],
+.window_advice_card-img[style*="advice-14-"],
+.window_advice_card-img[style*="advice-15-"],
+.window_advice_card-img[style*="advice-16-"] {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #f8f5f2 !important;
+}
+
+
+/* Дизайн тільки для секції «Популярні матеріали».
+   Додай цей код у КІНЕЦЬ свого style.css. */
+.popular_materials_full .popular_materials_blok {
+  width: 100% !important;
+  font: inherit;
+}
+.popular_materials_full .popular_materials_blok:focus-visible {
+  outline: 3px solid #64927e;
+  outline-offset: 3px;
+}
+
+
+/* Рамка для будь-якого формату: горизонтального, вертикального, квадратного */
+.popular_materials_full .popular_materials_blok_up {
+  height: auto !important;
+  isolation: isolate;
+}
+
+
+/* Ніжне розмиття з того самого зображення */
+.popular_materials_full .popular_materials_blok_up::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  z-index: 0;
+  background-image: var(--popular-bg, none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(20px);
+  opacity: 0.45;
+}
+.popular_materials_full .popular_materials_blok_up::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+
+/* Не обрізаємо і не розтягуємо зображення */
+
+/* Картки «Популярні матеріали»: однакова висота фото, природна ширина.
+   Додати В САМИЙ КІНЕЦЬ style.css (після попередніх виправлень). */
+.popular_materials_full .popular_materials_bloks {
+  display: flex !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+.popular_materials_full .popular_materials_blok {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 0 0 var(--natural-card-width, 240px) !important;
+  width: var(--natural-card-width, 240px) !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 360px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid #e9e6e1 !important;
+  border-radius: 22px !important;
+  background: #fff !important;
+  box-shadow: 0 8px 22px rgb(26 44 32 / 8%) !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.popular_materials_full .popular_materials_blok:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgb(26 44 32 / 12%) !important;
+}
+
+
+/* У всіх картинок висота однакова; width:auto бере їхні реальні пропорції. */
+.popular_materials_full .popular_materials_blok_up {
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  height: var(--popular-photo-height, 210px) !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+  background: #f6f3ee !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Прибираємо старі розмиті підкладки. */
+.popular_materials_full .popular_materials_blok_up::before,
+.popular_materials_full .popular_materials_blok_up::after {
+  content: none !important;
+  display: none !important;
+}
+.popular_materials_full .popular_materials_blok_up img {
+  display: block !important;
+  position: relative !important;
+  z-index: 1 !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  filter: none !important;
+}
+.popular_materials_full .popular_materials_blok_down {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 13px !important;
+  min-height: 150px !important;
+  padding: 18px 18px 23px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+.popular_materials_full .popular_materials_blok-title {
+  font-size: 17px !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  overflow-wrap: break-word;
+}
+.popular_materials_full .popular_materials_blok-category {
+  width: max-content !important;
+  padding: 7px 12px !important;
+  border-radius: 999px !important;
+}
+
+
+/* Нижче 850px картки можна гортати по горизонталі. */
+@media (max-width: 850px) {
+  .popular_materials_full {
+    --popular-photo-height: 185px;
+  }
+  .popular_materials_full .popular_materials_bloks {
+    gap: 15px !important;
+  }
+  .popular_materials_full .popular_materials_blok {
+    min-height: 330px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular_materials_full {
+    --popular-photo-height: 170px;
+  }
+  .popular_materials_full .popular_materials_blok_down {
+    padding: 15px !important;
+  }
+  .popular_materials_full .popular_materials_blok-title {
+    font-size: 16px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popular_materials_full .popular_materials_blok {
+    transition: none !important;
+  }
+  .popular_materials_full .popular_materials_blok:hover {
+    transform: none !important;
+  }
+}
+
+
+/* ПОПУЛЯРНІ МАТЕРІАЛИ = ДИЗАЙН «ПСИХОЛОГІЧНИХ ПОРАД»
+  Підключити ПІСЛЯ основного style.css, щоб прибрати старі експерименти.
+  На ПК 3 картки в ряд, на планшеті 2, на телефоні 1. */
+
+/* Така сама трьохколонкова сітка, як у Психологічних порадах */
+
+/* Використовуємо той самий вигляд карток, що вже існує в style.css */
+
+/* Єдина висота області зображень; зберігаємо всі пропорції. */
+
+/* Категорія «Усі» вже є в твоєму CSS для карток порад. */
+
+/* Популярні матеріали — 4 картки в ряд */
+.popular_materials_bloks {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: 100% !important;
+}
+
+
+/* Картки */
+.popular_materials_bloks > * {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+
+/* Зображення */
+.popular_materials_blok_up,
+.popular_materials_bloks .window_advice_card-img {
+  height: 165px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #f8f6f3;
+}
+
+
+/* Заголовки */
+.popular_materials_bloks h3 {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+
+/* Адаптивність */
+@media (max-width: 1000px) {
+  .popular_materials_bloks {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular_materials_bloks {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* ПОПУЛЯРНІ МАТЕРІАЛИ = ДИЗАЙН «ПСИХОЛОГІЧНИХ ПОРАД»
+  Підключити ПІСЛЯ основного style.css, щоб прибрати старі експерименти.
+  На ПК 4 картки в ряд, на планшеті 2, на телефоні 1. */
+.popular_materials_full {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 48px 0 60px !important;
+  box-sizing: border-box;
+  align-items: stretch !important;
+  background: #fafcfb;
+}
+.popular_materials_full .popular_materials {
+  width: min(1200px, 90%) !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+.popular_materials_full .popular_materials_bloks_full {
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+
+
+/* Чотири картки в одному рядку, стиль як у Психологічних порадах */
+.popular_materials_full .popular_materials_bloks {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+  justify-content: normal !important;
+  flex-wrap: initial !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  scroll-snap-type: none !important;
+  background: transparent !important;
+  box-sizing: border-box;
+}
+
+
+/* Використовуємо той самий вигляд карток, що вже існує в style.css */
+.popular_materials_full .window_advice_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  background: #fff;
+}
+
+
+/* Єдина висота області зображень; зберігаємо всі пропорції. */
+.popular_materials_full .window_advice_card-img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  flex: 0 0 170px;
+  background-color: #f8f5f2;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.popular_materials_full .window_advice_card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  min-width: 0;
+}
+.popular_materials_full .window_advice_card-info h3 {
+  overflow-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.popular_materials_full .window_advice_card-description {
+  margin: 0 0 16px;
+}
+.popular_materials_full .window_advice_card-bottom {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+
+/* Категорія «Усі» вже є в твоєму CSS для карток порад. */
+.popular_materials_full .window_advice_card-category.all {
+  background: #e7f0f5;
+  color: #24576b;
+}
+
+@media (max-width: 1050px) {
+  .popular_materials_full .popular_materials_bloks {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular_materials_full {
+    padding: 32px 0 45px !important;
+  }
+  .popular_materials_full .popular_materials_bloks {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+
+/* Популярні матеріали — без відступів у фото */
+.popular_materials_full .window_advice_card-img,
+.popular_materials_full .popular_materials_blok_up {
+  height: 170px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+
+/* якщо всередині є img */
+.popular_materials_full .window_advice_card-img img,
+.popular_materials_full .popular_materials_blok_up img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+
+/* сама картка */
+.popular_materials_full .window_advice_card,
+.popular_materials_full .popular_materials_blok {
+  overflow: hidden;
+}
+
+
+/* ================================================
+   АДАПТИВНІ КАРТКИ ГОЛОВНОЇ — без перекривання секцій
+   Десктопну верстку не змінюємо.
+   ================================================ */
+@media (max-width: 1100px) {
+  #home .choice_window_full {
+    height: auto;
+    min-height: 0;
+    padding: 36px 0 48px;
+    box-sizing: border-box;
+  }
+
+  #home .choice_window {
+    height: auto;
+    min-height: 0;
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  #home .choice_window_boxs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    height: auto;
+  }
+
+  #home .choice_window_box {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    min-height: 110px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  #home .choice_window_box h5 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 700px) {
+  #home .choice_window_full {
+    padding: 32px 0 42px;
+  }
+
+  #home .choice_window {
+    width: 90%;
+    gap: 25px;
+  }
+
+  #home .choice_window_text {
+    text-align: center;
+  }
+
+  #home .choice_window_text h2 {
+    max-width: 100%;
+    font-size: clamp(23px, 6vw, 30px);
+    line-height: 1.2;
+  }
+
+  #home .choice_window_text p {
+    max-width: 100%;
+  }
+
+  #home .choice_window_cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  #home .choice_window_card1,
+  #home .choice_window_card2,
+  #home .choice_window_card3 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  #home .choice_window_boxs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Нижній заклик до звернення: без виходу за межі телефону. */
+@media (max-width: 700px) {
+  #home .write_to_psychologist_full {
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  #home .write_to_psychologist {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 118px;
+    padding: 20px;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #home .write_to_psychologist h5 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  #home .write_to_psychologist p {
+    margin: 0;
+  }
+
+  #home .write_psychologist {
+    width: 100%;
+  }
+
+  #home .write_psychologist-button {
+    width: 100%;
+  }
 }
