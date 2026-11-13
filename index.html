@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <nav class="psy-menu" aria-label="Основне меню">
+            <nav class="psy-menu" id="psyMainMenu" aria-label="Основне меню">
                 <div>
                     <button class="psy-active" onclick="showPage('home')">
                     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Головна
@@ -51,6 +51,18 @@
                     </button>
                 </div>
             </nav>
+            <button
+                class="psy-burger"
+                id="psyBurgerBtn"
+                type="button"
+                aria-label="Відкрити меню"
+                aria-controls="psyMainMenu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
             <div class="psy-contact">
                 <button onclick="showPage('contact')" class="psy-contact-button">
@@ -1465,7 +1477,7 @@
                 <div>
                     <span class="bullying-label-full">
                         <span class="bullying-label">ВАЖЛИВО</span>
-                        <span class="bullying-label-valid-from"><h4>Дійсний від 18 червня</h4></span>
+                        <span class="bullying-label-valid-from"><h4>Дійсний від 18 червня 2026р</h4></span>
                     </span>
                     <h2>Правила протидії булінгу</h2>
                     <p>
@@ -1741,7 +1753,7 @@
                         </div>
                     
                         <div>
-                            <h3>Робота з учнями</h3>
+                            <h3>психологічний супровід та підтримка дитини</h3>
                         
                             <p>
                                 Емоційна підтримка, розвиток навичок
