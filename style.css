@@ -5909,3 +5909,149 @@ body {
         width: 114px;
     }
 }
+
+/* ВІДЕО В МОДАЛЬНОМУ ВІКНІ ПОДІЙ */
+
+.window_events_modal-img:has(video) {
+    height: auto;
+    background: #101d18;
+}
+
+.window_events_modal-img video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+/* ==================================
+   ПОДІЇ — ВЕРТИКАЛЬНЕ ВІДЕО ЗЛІВА
+   ТЕКСТ СПРАВА
+================================== */
+
+/* Тільки події, у яких є відео */
+.window_events_modal-content:has(video) {
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    width: min(1050px, 95vw);
+    max-width: 1050px;
+    height: min(750px, 88dvh);
+    max-height: 88dvh;
+
+    padding: 0;
+    overflow: hidden;
+
+    border-radius: 26px;
+    background: #fdfcf8;
+}
+
+/* Ліва колонка з відео */
+.window_events_modal-content:has(video)
+.window_events_modal-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    background: #162922;
+    overflow: hidden;
+}
+
+/* Саме вертикальне відео */
+.window_events_modal-img video {
+    position: absolute;
+    inset: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+
+    object-fit: contain;
+}
+
+/* Права колонка з текстом */
+.window_events_modal-content:has(video)
+.window_events_modal-info {
+    min-width: 0;
+    padding: 65px 42px 35px;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    background: #fdfcf8;
+}
+
+/* Назва події */
+.window_events_modal-content:has(video)
+.window_events_modal-info h2 {
+    color: #123f3b;
+    font-size: clamp(23px, 2.6vw, 34px);
+    line-height: 1.25;
+    margin: 12px 0 24px;
+}
+
+/* Опис події */
+.window_events_modal-content:has(video)
+.window_events_modal-description {
+    color: #526963;
+    font-size: 16px;
+    line-height: 1.85;
+    white-space: pre-line;
+}
+
+/* Кнопка закриття */
+.window_events_modal-content:has(video)
+.window_events_modal-close {
+    top: 18px;
+    right: 18px;
+    z-index: 10;
+
+    background: #e8f2ec;
+    color: #123f3b;
+}
+
+/* ==================================
+   МОБІЛЬНА ВЕРСІЯ
+================================== */
+
+@media (max-width: 700px) {
+
+    .window_events_modal-content:has(video) {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        height: auto;
+        max-height: 92dvh;
+
+        overflow-y: auto;
+        border-radius: 20px;
+    }
+
+    .window_events_modal-content:has(video)
+    .window_events_modal-img {
+        height: min(55dvh, 500px);
+        min-height: 280px;
+    }
+
+    .window_events_modal-content:has(video)
+    .window_events_modal-info {
+        padding: 28px 22px 35px;
+        overflow-y: visible;
+    }
+
+    .window_events_modal-content:has(video)
+    .window_events_modal-info h2 {
+        font-size: 25px;
+    }
+
+    .window_events_modal-content:has(video)
+    .window_events_modal-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}

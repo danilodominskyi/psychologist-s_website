@@ -1,0 +1,102 @@
+/* Картка презентації успадковує ЗВИЧАЙНІ стилі .window_advice_card. */
+/* Лише обкладинка не обрізає текст першого слайда. */
+#articlesContainer .psy-presentation-card .window_advice_card-img {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+/* В «Популярних матеріалах» показуємо слайд повністю. */
+.psy-presentation-popular-card .popular_materials_blok_up img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Модальне вікно PDF */
+.psy-presentation-modal {
+  position: fixed; inset: 0; z-index: 20000;
+  padding: 22px; box-sizing: border-box;
+  display: flex; justify-content: center; align-items: center;
+  background: rgba(11,35,26,.66); backdrop-filter: blur(7px);
+}
+.psy-presentation-modal[hidden],
+.psy-presentation-modal [hidden] { display: none !important; }
+.psy-presentation-dialog {
+  width: min(1050px, 100%); height: min(840px, 92dvh);
+  min-height: 0; display: flex; flex-direction: column;
+  background: white; border-radius: 23px;
+  overflow: hidden; box-shadow: 0 30px 85px rgba(0,0,0,.24);
+  outline: none;
+}
+.psy-presentation-header {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 14px; padding: 16px 22px; border-bottom: 1px solid #e5ebe7;
+  background: linear-gradient(100deg, #f3faf4, #fff9f0);
+}
+.psy-presentation-heading { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.psy-presentation-mini-icon {
+  display: flex; align-items: center; justify-content: center;
+  flex: 0 0 39px; height: 39px; width: 39px;
+  border-radius: 12px; background: #dff2e6; color: #086542;
+  font-size: 24px;
+}
+.psy-presentation-eyebrow {
+  display: block; color: #5f806e; font-size: 11px;
+  font-weight: 650; margin-bottom: 4px;
+}
+.psy-presentation-header h2 {
+  color: #153b2c; font-size: clamp(16px, 2vw, 23px);
+  line-height: 1.2; margin: 0; overflow-wrap: anywhere;
+}
+.psy-presentation-close {
+  flex: 0 0 39px; height: 39px; width: 39px;
+  border: 0; border-radius: 50%; background: #e4efe8;
+  color: #14543c; font-size: 27px; line-height: 1;
+  cursor: pointer;
+}
+.psy-presentation-close:hover { background: #cce8d9; }
+.psy-presentation-viewer {
+  position: relative; flex: 1; min-height: 0;
+  background: #edf0ec; display: flex;
+}
+.psy-presentation-frame {
+  width: 100%; height: 100%; flex: 1; border: 0;
+}
+.psy-presentation-placeholder {
+  margin: auto; max-width: 490px; padding: 25px;
+  text-align: center; color: #234d3b;
+}
+.psy-presentation-placeholder-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 70px; width: 70px; border-radius: 20px;
+  background: #dcefe0; color: #166544; font-size: 46px;
+}
+.psy-presentation-placeholder h3 { margin: 14px 0 7px; font-size: 23px; }
+.psy-presentation-placeholder p { margin: 0; line-height: 1.7; font-size: 14px; }
+.psy-presentation-placeholder code {
+  font-size: .95em; background: #e1e8e0; padding: 2px 4px; border-radius: 4px;
+}
+.psy-presentation-footer {
+  display: flex; justify-content: space-between; gap: 15px;
+  align-items: center; padding: 12px 23px;
+  border-top: 1px solid #e5ebe7; background: white;
+}
+.psy-presentation-hint { font-size: 12px; color: #6c8076; }
+.psy-presentation-external {
+  color: #086542; font-size: 13px; font-weight: 750;
+  padding: 8px 12px; border: 1px solid #b8d8c6;
+  border-radius: 999px; text-decoration: none;
+}
+.psy-presentation-external:hover { background: #ebf7ef; }
+.psy-presentation-close:focus-visible,
+.psy-presentation-external:focus-visible {
+  outline: 3px solid #80c2a5; outline-offset: 2px;
+}
+@media (max-width: 700px) {
+  .psy-presentation-modal { padding: 0; }
+  .psy-presentation-dialog { width: 100%; height: 100dvh; border-radius: 0; }
+  .psy-presentation-header { padding: 11px 14px; }
+  .psy-presentation-footer { padding: 10px 14px; }
+  .psy-presentation-hint { display: none; }
+  .psy-presentation-external { margin-left: auto; }
+}

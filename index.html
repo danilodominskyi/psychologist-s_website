@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="presentation.css">
 </head>
 <body>
     <header class="psy-header">
@@ -40,9 +41,9 @@
                     <button onclick="showPage('advice')">
                     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 19h6M10 22h4M8 16c-2.3-1.4-3.5-3.5-3.5-6A7.5 7.5 0 0 1 12 2.5a7.5 7.5 0 0 1 7.5 7.5c0 2.5-1.2 4.6-3.5 6l-1 2H9l-1-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Психологічні поради
                     </button>
-                    <!-- <button onclick="showPage('events')">
+                    <button onclick="showPage('events')">
                     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M7 2v6M17 2v6M3 10h18M7.5 14h3M13.5 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Події
-                    </button> -->
+                    </button>
                     <button onclick="showPage('about')">
                     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v6M12 7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Про психолога
                     </button>
@@ -912,7 +913,7 @@
                         </div>
                     </div>
                 
-                    <div class="content_topic-grid-full">
+                    <!-- <div class="content_topic-grid-full">
                         <div class="content_topic-grid">
                             <div class="content_topic-card">
                                 <p class="content_topic-card-img">👥</p>
@@ -944,7 +945,7 @@
                                 <p class="content_topic-card-text">Профілактика булінгу</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 
                     <div class="content_info-blocks-full">
                     
@@ -1550,15 +1551,14 @@
                                 
                                     <p>
                                         Тамара Василишина- практичний психолог Жовківського ЗЗСО І-ІІІ ступенів N 2.
-                                        Стаж роботи психологом 21 рік.Педагогічний стаж+36 років
+                                        Стаж роботи психологом 21 рік. Педагогічний стаж+36 років
                                         Маю вищу категорію та звання психолог-методист
-                                        В школі  займаюсь психологічним супроводом освітнього процесу,допомагаю у створенні безпечного середовища .
-                                        Допомагаю в адаптації учням, проводжу індивідуальні консультації з учнями,батьками,педагогами-( за запитом.)
+                                        В школі  займаюсь психологічним супроводом освітнього процесу, допомагаю у створенні безпечного середовища.                                         Допомагаю в адаптації учням, проводжу індивідуальні консультації з учнями,батьками,педагогами-( за запитом.)
                                         Навчаю як впоратись зі стресом та вмінням керувати своїм емоційним станом.
                                         Як психолог допомагаю не тільки вирішувати конфлікти, в й попередити їх.
                                         До мене можна звернутись старшокласникам про допомогу у виборі професії.
                                         Батькам та педагогам радо надам рекомендації як підтримати дітей та створити довірливі стосунки.
-                                        Люблю свою роботу.Люблю допомагати тим,хто цього дійсно потребує
+                                        Люблю свою роботу. Люблю допомагати тим, хто цього дійсно потребує
                                     </p>
                                         Моя робота в школі- це постійне вдосконалення і навчання!!
                                 </div>
@@ -1641,7 +1641,29 @@
                                     type="text"
                                     id="classAge"
                                     name="classAge"
+                                    required
                                 >
+
+
+                                
+                                <label for="phone">Номер телефону</label>
+                                <input
+                                    class="input_classAge"
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="0971234567"
+                                    inputmode="numeric"
+                                    minlength="10"
+                                    maxlength="10"
+                                    pattern="0[0-9]{9}"
+                                    title="Введіть 10 цифр номера, починаючи з 0"
+                                    autocomplete="tel"
+                                    oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)"
+                                    required
+                                >
+
+
 
 
                                 <label for="message">Ваше повідомлення *</label>
@@ -1656,6 +1678,8 @@
                                 <button type="submit" class="form-button">
                                     Надіслати повідомлення →
                                 </button>
+
+                                <p id="formStatus" role="status" aria-live="polite"></p>
 
                             </form>
                         </div>
@@ -2092,5 +2116,6 @@
     <footer></footer>
     <script src="index.js"></script>
     <script src="new_advice.js"></script>
+    <script src="presentation.js"></script>
 </body>
 </html>

@@ -503,59 +503,24 @@ const events = [
     {
         id: 1,
 
-        category: "Учні",
-        categoryClass: "student",
-
-        date: "24 вересня 2026",
-
-        title: "Тренінг для учнів 8 класу «Впевненість у собі»",
-
-        description: "Учні взяли участь у тренінгу, присвяченому розвитку впевненості в собі та вмінню висловлювати власну думку.",
-
-        fullDescription: "Під час тренінгу учні 8 класу дізналися, що таке впевненість у собі та як її розвивати.\n\nУчасники виконували цікаві вправи, працювали в командах і ділилися власними думками.\n\nЗахід пройшов у дружній атмосфері.",
-
-        image: "",
-
-        photos: []
-    },
-
-    {
-        id: 2,
-
-        category: "Батьки",
-        categoryClass: "parents",
-
-        date: "15 вересня 2026",
-
-        title: "Зустріч з батьками «Як порозумітися з підлітком»",
-
-        description: "Обговорення важливих питань спілкування між батьками та підлітками.",
-
-        fullDescription: "Відбулася зустріч із батьками, присвячена особливостям підліткового віку.\n\nОбговорили способи побудови довірливих стосунків, вирішення конфліктів та емоційної підтримки дітей.",
-
-        image: "",
-
-        photos: []
-    },
-
-    {
-        id: 3,
-
         category: "Педагоги",
         categoryClass: "teachers",
 
-        date: "5 вересня 2026",
+        date: "",
 
-        title: "Семінар для педагогів «Психологічний клімат класу»",
+        title: "Чай з психологом з нотками ментальності",
 
-        description: "Практичні рекомендації щодо створення комфортної атмосфери в класі.",
+        description: "Тематичні перерви для педагогів, присвячені збереженню ментального здоров'я.",
 
-        fullDescription: "Для педагогів проведено семінар, присвячений психологічному клімату в класному колективі.\n\nУчасники обговорили методи підтримки учнів, профілактики конфліктів та формування позитивної атмосфери.",
+        fullDescription: "Практичний психолог Жовківського ЗЗСО І–ІІІ ступенів № 2 провела для педагогів тематичні перерви «Чай з психологом з нотками ментальності».\n\nВправи та техніки, запропоновані психологом, були спрямовані на збереження й підтримку ментального здоров'я педагогів.",
 
-        image: "",
+        image: "img/tea-with-psychologist.jpg",
+
+        video: "video/tea-with-psychologist.mp4",
 
         photos: []
-    }
+    },
+
 ];
 
 
@@ -704,14 +669,32 @@ function openEvent(eventId) {
 
     modalImg.innerHTML = "";
 
-    if (selectedEvent.image) {
+    
+    if (selectedEvent.video) {
+
+        const video = document.createElement("video");
+
+        video.src = selectedEvent.video;
+        video.controls = true;
+        video.playsInline = true;
+        video.preload = "metadata";
+
+        if (selectedEvent.image) {
+            video.poster = selectedEvent.image;
+        }
+
+        modalImg.appendChild(video);
+
+    } else if (selectedEvent.image) {
 
         const img = document.createElement("img");
+
         img.src = selectedEvent.image;
         img.alt = selectedEvent.title;
 
         modalImg.appendChild(img);
     }
+
 
 
     // ГАЛЕРЕЯ
@@ -742,12 +725,22 @@ function openEvent(eventId) {
 
 // ЗАКРИТТЯ МОДАЛЬНОГО ВІКНА
 
+
 function closeEvent() {
 
-    document.getElementById("eventModal").style.display = "none";
+    const modal = document.getElementById("eventModal");
+    const video = modal.querySelector("video");
 
+    if (video) {
+        video.pause();
+        video.removeAttribute("src");
+        video.load();
+    }
+
+    modal.style.display = "none";
     document.body.style.overflow = "";
 }
+
 
 
 // ЗАКРИТТЯ ПРИ НАТИСКАННІ НА ФОН
@@ -778,37 +771,78 @@ document.addEventListener("keydown", function(event) {
 
 
 
-const messages = [];
+
+/* ====================================
+   НАДСИЛАННЯ ФОРМИ У TELEGRAM
+==================================== */
 
 const form = document.getElementById("psychologistForm");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
-    const fullName = document.getElementById("fullName").value;
-    const classAge = document.getElementById("classAge").value;
-    const message = document.getElementById("message").value;
+    const button = form.querySelector(".form-button");
+    const status = document.getElementById("formStatus");
 
-    const role = document.querySelector(
-        'input[name="role"]:checked'
-    ).value;
-
-    const newMessage = {
-        id: Date.now(),
-        fullName: fullName,
-        role: role,
-        classAge: classAge,
-        message: message,
-        createdAt: new Date().toLocaleString()
+    // Отримуємо дані з форми
+    const data = {
+        fullName: document.getElementById("fullName").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        role: form.querySelector('input[name="role"]:checked').value,
+        classAge: document.getElementById("classAge").value.trim(),
+        message: document.getElementById("message").value.trim()
     };
 
-    // ДОДАЄМО ОБ'ЄКТ У МАСИВ
-    messages.push(newMessage);
-    form.reset();
-    console.log(messages);
+    // Блокуємо кнопку на час надсилання
+    button.disabled = true;
+    button.textContent = "Надсилаємо...";
+    status.textContent = "";
+
+    try {
+
+        // Передаємо дані на наш сервер
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.ok) {
+            throw new Error(result.error || "Помилка надсилання");
+        }
+
+        // Успішне надсилання
+        status.textContent = "✅ Повідомлення успішно надіслано!";
+        status.style.color = "#087444";
+
+        // Очищуємо форму
+        form.reset();
+
+    } catch (error) {
+
+        // Якщо сталася помилка
+        status.textContent =
+            "❌ Не вдалося надіслати повідомлення. Спробуйте ще раз.";
+
+        status.style.color = "#bd3030";
+
+        console.error("Помилка:", error.message);
+
+    } finally {
+
+        // Повертаємо кнопку у звичайний стан
+        button.disabled = false;
+        button.textContent = "Надіслати повідомлення →";
+
+    }
 
 });
+
 
 
 
@@ -1093,7 +1127,7 @@ function closeCertificatesModal() {
 
 
 const pageArticles = {
-    students: [12, 1, 2, 2, 1],
+    students: [9, 17, 5, 2, 1],
     parents: [2, 9, 2, 1, 2],
     teachers: [3, 13, 3, 1, 3]
 };
@@ -1158,7 +1192,12 @@ function renderPageArticles(pageId) {
                 tips.appendChild(p);
             });
 
-            tips.hidden = steps.length === 0;
+            
+            const hideTips = article.type === "presentation" || steps.length === 0;
+
+            tips.hidden = hideTips;
+            tips.style.display = hideTips ? "none" : "";
+
         }
 
         if (image) {
@@ -1311,7 +1350,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ID беруться з масиву `articles` у твоєму index.js.
 // Наприклад [4, 1, 2, 3] = 4 картки у такому порядку.
 const popularArticlesByPage = {
-    home:     [2, 5, 9, 13],  // Головна
+    home:     [17, 5, 9, 13],  // Головна
     students: [6, 7, 8, 9],  // Учням
     parents:  [2, 14, 10, 12],  // Батькам
     teachers: [16, 11, 10, 6]   // Педагогам
